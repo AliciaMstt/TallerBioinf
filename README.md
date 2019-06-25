@@ -8,7 +8,7 @@ Taller práctico de bioinformática Posgrado en Ciencias Biológicas UNAM
 
 [Dra. Camille Truong](https://camilletruong.wixsite.com/home#!)
 
-M. en C. Rodolfo Ángeles Argáiz
+[M. en C. Rodolfo Ángeles Argáiz](https://scholar.google.com/citations?user=A2ZpeC8AAAAJ&hl=es&oi=ao)
 
 Lunes y miércoles 3-6 pm. Instituto de Biología y CONABIO (salas por definir según el día).
 
