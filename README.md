@@ -25,21 +25,23 @@ Que los y las estudiantes solucionen problemas bioinformáticos para el análisi
 
   * Haber concluido exitosamente un curso de bioinformática que cubra bash y R o python, o comprobar aptitudes bioinformáticas nivel medio (haber hecho scripts propios, poder leer y adaptar scripts de otros, navegar con fluidez por un sistema de archivos utilizando la línea de comando).
   * Tener datos de secuenciación masiva propios al inicio del curso.
+  
+Por favor nota que este **no** es un curso introductorio a la bioinformática, por lo que si no tienes cubierto un nivel básico en el manejo de línea de comando, te será difícil seguir las clases y aprovechar realmente el curso. 
 
 ## Temario 
 
 #### Unidad 1 Reproducibilidad y documentación de análisis bioinformáticos (horas: teóricas 2, prácticas 1)
-1.	La crisis de la reproducibilidad y herramientas para combatirla
+1.1.	La crisis de la reproducibilidad y herramientas para combatirla
 
-2.	Documentación 
+1.2.	Documentación 
 
-3.	Organización de directorios y datos
+1.3.	Organización de directorios y datos
 
-4.	Organización de scripts 
+1.4.	Organización de scripts 
 
-5.	Control de versiones con git
+1.5.	Control de versiones con git
 
-6.	Introducción a Github 
+1.6.	Introducción a Github 
 
 #### Unidad 2 Mejores prácticas al escribir y documentar scripts (horas: teóricas 2, prácticas 1)
 2.1. Working directory y rutas relativas
