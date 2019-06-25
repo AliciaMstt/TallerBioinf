@@ -30,26 +30,40 @@ Que los y las estudiantes solucionen problemas bioinformáticos para el análisi
 
 #### Unidad 1 Reproducibilidad y documentación de análisis bioinformáticos (horas: teóricas 2, prácticas 1)
 1.	La crisis de la reproducibilidad y herramientas para combatirla
+
 2.	Documentación 
+
 3.	Organización de directorios y datos
+
 4.	Organización de scripts 
+
 5.	Control de versiones con git
+
 6.	Introducción a Github 
 
 #### Unidad 2 Mejores prácticas al escribir y documentar scripts (horas: teóricas 2, prácticas 1)
-2.1. Working directory y rutas relativas 
+2.1. Working directory y rutas relativas
+
 2.2. Uso de variables 
+
 2.3. Cuando sí, cuando no y cómo usar for loops
+
 2.4. Trucos en la terminal y el editor de texto
+
 2.5. Recomendaciones misceláneas 
 
 #### Unidad 3 Discusión de métodos bioinformáticos aplicados a distintos tipos de datos (horas: teóricas 8, prácticas 8)
 3.1. Evaluación de la calidad, limpieza de datos y demultiplexeo
+
 3.2. Secuenciación reducida de genomas (eg. RAD, GBS)
+
 3.3. Genomas completos
+
 3.4. Metabarcoding
 
 #### Unidad 4 Revisión colaborativa de código bioinformático (horas: teóricas 2, prácticas 40)
 4.1. Planteamiento de un proyectos bioinformáticos
+
 4.2. Github para manejar proyectos bioinformáticos
+
 4.3. Revisión colaborativa de análisis bioinformáticos de los proyectos de los y las estudiantes
