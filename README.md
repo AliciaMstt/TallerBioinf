@@ -63,9 +63,64 @@ Por favor nota que este **no** es un curso introductorio a la bioinformática, p
 
 3.4. Metabarcoding
 
+3.5. Transcriptomas
+
 #### Unidad 4 Revisión colaborativa de código bioinformático (horas: teóricas 2, prácticas 40)
 4.1. Planteamiento de un proyectos bioinformáticos
 
 4.2. Github para manejar proyectos bioinformáticos
 
 4.3. Revisión colaborativa de análisis bioinformáticos de los proyectos de los y las estudiantes
+
+
+## Dinámica de clase y evaluación
+
+* **Exposición de su proyecto con enfoque en la parte bioinformática**
+* **Planteamiento y exposición de su proyecto como un Repositorio y un Proyecto de Github subdividido en tareas**
+
+* **Presentación en clase de un problema(s) bioinformático que no hayan podido resolver o del que tengan dudas**. Puede ser desde solicitar ayuda para realizar un loop sencillo hasta cómo elegir de manera óptima los parámetros de cierto proceso bioinformático (limpieza, ensamblado, etc). La presentación debe incluir: breves antecedentes, descripción del problema dentro de un issue(s) de Github, output esperado, scripts y outputs intentados hasta el momento. Las sesiones de presentaciones de pregunta incluyen un segmento para presentaciones calendarizadas por estudiante, y un segmento para presentaciones de problemas emergentes. Cada estudiante deberá presentar al menos 3 problemas calendarizados.
+
+* **Retroalimentación a los problemas de otros en clase**. Participación en clase en la sección de comentarios después de las presentaciones de otros.
+
+* **Retroalimentación al código de otros**. Mediante comentarios en la clase, en comentarios a los issues de Github y pull requests en Github con propuestas de soluciones.
+
+* **Seminario de tópico metodológico.** Preparación, exposición y discusión de tópicos metodológicos. 
+
+* **Evaluación final del repositorio** Dos fechas de revisión: 30 de octubre (se hacen comentarios) y 20 de noviembre (entrega final con comentarios resueltos).
+
+
+## Calendario
+
+* L5 Agosto: Bienvenida y Unidad 1 (1.1-1.4)
+* M7 Agosto: Unidad 1 continaucion (1.5, 1.6: git y github)
+* L12 Agosto: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2
+* M14 Agosto: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2
+* L19 Agosto: Clase 4.1. Planteamiento de un proyectos bioinformáticos y 4.2. Github para manejar proyectos bioinformáticos
+* M21 Agosto: Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github
+* L26 Agosto: Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github
+* M28 Agosto: Clase (exposición profes) de tópico Unidad 3 (Evaluación de Calidad)
+
+* L2 Septiembre: Presentación/retroalimentación de problemas de estudiantes
+* M4 Septiembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
+* L9 Septiembre: Presentación/retroalimentación de problemas de estudiantes
+* M11 Septiembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
+* M18 Septiembre: Presentación/retroalimentación de problemas de estudiantes
+* L23 Septiembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
+* M25 Septiembre: Presentación/retroalimentación de problemas de estudiantes
+
+* M2 Octubre (no se olvida): Presentación/retroalimentación de problemas de estudiantes
+* L7 Octubre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
+* M9 Octubre: Presentación/retroalimentación de problemas de estudiantes
+* L14 Octubre: Seminario (estudiantes) de tópico metodológico.
+* M16 Octubre: Presentación/retroalimentación de problemas de estudiantes
+* L21 Octubre: Seminario (estudiantes) de tópico metodológico.
+* M23 Octubre: Presentación/retroalimentación de problemas de estudiantes
+* L28 Octubre: Seminario (estudiantes) de tópico metodológico.
+* M30 Octubre: Presentación/retroalimentación de problemas de estudiantes | Primera entrega de Repositorio 
+
+* L4 Noviembre: Seminario (estudiantes) de tópico metodológico.
+* M6 Noviembre: Presentación/retroalimentación de problemas de estudiantes
+* L11  Noviembre: Presentación/retroalimentación de problemas de estudiantes
+* M13  Noviembre: Presentación/retroalimentación de problemas de estudiantes
+* M20 Noviembre: Presentación/retroalimentación de problemas de estudiantes | Entrega final de Repositorio
+
