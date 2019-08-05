@@ -1,6 +1,7 @@
 # TallerBioinf
 Taller práctico de bioinformática Posgrado en Ciencias Biológicas UNAM
 
+[![Gitter](https://badges.gitter.im/TallerBioinfo2019/community.svg)](https://gitter.im/TallerBioinfo2019/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 **Profesorxs:** 
 
