@@ -76,18 +76,19 @@ Por favor nota que este **no** es un curso introductorio a la bioinformática, p
 
 ## Dinámica de clase y evaluación
 
-* **Exposición de su proyecto con enfoque en la parte bioinformática**
-* **Planteamiento y exposición de su proyecto como un Repositorio y un Proyecto de Github subdividido en tareas**
+* 5% **Exposición de su proyecto con enfoque en la parte bioinformática** La exposición se debe hacer en inglés.
 
-* **Presentación en clase de un problema(s) bioinformático que no hayan podido resolver o del que tengan dudas**. Puede ser desde solicitar ayuda para realizar un loop sencillo hasta cómo elegir de manera óptima los parámetros de cierto proceso bioinformático (limpieza, ensamblado, etc). La presentación debe incluir: breves antecedentes, descripción del problema dentro de un issue(s) de Github, output esperado, scripts y outputs intentados hasta el momento. Las sesiones de presentaciones de pregunta incluyen un segmento para presentaciones calendarizadas por estudiante, y un segmento para presentaciones de problemas emergentes. Cada estudiante deberá presentar al menos 3 problemas calendarizados.
+* 5% **Planteamiento y exposición de su proyecto como un Repositorio y un Proyecto de Github subdividido en tareas** Los tasks, documentación e issues deben ser en inglés.
 
-* **Retroalimentación a los problemas de otros en clase**. Participación en clase en la sección de comentarios después de las presentaciones de otros.
+* 30% **Presentación en clase de un problema(s) bioinformático que no hayan podido resolver o del que tengan dudas**. Puede ser desde solicitar ayuda para realizar un loop sencillo hasta cómo elegir de manera óptima los parámetros de cierto proceso bioinformático (limpieza, ensamblado, etc). La presentación debe incluir: breves antecedentes, descripción del problema dentro de un issue(s) de Github, output esperado, scripts y outputs intentados hasta el momento. Las sesiones de presentaciones de pregunta incluyen un segmento para presentaciones calendarizadas por estudiante, y un segmento para presentaciones de problemas emergentes. Cada estudiante deberá presentar al menos 3 problemas calendarizados.
 
-* **Retroalimentación al código de otros**. Mediante comentarios en la clase, en comentarios a los issues de Github y pull requests en Github con propuestas de soluciones.
+* 15% **Retroalimentación a los problemas de otros en clase**. Participación en clase en la sección de comentarios después de las presentaciones de otros.
 
-* **Seminario de tópico metodológico.** Preparación, exposición y discusión de tópicos metodológicos. 
+* 15% **Retroalimentación al código de otros**. Mediante comentarios en la clase, en comentarios a los issues de Github y pull requests en Github con propuestas de soluciones.
 
-* **Evaluación final del repositorio** Dos fechas de revisión: 30 de octubre (se hacen comentarios) y 20 de noviembre (entrega final con comentarios resueltos).
+* 10% **Seminario de tópico metodológico.** Preparación, exposición y discusión de tópicos metodológicos. La exposición del seminario debe ser en inglés.
+
+* 20% **Evaluación final del repositorio** Dos fechas de revisión: 30 de octubre (se hacen comentarios) y 20 de noviembre (entrega final con comentarios resueltos).
 
 
 ## Calendario
