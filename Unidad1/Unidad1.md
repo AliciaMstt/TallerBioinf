@@ -109,6 +109,16 @@ Acepta archivos excel, scripts, alineamientos de secuencias de ADN, datos semi-c
 
 Muchas revistas científicas piden como requisito que los datos estén en Dryad además de en NCBI o símil.
 
+
+[Open Science Framework](https://osf.io/) es una platforma gratuita que permite almacener y compartir datos, códigos y otros materiales. Cada archivo obtiene una URL única y persistente para citarlo y compartirlo de forma flexible y controlada.
+
+Los archivos se organizan en proyectos estructurados y se agregan colaboradores, dándoles acceso a los datos, protocolos y otros materiales de investigación. El control de versión incorporado sigue la evolución del proyecto y de los archivos, y impide que dos personas hacen cambios al mismo tiempo.
+
+También se puede crear y compartir "preprint" para que otros puedan encontrar y citar su trabajo.
+
+Es una muy buena manera de planear y gestionar proyectos colaborativos, y su capacidad de almacen de datos es "infinita" - sin problema se puede depositar y compartir los datos de varios genomas.
+
+
 Checa otros repositorios de datos [aquí](http://ropensci.github.io/reproducibility-guide/sections/dataStorage/).
 
 
