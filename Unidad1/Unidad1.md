@@ -448,7 +448,7 @@ Debe mostrarse tu dirección correcta.
 ### Ejemplo: vamos a crear un repo
 
 #### `git init`
-Te permite crear un repositorio desde tu disco local.
+Te permite crear un repo desde tu disco local. En la terminal escribe:
 
 ```
 $ mkdir repo_name # crear un directorio en tu disco local
@@ -457,6 +457,17 @@ $ git init # transformar ese directorio en un repositorio git
 $ git status # verificar que el repositorio ha sido creado
 ```
 
+Para conectar ese nuevo repostorio a github:
+
+Log in en tu cuenta de github
+En 'Repositories' click en el boton verde 'NEW"
+Dale el mismo nombre que tu repostorio local y click en el botom 'Create repository'
+Vuelves al terminal para conectar tu repo local con el repo en github, usando:
+
+```
+$ git remote add origin https://github.com/<username>/<repo_name>.git
+$ git push -u origin master
+```
 
 ### Ejemplo: vamos a clonar un repo.
 
