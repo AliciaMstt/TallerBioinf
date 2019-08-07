@@ -713,3 +713,19 @@ También puedes crear un `.gitignore` global que aplique en todos los repos de t
 Lo primero que hay que hacer es este tutorial: [Hello-world Github Guide](https://guides.github.com/activities/hello-world/) para aprender a crear un repo en Github y utilizar su versión web.
 
 
+### Ejercicios:
+
+1. Configura tu git local a Github con las instrucciones que dimos arriba
+
+2. Sigue el [tutorial de Hello World](https://guides.github.com/activities/hello-world/) para crear un repositorio con el nombre de tu proyecto. Este es el repositorio que ocuparás para poner los scripts de tu proyecto que revisaremos durante el curso.
+
+3. Realiza este tutorial de git [https://learngitbranching.js.org/](https://learngitbranching.js.org/).
+
+4. Ve al Repo_chocolate que utilizamos en un ejercicio de arriba. Utiliza git para volverr al commit donde el archivo example2.txt existía pero estaba vacío.
+
+5. Lee la [documentación de `pull request` en Github](https://help.github.com/en/articles/about-pull-requests). Con base en esto, modifica el archivo `/Unidad1/listado_estudiantes.txt` del repositorio del curso para agregar tu nombre y nombre de usuario de github a la lista. Posteriormente has un `pull request` para que nosotros lo veamos y aceptemos en el repositorio.  
+
+
+
+
+
