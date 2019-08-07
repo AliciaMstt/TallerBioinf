@@ -445,6 +445,19 @@ Debe mostrarse tu dirección correcta.
 [Referencia de lo anterior](https://help.github.com/articles/setting-your-commit-email-address-in-git/)
 
 
+### Ejemplo: vamos a crear un repo
+
+#### `git init`
+Te permite crear un repositorio desde tu disco local.
+
+```
+$ mkdir repo_name # crear un directorio en tu disco local
+$ cd repo_name
+$ git init # transformar ese directorio en un repositorio git
+$ git status # verificar que el repositorio ha sido creado
+```
+
+
 ### Ejemplo: vamos a clonar un repo.
 
 #### `git clone`
