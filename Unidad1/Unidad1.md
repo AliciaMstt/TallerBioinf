@@ -458,11 +458,10 @@ $ git status # verificar que el repositorio ha sido creado
 ```
 
 Para conectar ese nuevo repostorio a github:
-
-Log in en tu cuenta de github
-En 'Repositories' click en el boton verde 'NEW"
-Dale el mismo nombre que tu repostorio local y click en el botom 'Create repository'
-Vuelves al terminal para conectar tu repo local con el repo en github, usando:
++ Log in en tu cuenta de github
++ En 'Repositories' click en el boton verde 'NEW"
++ Dale el mismo nombre que tu repostorio local y click en el botom 'Create repository'
++ Vuelves al terminal para conectar tu repo local con el repo en github, usando:
 
 ```
 $ git remote add origin https://github.com/<username>/<repo_name>.git
