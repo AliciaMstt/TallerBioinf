@@ -133,6 +133,7 @@ Ejemplos:
 
 * [Genomics Data](http://www.journals.elsevier.com/genomics-data/)
 
+* [Microbiology Resource Announcements ](https://mra.asm.org/)
 
 ### Compartir código 
 
