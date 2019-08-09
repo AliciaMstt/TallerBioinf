@@ -271,6 +271,19 @@ $ for i in $(cat muestras.txt); do echo Hacer algo con la muestra $i; done
 
 ## 2.4. Trucos en la terminal y el editor de texto
 
+#### `cat`
+
+[definición e usos](http://www.linfo.org/cat.html)
+
+Usando `cat`, crea un archivo en tu repo de chocolate llamado 'felines.txt' e inserta el texto 'This is not about a cat.'
+
+
+#### `grep`
+
+
+**expresiones regulares**
+
+
 ## 2.5. Recomendaciones misceláneas
 
 
