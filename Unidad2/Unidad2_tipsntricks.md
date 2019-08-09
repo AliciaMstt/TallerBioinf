@@ -273,7 +273,7 @@ $ for i in $(cat muestras.txt); do echo Hacer algo con la muestra $i; done
 
 #### `cat`
 
-[definición e usos](http://www.linfo.org/cat.html)
+[Definición e usos](http://www.linfo.org/cat.html)
 
 Usando `cat`, crea un archivo en tu repo de chocolate llamado 'felines.txt' e inserta el texto 'This is not about a cat.'
 
@@ -281,7 +281,12 @@ Usando `cat`, crea un archivo en tu repo de chocolate llamado 'felines.txt' e in
 #### `grep`
 
 
-**expresiones regulares**
+**Ejercicios**
+
+Usando [grep y cat](https://medium.com/@robertopreste/counting-sequences-in-fasta-fastq-files-ad7d2675b40f), cuenta el número de secuencias contenidas en un archivo fasta y fastq
+
+
+**Expresiones regulares**
 
 
 ## 2.5. Recomendaciones misceláneas
