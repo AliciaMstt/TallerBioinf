@@ -118,6 +118,8 @@ También se puede crear y compartir "preprint" para que otros puedan encontrar y
 
 Es una muy buena manera de planear y gestionar proyectos colaborativos, y su capacidad de almacen de datos es "infinita" - sin problema se puede depositar y compartir los datos de varios genomas.
 
+Puedes [conectar un repositorio GitHub a un proyecto OSF](https://help.osf.io/hc/en-us/articles/360019929813-Connect-GitHub-to-a-Project), o diferentes repositorios a diferentes componentes dentro del mismo proyecto. Archivos editados en su repositorio GitHub serán accesibles a través de OSF. Del mismo modo archivos editados desde su cuenta OSF se actualizarán en su cuenta GitHub, y puedes elegir de modificar tal "branch" o hacer un "fork".
+
 
 Checa otros repositorios de datos [aquí](http://ropensci.github.io/reproducibility-guide/sections/dataStorage/).
 
