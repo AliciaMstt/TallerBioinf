@@ -2,7 +2,7 @@
 
 ## 2.1. Working directory y rutas relativas
 
-El workingdirectory de un script siempre es el directorio donde está guardado dicho script. Entonces, es importante que si tu script va a manejar directorios (`cd` a algún lugar) lo planees todo con **rutas relativas** empezando en el directorio donde guardarás el script.
+El workingdirectory de un script siempre es el directorio donde está guardado dicho script. Entonces, es importante que si tu script va a manejar directorios (`cd` a algún lugar) lo planees con **rutas relativas** empezando en el directorio donde guardarás el script.
 
 * **Absolute path** es dar la ruta (dirección) completa **desde root** hasta el directorio que queremos.
 
@@ -44,6 +44,52 @@ Asumiendo que `scripts` sea el WD del script.
 
 
 Esto importa porque **utilizar  rutas relativas permite que los scripts puedan correr en cualquier equipo sin necesidad de hacer cambios**
+
+
+
+### Alternativa: ejecutar un script desde cualquier workingdirectory usando el PATH
+
+El PATH es una lista de directorios donde la computadora busca para encontrar el script solicitado. Es una **variable global** que contiene una cadena de diferentes rutas separadas por ':'
+
+Cuando escribes el nombre de un script sin utilizar una ruta absoluta o relativa, la computadora usa esa variable para buscarlo, comenzando con el primer directorio de la lista. Eso significa que los directorios que aparecen primero en el PATH tienen prioridad sobre los que aparecen más adelante.
+
+```
+$echo $PATH # ver cual es el PATH de tu computadora (o sesión)
+```
+
+### ¿Como cambiar el PATH de manera permanente?
+
+Cada vez que abres una nueva sesión en el Terminal, el PATH se define por el medio de dos ejecutivos que se pueden modificar usando:
+
+```
+$open -a TextWrangler .bash_profile  ### login shells
+$open -a TextWrangler .bashrc  ### non-login shells
+```
+
+### ¿Cual es la diferencia entre un login y un non-login shell?
+
+Cuando inicias una sesión (nombre de usuario y contraseña), ya sea en la computadora o de forma remota a través de 'ssh', .bash_profile se ejecuta para configurar su shell. Pero, si ya has iniciado una sesión en la computadora y abres una nueva ventana de terminal, entonces .bashrc se ejecuta. 
+
+Digamos que si quieres imprimir información de diagnóstico sobre tu máquina cada vez que inicias una sesión (uso de memoria, usuarios actuales, etc), vas a colocar esto en tu .bash_profile. Si lo colocas en tu .bashrc, lo verás cada vez que abras una nueva ventana del terminal.
+
+Mac OS X es una excepción: La Terminal de Mac OS X ejecuta un login shell para cada nueva ventana de terminal, llamando a .bash_profile en lugar de .bashrc.
+
+### Recomendación
+
+La mayoría del tiempo, quieres que modificaciones al PATH se apliquen a ambos login y non-login shells, y no es deseable mantener dos archivos de configuración separados. Eso se puede solucionar llamando a .bashrc adentro del archivo .bash_profile, luego colocando la configuración del PATH en .bashrc
+
+Para hacer esto, agregue las siguientes líneas a .bash_profile:
+
+```
+si [-f ~ / .bashrc]; entonces
+   fuente ~ / .bashrc
+fi
+```
+
+### Ejercicio
+
+[Crear y ejecutar un bash script usando el PATH](https://www.taniarascia.com/how-to-create-and-use-bash-scripts/)
+
 
 
 ## 2.2. Uso de variables
