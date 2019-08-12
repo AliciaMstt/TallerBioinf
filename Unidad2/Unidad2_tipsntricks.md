@@ -366,4 +366,4 @@ $ seq -s : 5
 
 `runparts` ejecuta todos los scripts en un directorio de destino, secuencialmente en orden de **nombre de archivo**. Por supuesto, los scripts deben tener permiso de ejecución.
 
-[Recomendaciones para usar el shell de manera eficiente]https://google.github.io/styleguide/shell.xml
+[Recomendaciones para usar el shell de manera eficiente](https://google.github.io/styleguide/shell.xml)
