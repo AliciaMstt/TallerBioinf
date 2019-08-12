@@ -266,7 +266,7 @@ Lo cual hará 100 directorios, llamados directorio1, directorio2 y así.
 
 ### Crear arrays y utilizarlos como una lista en un loop
 
-Quizá quieras correr algo sobre muchas variables, como los nombres de 30 muestras o poblaciones distintas. Esto puede resolverse utilizando comodines, si los nombres lo permiten, o alimentando al loop con un un **arreglo**.
+Quizá quieras correr algo sobre muchas variables, como los nombres de 30 muestras o poblaciones distintas. Esto puede resolverse utilizando comodines, si los nombres lo permiten, o alimentando al loop con un **arreglo**.
 
 **Con comodines**
 
@@ -321,21 +321,49 @@ $ for i in $(cat muestras.txt); do echo Hacer algo con la muestra $i; done
 
 [Definición e usos](http://www.linfo.org/cat.html)
 
-Usando `cat`, crea un archivo en tu repo de chocolate llamado 'felines.txt' e inserta el texto 'This is not about a cat.'
-
+Ejemplo: usando `cat`, crea un archivo en tu repo de chocolate llamado 'felines.txt' e inserta el texto 'This is not about a cat.'
 
 #### `grep`
+[Definición e usos](http://www.linfo.org/grep.html)
 
+Ejemplo: Usa `grep` y "." para encontrar todas las palabras de 5 caracteres que empiezan con "c" y acaban con "h" - muy bueno para hacer cruzigramas!
 
-**Ejercicios**
+```
+$grep '\<c...h\>' /usr/share/dict/words
+```
 
-Usando [grep y cat](https://medium.com/@robertopreste/counting-sequences-in-fasta-fastq-files-ad7d2675b40f), cuenta el número de secuencias contenidas en un archivo fasta y fastq
+Para hacer un match con palabras de cualquier numero de caracteres usa "*"
 
+```
+$grep '\<c.*h\>' /usr/share/dict/words
+```
 
-**Expresiones regulares**
+En ese ejemplo, usa [grep y cat](https://medium.com/@robertopreste/counting-sequences-in-fasta-fastq-files-ad7d2675b40f) para contar el número de secuencias contenidas en un archivo fasta y fastq
 
+#### `seq`
+
+Emite una secuencia de números, con un incremento seleccionado por el usuario. Es útil para hacer loops!
+
+```
+$ seq 5
+>1
+>2
+>3
+>4
+>5
+```
+
+El carácter separador entre cada número es una nueva línea, pero esto se puede cambiar con la opción -s
+
+```
+$ seq -s : 5
+>1:2:3:4:5
+```
 
 ## 2.5. Recomendaciones misceláneas
 
-
 `~` es una especie de ruta corta a la ruta absoluta de tu directorio home. No importa dónde estés `cd ~` te llevará a home.
+
+`runparts` ejecuta todos los scripts en un directorio de destino, secuencialmente en orden de **nombre de archivo**. Por supuesto, los scripts deben tener permiso de ejecución.
+
+[Recomendaciones para usar el shell de manera eficiente]https://google.github.io/styleguide/shell.xml
