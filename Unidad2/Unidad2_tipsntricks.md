@@ -59,11 +59,20 @@ $echo $PATH # ver cual es el PATH de tu computadora (o sesión)
 
 ### ¿Como cambiar el PATH de manera permanente?
 
-Cada vez que abres una nueva sesión en el Terminal, el PATH se define por el medio de dos ejecutivos que se pueden modificar usando:
+Dando que PATH es una variable, si has hecho modificaciones usando el terminal, no se van a guardar cuando abres una nueva sesión/ventana en el Terminal. Modificaciones al PATH de manera permanente se hacen por el medio de dos ejecutivos que se pueden modificar usando:
 
 ```
 $open -a TextWrangler .bash_profile  ### login shells
 $open -a TextWrangler .bashrc  ### non-login shells
+```
+
+Si esos archivos no existen en la configuración de su maquina, se pueden crear usando:
+
+```
+$ cd ~/   ## to go to your home folder
+$ touch .bash_profile   ## to create your new file
+$ $open -a TextWrangler .bash_profile   ## edit .bash_profile (or with your favorite editor)
+$ . .bash_profile   ## to reload .bash_profile and update any functions you have added. Notice the space between the two dots!
 ```
 
 ### ¿Cual es la diferencia entre un login y un non-login shell?
@@ -72,11 +81,11 @@ Cuando inicias una sesión (nombre de usuario y contraseña), ya sea en la compu
 
 Digamos que si quieres imprimir información de diagnóstico sobre tu máquina cada vez que inicias una sesión (uso de memoria, usuarios actuales, etc), vas a colocar esto en tu .bash_profile. Si lo colocas en tu .bashrc, lo verás cada vez que abras una nueva ventana del terminal.
 
-Mac OS X es una excepción: La Terminal de Mac OS X ejecuta un login shell para cada nueva ventana de terminal, llamando a .bash_profile en lugar de .bashrc.
+Mac OS X es una excepción: La Terminal de Mac OS X ejecuta un login shell para cada nueva ventana de terminal, llamando a **.bash_profile** en lugar de .bashrc.
 
 ### Recomendación
 
-La mayoría del tiempo, quieres que modificaciones al PATH se apliquen a ambos login y non-login shells, y no es deseable mantener dos archivos de configuración separados. Eso se puede solucionar llamando a .bashrc adentro del archivo .bash_profile, luego colocando la configuración del PATH en .bashrc
+La mayoría del tiempo, quieres que modificaciones al PATH se apliquen a ambos login y non-login shells, y no es deseable mantener dos archivos de configuración separados. Si es el caso (y solamente si esos dos archivos existen en su computadora), eso se puede solucionar llamando a .bashrc adentro del archivo .bash_profile, luego colocando **toda la configuración** del PATH en .bashrc
 
 Para hacer esto, agregue las siguientes líneas a .bash_profile:
 
