@@ -90,6 +90,18 @@ Por favor nota que este **no** es un curso introductorio a la bioinformática, p
 
 * 20% **Evaluación final del repositorio** Dos fechas de revisión: 30 de octubre (se hacen comentarios) y 20 de noviembre (entrega final con comentarios resueltos).
 
+La calificación final del repositorio toma en cuenta:
+
+* 10% Organización del repositorio
+* 15% README **(debe ser en inglés)**
+* 20% Análisis
+* 10% Resumen y discusión en formato Markdown 
+* 15% Gráfica(s) en R
+* 15% Scripts **deben estar comentados en inglés**
+* 15% Avances, organización y respuesta a comentarios en el proyecto de Github **en inglés**
+
+
+
 
 ## Calendario
 
