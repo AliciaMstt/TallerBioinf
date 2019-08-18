@@ -95,9 +95,9 @@ Por favor nota que este **no** es un curso introductorio a la bioinformática, p
 
 * L5 Agosto: Bienvenida y Unidad 1 (1.1-1.4)
 * M7 Agosto: Unidad 1 continaucion (1.5, 1.6: git y github)
-* L12 Agosto: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2
-* M14 Agosto: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2
-* L19 Agosto: Clase 4.1. Planteamiento de un proyectos bioinformáticos y 4.2. Github para manejar proyectos bioinformáticos
+* L12 Agosto: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (basics)
+* M14 Agosto: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (loops)
+* L19 Agosto: 1/2 Unidad 2.4 (trucos en terminal y editores de texto), Clase 4.1. Planteamiento de un proyectos bioinformáticos y 4.2. Github para manejar proyectos bioinformáticos
 * M21 Agosto: Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github
 * L26 Agosto: Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github
 * M28 Agosto: Clase (exposición profes) de tópico Unidad 3 (Evaluación de Calidad)

@@ -118,6 +118,10 @@ También se puede crear y compartir "preprint" para que otros puedan encontrar y
 
 Es una muy buena manera de planear y gestionar proyectos colaborativos, y su capacidad de almacen de datos es "infinita" - sin problema se puede depositar y compartir los datos de varios genomas.
 
+Puedes [conectar un repositorio GitHub a un proyecto OSF](https://help.osf.io/hc/en-us/articles/360019929813-Connect-GitHub-to-a-Project), o diferentes repositorios a diferentes componentes dentro del mismo proyecto. Archivos editados en su repositorio GitHub serán accesibles a través de OSF. Del mismo modo archivos editados desde su cuenta OSF se actualizarán en su cuenta GitHub, y puedes elegir de modificar tal "branch" o hacer un "fork".
+
+Así a través de OSF y GitHub, puedes dar un aceso publico a tus [datos, scripts y pre-prints](https://angus.readthedocs.io/en/2019/where_to_put_data.html)
+
 
 Checa otros repositorios de datos [aquí](http://ropensci.github.io/reproducibility-guide/sections/dataStorage/).
 
@@ -448,7 +452,7 @@ Debe mostrarse tu dirección correcta.
 ### Ejemplo: vamos a crear un repo
 
 #### `git init`
-Te permite crear un repositorio desde tu disco local.
+Te permite crear un repo desde tu disco local. En la terminal escribe:
 
 ```
 $ mkdir repo_name # crear un directorio en tu disco local
@@ -457,6 +461,16 @@ $ git init # transformar ese directorio en un repositorio git
 $ git status # verificar que el repositorio ha sido creado
 ```
 
+Para conectar ese nuevo repostorio a github:
++ Log in en tu cuenta de github
++ En 'Repositories' click en el boton verde 'NEW"
++ Dale el mismo nombre que tu repostorio local y click en el botom 'Create repository'
++ Vuelves al terminal para conectar tu repo local con el repo en github, usando:
+
+```
+$ git remote add origin https://github.com/<username>/<repo_name>.git
+$ git push -u origin master
+```
 
 ### Ejemplo: vamos a clonar un repo.
 
