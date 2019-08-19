@@ -349,25 +349,54 @@ $grep '\<c.*h\>' /usr/share/dict/words
 
 En ese ejemplo, usa [grep y cat](https://medium.com/@robertopreste/counting-sequences-in-fasta-fastq-files-ad7d2675b40f) para contar el número de secuencias contenidas en un archivo fasta y fastq
 
-#### `seq`
 
-Emite una secuencia de números, con un incremento seleccionado por el usuario. Es útil para hacer loops!
+#### `sed`
 
-```
-$ seq 5
->1
->2
->3
->4
->5
-```
+`sed` es un 'stream editor' que realiza operaciones de edición de información proveniente de un input o un archivo, como buscar, eliminar y reemplazar, **línea por línea**.
 
-El carácter separador entre cada número es una nueva línea, pero esto se puede cambiar con la opción -s
+`sed` envía sus resultados a la pantalla de forma predeterminada, entonces podemos usarlo como lector de archivos al no pasarle comandos de edición:
 
 ```
-$ seq -s : 5
->1:2:3:4:5
+$sed '' geekfile.txt
 ```
+
+Para realizar eliminación de texto se usa el comando "d":
+
+```
+$sed '1d' geekfile.txt
+```
+
+Para cambiar una palabra a otra se usa el comando "s":
+
+```
+$sed 's/unix/linux/' geekfile.txt  ## reemplazar una vez por linea
+$sed 's/unix/linux/g' geekfile.txt  ## reemplazar todas las ocurrencias
+```
+
+Para eliminar todas las palabras "unix" (i.e., reemplazarlas por un carácter nulo):
+
+```
+$sed 's/unix//g' geekfile.txt  ## reemplazar una vez por linea
+
+```
+
+Por supuesto, no estámos realizando esos cambios en el archivo, por lo que solo alimenta esas líneas a su shell. Si queremos guardar nuestras ediciones, se pueden redirigir a un archivo de esta manera:
+
+```
+$sed 's/unix/linux/g' geekfile.txt > moregeekfile.txt
+```
+
+[Mas ejemplos](https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/)
+
+
+#### `awk`
+
+`awk` es más que un comando, es un lenguaje de programación. Se puede escribir scripts `awk` para operaciones complejas o usar `awk` desde la línea de comandos. El nombre significa 'Aho, Weinberger y Kernighan', los autores del lenguaje.
+
+¿Qué es lo que hace awk?
+
+`awk` es un lenguaje diseñado para la extracción de datos. A menudo se usa con `sed` para realizar tareas útiles y prácticas de manipulación de texto. Al igual que `sed`, `awk` lee una línea a la vez, realiza alguna acción dependiendo de la condición que le dé y genera el resultado. Entre otros, uno de los usos más populares de `awk` es para [seleccionar columnas de un archivo de texto](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/)
+
 
 ## 2.5. Recomendaciones misceláneas
 
