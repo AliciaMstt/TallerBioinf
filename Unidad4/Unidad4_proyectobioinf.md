@@ -88,8 +88,8 @@ La calificación final del repositorio (20% calif del curso) toma en cuenta:
 
 * 10% Organización del repositorio
 * 15% README **(debe ser en inglés)**
-* 20% Análisis
-* 10% Resumen y discusión en formato Markdown 
+* 15% Análisis
+* 15% Resumen y discusión en formato Markdown 
 * 15% Gráfica(s) en R
 * 15% Scripts **deben estar comentados en inglés**
 * 15% Avances, organización y respuesta a comentarios en el proyecto de Github **en inglés**
