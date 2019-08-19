@@ -274,7 +274,16 @@ cd ../;
 done
 ```
 
-Lo cual hará 100 directorios (llamados directorio1, directorio2 y así) con un archivo de texto (llamados texto1, texto2,...) adentro.
+Lo cual hará 100 directorios (llamados directorio1, directorio2 y así) con un archivo de texto (llamados texto1, texto2,...) adentro. Si lo quieres repetir se usa el comando **-p** para sobre-escribir el contenido de cada directorio (a usar con cuidado!)
+
+```
+for i in {1..100}; do
+mkdir -p directorio$i;
+cd directorio$i;
+touch texto${i}.txt;
+cd ../;
+done
+```
 
 
 ### Crear arrays y utilizarlos como una lista en un loop
