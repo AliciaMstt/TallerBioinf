@@ -263,14 +263,18 @@ Mi mejor amigo es un xolo
 
 2) ¿Qué hace `;`?
 
-Y un ejemplo más:
+Y un ejemplo más, usando rutas relativas:
 
 ```
-for i in {1..100};do
-mkdir directorio$i; done
+for i in {1..100}; do
+mkdir directorio$i;
+cd directorio$i;
+touch texto${i}.txt;
+cd ../;
+done
 ```
 
-Lo cual hará 100 directorios, llamados directorio1, directorio2 y así.
+Lo cual hará 100 directorios (llamados directorio1, directorio2 y así) con un archivo de texto (llamados texto1, texto2,...) adentro.
 
 
 ### Crear arrays y utilizarlos como una lista en un loop
