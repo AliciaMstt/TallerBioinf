@@ -110,7 +110,7 @@ La calificación final del repositorio toma en cuenta:
 * L12 Agosto: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (basics)
 * M14 Agosto: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (loops)
 * L19 Agosto: 1/2 Unidad 2.4 (trucos en terminal y editores de texto), Clase 4.1. Planteamiento de un proyectos bioinformáticos y 4.2. Github para manejar proyectos bioinformáticos
-* M21 Agosto: Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github
+* M21 Agosto: Unidad 4.? Funciones de R / Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github
 * L26 Agosto: Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github
 * M28 Agosto: Clase (exposición profes) de tópico Unidad 3 (Evaluación de Calidad)
 
