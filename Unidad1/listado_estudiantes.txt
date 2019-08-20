@@ -17,7 +17,7 @@ Estudiantes:
 6.Alma Melisa Vázquez López - Melisa_vl
 7. 
 8.
-9. Verónica Reyes Galindo - VeroIarrachtai
+9. Verónica Reyes Galindo - VeroIarrachtai - https://github.com/VeroIarrachtai/Transcriptomic_Analysis_Abies_religiosa-TB
 10.
 11. Laura Mariana Contreras Espinosa - LauraMCE
 12. José Antonio Urbán Aragon - tono2204
