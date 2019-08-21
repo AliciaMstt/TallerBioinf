@@ -423,6 +423,7 @@ $sed 's/unix/linux/g' geekfile.txt > moregeekfile.txt
 ## 2.6. Unos jueguitos
 
 Dejando a un lado el `code`, no es mala idea ejercitar también la lógica de la programación.
+
 [Aquí](https://blockly-games.appspot.com/) tenemos unos juegos de progamación.
 
 Ejercicio:
