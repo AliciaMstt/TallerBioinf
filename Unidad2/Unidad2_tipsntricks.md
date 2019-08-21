@@ -490,109 +490,97 @@ statements
 return(object)
 }
 ```
+
 **Ojo**: el comando `return` es necesario al final de una función siempre que queramos que dicha función "devuelva" un objeto (por ejemplo una df que creemos como parte de la función). De no poner esta instrucción, la función correrá desde otro script, pero no veremos ningún resultado.
 
 
-R base tiene muchas funciones predefinidas, y cuando instalamos un paquete básicamente agregamos una serie de funciones que trabajan juntas. Pero una ventaja de R es que también podemos hacer nuestras propias funciones.
+R base tiene muchas funciones predefinidas, y cuando instalamos un paquete básicamente agregamos una serie de funciones que trabajan juntas. Pero una ventaja de R es que también podemos hacer nuestras propias funciones. Esto es útil para:
 
 
-
-
-`source` es una función que sirve para correr un script de R **dentro de otro script de R**. Esto permite modularizar un análisis y luego correr una pipeline general, así como tener por separado **funciones propias** (que podemos llamar igual que llamamos las funciones de los paquetes) y que utilizamos mucho en diversos scripts. Este tipo de funciones son las que podemos compartir en Github con otros usuarios y hasta convertirlas en un paquete.
-
-Ejemplos de cómo utilizar `source`: correr el script del ejercicio anterior desde otro script con la línea.
-
-```{r}
-source("1.IBR_testing.r")
-```
-Nota que pare que esto funcione tu working directory debe ser el correcto para leer `1.IBR_testing.r` como si fuera un archivo (que lo es). Es decir tu WD debe ser la ruta donde está 1.IBR_testing.r (`Unidad3/PracUni3/mantel/bin/1.IBR_testing.r`)
-
-**Hacer una función propia**:
-
-Este es el [esqueleto de una función escrita dentro de R](http://www.statmethods.net/management/userfunctions.html):
-
-
+* **No repetirnos**
+* Compartir funciones sin tener que compartir un script gigante de análisis
+* Hacer más leible el código.
 
 
 Ejemplo:
 
 ```{r}
-give_i_line<- function(file, i){
-  ## Arguments
-  # file = path to desired file with the indicadores, must be tab delimited and do NOT have a header
-  # i = number of line of file we want to print
-
-  ## Function
-  # read indicadores list
-  indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
-
-  # give text of the i line of the file  
-  x<-indicador[i,1]
-  return(x)
+fahrenheit_to_kelvin <- function(temp_F) {
+  ## converts temperature value from fahrenheit to fahrenheit_to_kelvin
+  ## Argumets:
+  # temp_F: value of temperature in F to be converted to K
+  temp_K <- ((temp_F - 32) * (5 / 9)) + 273.15
+  return(temp_K)
 }
-
-give_i_line("../data/indicadores.txt", i=2)
-x<-give_i_line("../data/indicadores.txt", i=2)
-
 ```
 
+**Ejercicio**: escribe una función para convertir temperatura en grados centígrados a Kelvin.
 
-Como alternativa a `return()` puedes poner el nombre del objeto (como si quisieras verlo en la terminal).
 
+#### Guardar funciones en archivos fuera del script de análisis
+
+`source` es una función que sirve para correr un script de R **dentro de otro script de R**. Esto permite modularizar un análisis y luego correr una pipeline general, así como tener por separado **funciones propias** (que podemos llamar igual que llamamos las funciones de los paquetes) y que utilizamos mucho en diversos scripts.
+
+Ejemplos de cómo utilizar `source`: correr el script del ejercicio anterior desde otro script con la línea con base en el código de la sección PopGenomicsIBR.zip de [este repositorio](https://datadryad.org/resource/doi:10.5061/dryad.f7248))
+
+Desde R, con source podemos correr todo un script de R desde **otro** script de R:
 
 ```{r}
-give_i_line<- function(file, i){
-  ## Arguments
-  # file = path to desired file with the indicadores, must be tab delimited and do NOT have a header
-  # i = number of line of file we want to print
+source("1.IBR_testing.r")
+```
+Nota que pare que esto funcione tu working directory debe ser el correcto para leer `1.IBR_testing.r` como si fuera un archivo (que lo es). Es decir tu WD debe ser la ruta donde está 1.IBR_testing.r.
 
-  ## Function
-  # read indicadores list
-  indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
 
-  # give text of the i line of the file  
-  x<-indicador[i,1]
-  x
-}
+Ahora veamos esta función:
 
-give_i_line("../data/indicadores.txt", i=2)
-x<-give_i_line("../data/indicadores.txt", i=2)
-
+Primero veamos esta función:
 
 ```
+read.fst_summary_fix <- function(file, popNames){
+    ### Function to read the Stacks populations output file batch_1.fst_summary.tsv and add PopNames to it
+    # it also adds a 0 diagonal and converts it to a symmetric matrix
+    # file = path to batch_1.fst_summary.tsv file
+    # popNames = vector with population names in the same order than PopID in the file
 
-Si quieres ver un resultado pero que este no sea guardado como un objeto, utiliza `print()`.
+    ### Get data
+    Fstmat<-data.matrix(read.delim(file = file, row.names=1, fill=TRUE))
+    # add col names
+    colnames(Fstmat)<- popNames
+    Fstmat
 
-```{r}
-give_i_line<- function(file, i){
-  ## Arguments
-  # file = path to desired file with the indicadores, must be tab delimited and do NOT have a header
-  # i = number of line of file we want to print
-
-  ## Function
-  # read indicadores list
-  indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
-
-  print(i)
-
-  # give text of the i line of the file  
-  x<-indicador[i,1]
-  x
-}
-
-give_i_line("../data/indicadores.txt", i=2)
-x<-give_i_line("../data/indicadores.txt", i=2)
-
-
+  ## Fix
+  x<-Fstmat
+  # add an extrarow
+  x <- rbind(x, n=NA)
+  # Change rownames to col names
+  rownames(x)<-colnames(x)
+  # add 0 diagonal
+  x[is.na(x)] <- 0
+  # make symmetrical matrix
+  x <- x + t(x)
+  Fstmat <-x
+  Fstmat
+  }
 ```
 
-Si guardamos la función como un script llamado [`give_i_line.r`](Prac_Uni3/ejemplosgenerales/bingive_i_line.r) después podemos correrla desde otro script, llamándola con `source()`:
+Si guardamos la función como un script llamado `read.fst_summary_fix.r` después podemos correrla desde otro script, llamándola con `source()`:
 
 ```{r}
-source("give_i_line.r")
-give_i_line("../data/indicadores.txt"), i=2)
+source("read.fst_summary_fix.r")
 ```
 
 Nota que `source` NO corre la función en sí, sino que solo la carga al cerebro de R para que podamos usarla como a una función cualquiera de un paquete.
 
-El nombre del archivo R no improta, pero es buena práctica ponerle el mismo que el nombre de la función.
+El nombre del archivo R no importa, pero es buena práctica ponerle el mismo que el nombre de la función.
+
+
+**Ejercicio** Guarda tu función para convertir temperatura de grados C a K en un archivo separado de tu script, luego llámala con `source()` y utilízala en tu script.
+
+
+**Referencias útiles para funciones en R**
+
+Intro: [https://swcarpentry.github.io/r-novice-inflammation/02-func-R/](https://swcarpentry.github.io/r-novice-inflammation/02-func-R/)
+
+Funciones dentro de funciones [https://www.r-bloggers.com/r-tips-and-tricks-higher-order-functions/](https://www.r-bloggers.com/r-tips-and-tricks-higher-order-functions/)
+
+Todo lo que quieres saber y no te treves a preguntar: [http://adv-r.had.co.nz/Functional-programming.html](http://adv-r.had.co.nz/Functional-programming.html)
