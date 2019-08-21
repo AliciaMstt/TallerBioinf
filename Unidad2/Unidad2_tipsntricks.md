@@ -418,3 +418,15 @@ $sed 's/unix/linux/g' geekfile.txt > moregeekfile.txt
 `runparts` ejecuta todos los scripts en un directorio de destino, secuencialmente en orden de **nombre de archivo**. Por supuesto, los scripts deben tener permiso de ejecución.
 
 [Recomendaciones para usar el shell de manera eficiente](https://google.github.io/styleguide/shell.xml)
+
+
+## 2.6. Unos jueguitos
+
+Dejando a un lado el `code`, no es mala idea ejercitar también la lógica de la programación.
+[Aquí](https://blockly-games.appspot.com/) tenemos unos juegos de progamación.
+
+Ejercicio:
+
+En clase, completemos los primeros 8 niveles del MAZE. O si pueden los 10, si no luego. 
+
+
