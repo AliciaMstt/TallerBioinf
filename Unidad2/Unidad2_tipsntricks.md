@@ -77,7 +77,7 @@ $ . .bash_profile   ## to reload .bash_profile and update any functions you have
 
 ### ¿Cual es la diferencia entre un login y un non-login shell?
 
-Cuando inicias una sesión (nombre de usuario y contraseña), ya sea en la computadora o de forma remota a través de 'ssh', .bash_profile se ejecuta para configurar su shell. Pero, si ya has iniciado una sesión en la computadora y abres una nueva ventana de terminal, entonces .bashrc se ejecuta. 
+Cuando inicias una sesión (nombre de usuario y contraseña), ya sea en la computadora o de forma remota a través de 'ssh', .bash_profile se ejecuta para configurar su shell. Pero, si ya has iniciado una sesión en la computadora y abres una nueva ventana de terminal, entonces .bashrc se ejecuta.
 
 Digamos que si quieres imprimir información de diagnóstico sobre tu máquina cada vez que inicias una sesión (uso de memoria, usuarios actuales, etc), vas a colocar esto en tu .bash_profile. Si lo colocas en tu .bashrc, lo verás cada vez que abras una nueva ventana del terminal.
 
@@ -419,6 +419,45 @@ $sed 's/unix/linux/g' geekfile.txt > moregeekfile.txt
 
 [Recomendaciones para usar el shell de manera eficiente](https://google.github.io/styleguide/shell.xml)
 
+[Recomendaciones que cualquier programadorx debería saber](https://www.codingdojo.com/blog/clean-code-techniques):
+
+1. Escribe código para humanos, no para computadoras.
+
+2. Manten tu código tan simple y leible como sea posible. **Keep it simple**.
+
+3. Entiende qué hace tu código.
+
+4. Los comentarios son tus nuevos mejores amigos. Y quieres tenerlos cerca siempre, no solo en en tus años mozos.
+
+5. No te repitas. **Don't repeat yourself (DRY)**
+
+6. Organiza tu código en secciones lógicas. Por ejemplo con la lectura de datos por un lado y las funciones por otro.
+
+7. Usa buenos nombres y sé consistente. **mejor si son en inglés**
+
+8. Pienso y luego escribo código. Por ejemplo pienso cuáles son los pasos para solucionar mi problema y los pongo como comentarios.
+
+```
+Step 1: Get data
+Step 2: Clean up data issues
+2a: Remove excess rows
+2b: Correct case issues in columns x,y,z
+Step 3: Apply glm function
+Step 4: Output validation components
+```
+
+9. Explora y pregúntale al internet.
+
+10. Soluciona las cosas por ti mismx.
+
+11. Prueba tu código (con datos distintos).
+
+12. Escribe código para sustituir operaciones que hacías point and click.
+
+
+Algunas de estas recomendaciones las tomé de [aquí](https://www.codingdojo.com/blog/clean-code-techniques) o [de aquí](https://www.r-bloggers.com/10-top-tips-for-becoming-a-better-coder/)
+
+
 
 ## 2.6. Unos jueguitos
 
@@ -428,6 +467,132 @@ Dejando a un lado el `code`, no es mala idea ejercitar también la lógica de la
 
 Ejercicio:
 
-En clase, completemos los primeros 8 niveles del MAZE. O si pueden los 10, si no luego. 
+En clase, completemos los primeros 8 niveles del MAZE. O si pueden los 10, si no luego.
 
 
+## 2.7. Funciones en R
+
+Una función es un conjunto de instrucciones organizadas para complir con una tarea específica. En R una función es un **objeto** compuesto por las siguientes partes:
+
+* **Nombre de la función:** el nombre del objeto con el que la función está guardada en el cerebro de R y que utilizamos para llamarla. Por ejemplo: el nombre de la función `mean()` es mean.
+
+* **Argumentos** variables definidas por el usuario cuando invoca la función y que la función requiere para funcionar. Por ejemplo el nombre de un archivo, el valor de un parámetro o el método que queremos utilizar de una lista de opciones. Los argumentos son opcionales (puede haber funciones sin argumentos) o pueden tener parámetros default.
+
+* **Return value:** la última expresión del cuerpo de la función que será "devuelta" como valor de salida (output) de la función.
+
+* **Statements:** comandos que utiliza la función para cumplir su propósito.
+
+Esqueleto de una función en R:
+
+```{r}
+myfunction <- function(arg1, arg2, ... ){
+statements
+return(object)
+}
+```
+**Ojo**: el comando `return` es necesario al final de una función siempre que queramos que dicha función "devuelva" un objeto (por ejemplo una df que creemos como parte de la función). De no poner esta instrucción, la función correrá desde otro script, pero no veremos ningún resultado.
+
+
+R base tiene muchas funciones predefinidas, y cuando instalamos un paquete básicamente agregamos una serie de funciones que trabajan juntas. Pero una ventaja de R es que también podemos hacer nuestras propias funciones.
+
+
+
+
+`source` es una función que sirve para correr un script de R **dentro de otro script de R**. Esto permite modularizar un análisis y luego correr una pipeline general, así como tener por separado **funciones propias** (que podemos llamar igual que llamamos las funciones de los paquetes) y que utilizamos mucho en diversos scripts. Este tipo de funciones son las que podemos compartir en Github con otros usuarios y hasta convertirlas en un paquete.
+
+Ejemplos de cómo utilizar `source`: correr el script del ejercicio anterior desde otro script con la línea.
+
+```{r}
+source("1.IBR_testing.r")
+```
+Nota que pare que esto funcione tu working directory debe ser el correcto para leer `1.IBR_testing.r` como si fuera un archivo (que lo es). Es decir tu WD debe ser la ruta donde está 1.IBR_testing.r (`Unidad3/PracUni3/mantel/bin/1.IBR_testing.r`)
+
+**Hacer una función propia**:
+
+Este es el [esqueleto de una función escrita dentro de R](http://www.statmethods.net/management/userfunctions.html):
+
+
+
+
+Ejemplo:
+
+```{r}
+give_i_line<- function(file, i){
+  ## Arguments
+  # file = path to desired file with the indicadores, must be tab delimited and do NOT have a header
+  # i = number of line of file we want to print
+
+  ## Function
+  # read indicadores list
+  indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
+
+  # give text of the i line of the file  
+  x<-indicador[i,1]
+  return(x)
+}
+
+give_i_line("../data/indicadores.txt", i=2)
+x<-give_i_line("../data/indicadores.txt", i=2)
+
+```
+
+
+Como alternativa a `return()` puedes poner el nombre del objeto (como si quisieras verlo en la terminal).
+
+
+```{r}
+give_i_line<- function(file, i){
+  ## Arguments
+  # file = path to desired file with the indicadores, must be tab delimited and do NOT have a header
+  # i = number of line of file we want to print
+
+  ## Function
+  # read indicadores list
+  indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
+
+  # give text of the i line of the file  
+  x<-indicador[i,1]
+  x
+}
+
+give_i_line("../data/indicadores.txt", i=2)
+x<-give_i_line("../data/indicadores.txt", i=2)
+
+
+```
+
+Si quieres ver un resultado pero que este no sea guardado como un objeto, utiliza `print()`.
+
+```{r}
+give_i_line<- function(file, i){
+  ## Arguments
+  # file = path to desired file with the indicadores, must be tab delimited and do NOT have a header
+  # i = number of line of file we want to print
+
+  ## Function
+  # read indicadores list
+  indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
+
+  print(i)
+
+  # give text of the i line of the file  
+  x<-indicador[i,1]
+  x
+}
+
+give_i_line("../data/indicadores.txt", i=2)
+x<-give_i_line("../data/indicadores.txt", i=2)
+
+
+```
+
+Si guardamos la función como un script llamado [`give_i_line.r`](Prac_Uni3/ejemplosgenerales/bingive_i_line.r) después podemos correrla desde otro script, llamándola con `source()`:
+
+```{r}
+source("give_i_line.r")
+give_i_line("../data/indicadores.txt"), i=2)
+```
+
+Nota que `source` NO corre la función en sí, sino que solo la carga al cerebro de R para que podamos usarla como a una función cualquiera de un paquete.
+
+El nombre del archivo R no improta, pero es buena práctica ponerle el mismo que el nombre de la función.
