@@ -77,7 +77,7 @@ $ . .bash_profile   ## to reload .bash_profile and update any functions you have
 
 ### ¿Cual es la diferencia entre un login y un non-login shell?
 
-Cuando inicias una sesión (nombre de usuario y contraseña), ya sea en la computadora o de forma remota a través de 'ssh', .bash_profile se ejecuta para configurar su shell. Pero, si ya has iniciado una sesión en la computadora y abres una nueva ventana de terminal, entonces .bashrc se ejecuta. 
+Cuando inicias una sesión (nombre de usuario y contraseña), ya sea en la computadora o de forma remota a través de 'ssh', .bash_profile se ejecuta para configurar su shell. Pero, si ya has iniciado una sesión en la computadora y abres una nueva ventana de terminal, entonces .bashrc se ejecuta.
 
 Digamos que si quieres imprimir información de diagnóstico sobre tu máquina cada vez que inicias una sesión (uso de memoria, usuarios actuales, etc), vas a colocar esto en tu .bash_profile. Si lo colocas en tu .bashrc, lo verás cada vez que abras una nueva ventana del terminal.
 
@@ -418,3 +418,169 @@ $sed 's/unix/linux/g' geekfile.txt > moregeekfile.txt
 `runparts` ejecuta todos los scripts en un directorio de destino, secuencialmente en orden de **nombre de archivo**. Por supuesto, los scripts deben tener permiso de ejecución.
 
 [Recomendaciones para usar el shell de manera eficiente](https://google.github.io/styleguide/shell.xml)
+
+[Recomendaciones que cualquier programadorx debería saber](https://www.codingdojo.com/blog/clean-code-techniques):
+
+1. Escribe código para humanos, no para computadoras.
+
+2. Manten tu código tan simple y leible como sea posible. **Keep it simple**.
+
+3. Entiende qué hace tu código.
+
+4. Los comentarios son tus nuevos mejores amigos. Y quieres tenerlos cerca siempre, no solo en en tus años mozos.
+
+5. No te repitas. **Don't repeat yourself (DRY)**
+
+6. Organiza tu código en secciones lógicas. Por ejemplo con la lectura de datos por un lado y las funciones por otro.
+
+7. Usa buenos nombres y sé consistente. **mejor si son en inglés**
+
+8. Pienso y luego escribo código. Por ejemplo pienso cuáles son los pasos para solucionar mi problema y los pongo como comentarios.
+
+```
+Step 1: Get data
+Step 2: Clean up data issues
+2a: Remove excess rows
+2b: Correct case issues in columns x,y,z
+Step 3: Apply glm function
+Step 4: Output validation components
+```
+
+9. Explora y pregúntale al internet.
+
+10. Soluciona las cosas por ti mismx.
+
+11. Prueba tu código (con datos distintos).
+
+12. Escribe código para sustituir operaciones que hacías point and click.
+
+
+Algunas de estas recomendaciones las tomé de [aquí](https://www.codingdojo.com/blog/clean-code-techniques) o [de aquí](https://www.r-bloggers.com/10-top-tips-for-becoming-a-better-coder/)
+
+
+
+## 2.6. Unos jueguitos
+
+Dejando a un lado el `code`, no es mala idea ejercitar también la lógica de la programación.
+
+[Aquí](https://blockly-games.appspot.com/) tenemos unos juegos de progamación.
+
+Ejercicio:
+
+En clase, completemos los primeros 8 niveles del MAZE. O si pueden los 10, si no luego.
+
+
+## 2.7. Funciones en R
+
+Una función es un conjunto de instrucciones organizadas para complir con una tarea específica. En R una función es un **objeto** compuesto por las siguientes partes:
+
+* **Nombre de la función:** el nombre del objeto con el que la función está guardada en el cerebro de R y que utilizamos para llamarla. Por ejemplo: el nombre de la función `mean()` es mean.
+
+* **Argumentos** variables definidas por el usuario cuando invoca la función y que la función requiere para funcionar. Por ejemplo el nombre de un archivo, el valor de un parámetro o el método que queremos utilizar de una lista de opciones. Los argumentos son opcionales (puede haber funciones sin argumentos) o pueden tener parámetros default.
+
+* **Return value:** la última expresión del cuerpo de la función que será "devuelta" como valor de salida (output) de la función.
+
+* **Statements:** comandos que utiliza la función para cumplir su propósito.
+
+Esqueleto de una función en R:
+
+```{r}
+myfunction <- function(arg1, arg2, ... ){
+statements
+return(object)
+}
+```
+
+**Ojo**: el comando `return` es necesario al final de una función siempre que queramos que dicha función "devuelva" un objeto (por ejemplo una df que creemos como parte de la función). De no poner esta instrucción, la función correrá desde otro script, pero no veremos ningún resultado.
+
+
+R base tiene muchas funciones predefinidas, y cuando instalamos un paquete básicamente agregamos una serie de funciones que trabajan juntas. Pero una ventaja de R es que también podemos hacer nuestras propias funciones. Esto es útil para:
+
+
+* **No repetirnos**
+* Compartir funciones sin tener que compartir un script gigante de análisis
+* Hacer más leible el código.
+
+
+Ejemplo:
+
+```{r}
+fahrenheit_to_kelvin <- function(temp_F) {
+  ## converts temperature value from fahrenheit to fahrenheit_to_kelvin
+  ## Argumets:
+  # temp_F: value of temperature in F to be converted to K
+  temp_K <- ((temp_F - 32) * (5 / 9)) + 273.15
+  return(temp_K)
+}
+```
+
+**Ejercicio**: escribe una función para convertir temperatura en grados centígrados a Kelvin.
+
+
+#### Guardar funciones en archivos fuera del script de análisis
+
+`source` es una función que sirve para correr un script de R **dentro de otro script de R**. Esto permite modularizar un análisis y luego correr una pipeline general, así como tener por separado **funciones propias** (que podemos llamar igual que llamamos las funciones de los paquetes) y que utilizamos mucho en diversos scripts.
+
+Ejemplos de cómo utilizar `source`: correr el script del ejercicio anterior desde otro script con la línea con base en el código de la sección PopGenomicsIBR.zip de [este repositorio](https://datadryad.org/resource/doi:10.5061/dryad.f7248))
+
+Desde R, con source podemos correr todo un script de R desde **otro** script de R:
+
+```{r}
+source("1.IBR_testing.r")
+```
+Nota que pare que esto funcione tu working directory debe ser el correcto para leer `1.IBR_testing.r` como si fuera un archivo (que lo es). Es decir tu WD debe ser la ruta donde está 1.IBR_testing.r.
+
+
+Ahora veamos esta función:
+
+Primero veamos esta función:
+
+```
+read.fst_summary_fix <- function(file, popNames){
+    ### Function to read the Stacks populations output file batch_1.fst_summary.tsv and add PopNames to it
+    # it also adds a 0 diagonal and converts it to a symmetric matrix
+    # file = path to batch_1.fst_summary.tsv file
+    # popNames = vector with population names in the same order than PopID in the file
+
+    ### Get data
+    Fstmat<-data.matrix(read.delim(file = file, row.names=1, fill=TRUE))
+    # add col names
+    colnames(Fstmat)<- popNames
+    Fstmat
+
+  ## Fix
+  x<-Fstmat
+  # add an extrarow
+  x <- rbind(x, n=NA)
+  # Change rownames to col names
+  rownames(x)<-colnames(x)
+  # add 0 diagonal
+  x[is.na(x)] <- 0
+  # make symmetrical matrix
+  x <- x + t(x)
+  Fstmat <-x
+  Fstmat
+  }
+```
+
+Si guardamos la función como un script llamado `read.fst_summary_fix.r` después podemos correrla desde otro script, llamándola con `source()`:
+
+```{r}
+source("read.fst_summary_fix.r")
+```
+
+Nota que `source` NO corre la función en sí, sino que solo la carga al cerebro de R para que podamos usarla como a una función cualquiera de un paquete.
+
+El nombre del archivo R no importa, pero es buena práctica ponerle el mismo que el nombre de la función.
+
+
+**Ejercicio** Guarda tu función para convertir temperatura de grados C a K en un archivo separado de tu script, luego llámala con `source()` y utilízala en tu script.
+
+
+**Referencias útiles para funciones en R**
+
+Intro: [https://swcarpentry.github.io/r-novice-inflammation/02-func-R/](https://swcarpentry.github.io/r-novice-inflammation/02-func-R/)
+
+Funciones dentro de funciones [https://www.r-bloggers.com/r-tips-and-tricks-higher-order-functions/](https://www.r-bloggers.com/r-tips-and-tricks-higher-order-functions/)
+
+Todo lo que quieres saber y no te treves a preguntar: [http://adv-r.had.co.nz/Functional-programming.html](http://adv-r.had.co.nz/Functional-programming.html)
