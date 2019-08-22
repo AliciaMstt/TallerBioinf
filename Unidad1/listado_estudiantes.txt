@@ -12,7 +12,7 @@ Estudiantes:
 1.
 2. Rafael Cristian Cervantes Salcedo - cristoichkov - https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm
 3. Héctor Martínez Gregorio - github: Martinez-Gregorio-Hector
-4. Rodolfo Luis Chávez Domínguez - necrosnake91
+4. Rodolfo Luis Chávez Domínguez - necrosnake91 https://github.com/necrosnake91/Lung_cancer_transcriptome.git
 5.
 6. Alma Melisa Vázquez López - Melisa_vl
 7. Melania Andrea Vega Angeles - Melcatus - https://github.com/Melcatus/genomic_cotton 
