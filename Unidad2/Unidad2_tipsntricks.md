@@ -537,7 +537,7 @@ Primero veamos esta función:
 
 ```
 read.fst_summary_fix <- function(file, popNames){
-    ### Function to read the Stacks populations output file batch_3.fst_summary.tsv and add PopNames to it
+    ### Function to read the Stacks populations output file batch_1.fst_summary.tsv and add PopNames to it
     # it also adds a 0 diagonal and converts it to a symmetric matrix
     # file = path to batch_1.fst_summary.tsv file
     # popNames = vector with population names in the same order than PopID in the file
