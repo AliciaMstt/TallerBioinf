@@ -82,6 +82,19 @@ Por favor nota que este **no** es un curso introductorio a la bioinformática, p
 
 * 30% **Presentación en clase de un problema(s) bioinformático que no hayan podido resolver o del que tengan dudas**. Puede ser desde solicitar ayuda para realizar un loop sencillo hasta cómo elegir de manera óptima los parámetros de cierto proceso bioinformático (limpieza, ensamblado, etc). La presentación debe incluir: breves antecedentes, descripción del problema dentro de un issue(s) de Github, output esperado, scripts y outputs intentados hasta el momento. Las sesiones de presentaciones de pregunta incluyen un segmento para presentaciones calendarizadas por estudiante, y un segmento para presentaciones de problemas emergentes. Cada estudiante deberá presentar al menos 3 problemas calendarizados.
 
+Dinámica de retroalimantación:
+
+for i in estudiante_a estudiante_b estudiante_c; do
+1.- Exposición del issue por resolver (10 minutos máximo)
+2.- Retroalimentación general (3 minutos)
+done
+;
+3. Retroalimentación por equípos:
+  Formamos equipos para cada issue (por afinidad de tema, interés, por que "tengo la solución" etc... (mínimo 2 personas))
+
+return
+4.- La solución o avances se comentan en el issue de cada git
+
 * 15% **Retroalimentación a los problemas de otros en clase**. Participación en clase en la sección de comentarios después de las presentaciones de otros.
 
 * 15% **Retroalimentación al código de otros**. Mediante comentarios en la clase, en comentarios a los issues de Github y pull requests en Github con propuestas de soluciones.
