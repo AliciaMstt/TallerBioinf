@@ -16,7 +16,7 @@ Estudiantes:
 5.
 6. Alma Melisa Vázquez López - Melisa_vl
 7. Melania Andrea Vega Angeles - Melcatus - https://github.com/Melcatus/genomic_cotton 
-8.
+8. Duhyadi Oliva García - Duhyadi - https://github.com/Duhyadi/Maize-deleterious-alleles
 9. Verónica Reyes Galindo - VeroIarrachtai
 10. Fernanda Díaz Espinosa - FernandaDiaz12 - https://github.com/FernandaDiaz12/pediatric_astrocytoma
 11. Laura Mariana Contreras Espinosa - LauraMCE
