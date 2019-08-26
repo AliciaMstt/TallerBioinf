@@ -526,9 +526,9 @@ Ejemplos de cómo utilizar `source`: correr el script del ejercicio anterior des
 Desde R, con source podemos correr todo un script de R desde **otro** script de R:
 
 ```{r}
-source("1.IBR_testing.r")
+source("3.IBR_testing.r")
 ```
-Nota que pare que esto funcione tu working directory debe ser el correcto para leer `1.IBR_testing.r` como si fuera un archivo (que lo es). Es decir tu WD debe ser la ruta donde está 1.IBR_testing.r.
+Nota que pare que esto funcione tu working directory debe ser el correcto para leer `3.IBR_testing.r` como si fuera un archivo (que lo es). Es decir tu WD debe ser la ruta donde está 1.IBR_testing.r.
 
 
 Ahora veamos esta función:
@@ -537,7 +537,7 @@ Primero veamos esta función:
 
 ```
 read.fst_summary_fix <- function(file, popNames){
-    ### Function to read the Stacks populations output file batch_1.fst_summary.tsv and add PopNames to it
+    ### Function to read the Stacks populations output file batch_3.fst_summary.tsv and add PopNames to it
     # it also adds a 0 diagonal and converts it to a symmetric matrix
     # file = path to batch_1.fst_summary.tsv file
     # popNames = vector with population names in the same order than PopID in the file
