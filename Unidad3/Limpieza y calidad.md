@@ -192,7 +192,7 @@ Después de analizar la calidad de los .fastq, límpialos con trim galore <span 
 ```
 cd H.hv6_toy/
 
-trim_galore -j 2 --fastqc --paired --retain_unpaired --three_prime_clip_R1 20 --three_prime_clip_R2 20 -o data/clean data/Hhv6.R1.fastq data/Hhv6.R2.fastq
+trim_galore --fastqc --paired --retain_unpaired --three_prime_clip_R1 20 --three_prime_clip_R2 20 -o data/clean data/Hhv6.R1.fastq data/Hhv6.R2.fastq
 ```
 
 
