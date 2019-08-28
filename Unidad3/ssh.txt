@@ -9,3 +9,4 @@ usando el PW xDjhNUkY9qc4b
 ssh gene[#]@172.16.9.173 -X -Y
 ```
 
+¿pa' que se usa el "-X -Y"?
