@@ -98,50 +98,115 @@ Evaluar la calidad de los datos *toy*
 - ejecutar FastQC:
 
 ```
+#go to the main wd
 cd H.hv6_toy/
-fastqc -o QC/raw -f fastq data/Hhv6.R1.fastq data/Hhv6.R2.fastq
+#do the QC analysis
+fastqc -o data/ -f fastq data/Hhv6.R1.fastq data/Hhv6.R2.fastq
+#decompress ressults
+unzip data/QC/raw/*.zip
 ```
 
 los resultados se pueden visualizar con un explorador como firefox
 
 ```
-firefox Hhv6.R1.fastqc.html  Hhv6.R2.fastqc.html
+firefox data/Hhv6.R1.fastqc.html data/Hhv6.R2.fastqc.html
 ```
 
+Todxs tienen XQuartz? (o algo así)
 
+Si no, mejor desde un shell local:
+
+```
+#get file to my local disc
+scp gene19@172.16.9.173:/LUSTRE/Genetica/common/gene19/TallerBioinf/Unidad3/H.hv6_toy/data/QC/raw/*.html .
+```
+
+ 
 
 ## 4.1.3 Limpieza
 
 ### Trim Galore!
 
+**USAGE:** `trim_galore [options] <filename(s)>`
+
 [manual](https://github.com/FelixKrueger/TrimGalore/blob/master/Docs/Trim_Galore_User_Guide.md)
+
+
 
 Consta de 4 pasos principales:
 
 1: Quality Trimming
 
+```
+-q/--quality <INT>
+```
+
+- Default Phred score: `20`
+
 2: Adapter Trimming
+
+```
+-a/--adapter <STRING>
+-a2/--adapter2 <STRING>
+-s/--stringency <INT>
+```
+
+- Default busca: Illumina universal, Nextera transposase o Illumina small RNA
 
 3: Removing Short Sequences
 
+```
+--length <INT>
+--max_length <INT>
+```
+
 4: Specialised Trimming
+
+```
+--max_n COUNT
+--trim-n
+--clip_R1 <int>
+--three_prime_clip_R1 <int>
+```
+
+Además:
+
+```
+--fastqc_args "<ARGS>"
+-o
+--paired
+--retain_unpaired
+-j/--cores INT
+```
+
+
 
 Cada uno de estos pasos involucra parámetros particulares, algunos se "auto-detectan" o se asignan.
 
 Ejercicio:
 
-Después de analizar la calidad de los .fastq, límpialos con trim galore como decidas. 
+Después de analizar la calidad de los .fastq, límpialos con trim galore <span style="color:red">con los parámetros que tú decidas</span>.
+
+ 
 
 ```
 cd H.hv6_toy/
-trim_galore --fastqc_args -o QC/clean --paired --retain_unpaired -clip_R1 20 -clip_R2 20 -o data/clean data/Hhv6.R1.fastq data/Hhv6.R2.fastq
+
+trim_galore -j 2 --fastqc --paired --retain_unpaired --three_prime_clip_R1 20 --three_prime_clip_R2 20 -o data/clean data/Hhv6.R1.fastq data/Hhv6.R2.fastq
 ```
 
 
 
-### Trimmomoatic
+### Trimmomatic
 
 [manual](http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf)
 
 
+
+### Principales diferencias entre Trim Galore y Trimmomatic
+
+- FastQC
+- threads
+- windows
+- adapter file
 
