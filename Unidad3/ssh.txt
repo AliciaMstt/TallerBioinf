@@ -2,7 +2,8 @@
 
 1.- Cada participante tendrá un gen (usuario), ej. gene1
 
-2.- Entrar al servidor desde la red local vía security shell (user@IP). usando el PW xDjhNUkY9qc4b
+2.- Entrar al servidor desde la red local vía security shell (user@IP).
+usando el PW xDjhNUkY9qc4b
 
 ```
 ssh gene[#]@172.16.9.173 -X -Y
