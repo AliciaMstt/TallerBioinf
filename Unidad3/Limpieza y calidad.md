@@ -103,7 +103,7 @@ cd H.hv6_toy/
 #do the QC analysis
 fastqc -o data/ -f fastq data/Hhv6.R1.fastq data/Hhv6.R2.fastq
 #decompress ressults
-unzip data/QC/raw/*.zip
+unzip data/*.zip
 ```
 
 los resultados se pueden visualizar con un explorador como firefox
@@ -118,7 +118,7 @@ Si no, mejor desde un shell local:
 
 ```
 #get file to my local disc
-scp gene19@172.16.9.173:/LUSTRE/Genetica/common/gene19/TallerBioinf/Unidad3/H.hv6_toy/data/QC/raw/*.html .
+scp gene19@172.16.9.173:/LUSTRE/Genetica/common/gene19/TallerBioinf/Unidad3/H.hv6_toy/data/*.html .
 ```
 
  
