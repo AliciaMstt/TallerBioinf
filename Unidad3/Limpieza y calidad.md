@@ -93,7 +93,7 @@ Ejercicio:
 
 Evaluar la calidad de los datos *toy*
 
-- entrar al servidor [así](liga a algo)
+- entrar al servidor [así](https://github.com/AliciaMstt/TallerBioinf/blob/master/Unidad3/ssh.txt)
 - git clone /la Unidad 3/
 - ejecutar FastQC:
 
