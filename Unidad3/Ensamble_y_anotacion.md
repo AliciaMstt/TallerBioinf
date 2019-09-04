@@ -279,7 +279,7 @@ Contig vs scaffolds? -> Ns
    ```
 
    ```
-   velveth Velh_Hhv6_raw71 71 -fastq -shortpaired ../data/Hhv6.R1.fastq .../data/Hhv6.R2.fastq
+   velveth Velh_Hhv6_raw71 31 -fastq -shortPaired ../data/Hhv6.R1.fastq .../data/Hhv6.R2.fastq
    
    velvetg Velh_Hhv6_raw71/
    ```
