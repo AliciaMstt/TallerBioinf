@@ -211,9 +211,94 @@ Contig vs scaffolds? -> Ns
 
 
 
+### Ejercicio:
+
+1. Entrar al servidor
+
+   ```
+   ssh gene8@172.16.9.173 -X -Y
+   # dale tu pw
+   cd ~/TallerBioinf/Unidad3/H.hv6_toy/bin
+   ```
+
+
+2. Ensamblar el genoma
+
+   Usaremos uno o varios  ensamblador con los mismos parámetros (-k) pero con los 2 grupos de datos (raw y clean)
+
+   
+
+   ### SPADES
+
+   ```
+   mkdir ../assem/raw
+   spades.py -1 ../data/Hhv6.R1.fastq -2 Hhv6.R2.fastq --careful -k 31,41,51,61,71,81,91 -t 4 -o raw
+   ```
+
+   ```
+   mkdir ../assem/clean
+   spades.py -1 ../data/Hhv6.R1.fastq -2 Hhv6.R2.fastq --careful -k 31,41,51,61,71,81,91 -t 4 -o clean
+   ```
+
+   ### IDBA_UD
+
+   http://i.cs.hku.hk/~alse/hkubrg/projects/idba_ud/
+
+   Peng, Y., et al. (2010) IDBA- A Practical Iterative de Bruijn Graph De Novo Assembler. RECOMB. Lisbon.
+
+   ```
+   #mkdir ..../IDBA_UD
+   ```
+
+   le daré el tercer juego de datos para el --read_level_2
+
+   primero se integran las lecturas pareadas en un solo archivo:
+
+   ```
+   interleave-reads.py ../data/Hhv6.R1.fastq ../data/Hhv6.R1.fastq -o Hhv6_InterRaw.fastq
+   ```
+
+   se eliminan las calidades
+
+   ```
+   fastq_to_fasta -n -v -i Hhv6_InterRaw.fastq -o Hhv6_InterRaw.fasta
+   ```
+
+   se ensambla
+
+   ```
+   idba_ud -r Hhv6_InterRaw.fasta --mink 31 --maxk 91 --step 10 --pre_correction -o idba_31-91_s10 --num_threads 4
+   ```
+
+   #### Velvet
+
+   Se ejecuta en 2 pasos velveth y velvetg
+
+   ```
+   #mkdir Velvet; cd Velvet
+   ```
+
+   ```
+   velveth Velh_Hhv6_raw71 71 -fastq -shortpaired ../data/Hhv6.R1.fastq .../data/Hhv6.R2.fastq
+   
+   velvetg Velh_Hhv6_raw71/
+   ```
+
+   
+
+3. Evaluar el ensamble
+
+   ```
+   ./quast-4.6.3/quast -t 30 ../assem/clean/contigs.fa ../assem/raw/contigs.fa
+   ```
+
+   Tal vez necesitemos scp los .html del servidor a nuestra unidad local
+
+   ¿scp?
+
 #### Calificando un ensamble
 
-Quast
+[Quast]() [Paper](http://doi.org/10.1093/bioinformatics/btt086)
 
 ![SRAfigure](figure5.png)
 

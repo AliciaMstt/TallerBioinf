@@ -1,0 +1,92 @@
+======================================================
+Copyright Georgia Institute of Technology, Atlanta, Georgia, USA
+======================================================
+
+Meta-GeneMark package was created for users interested in
+analysis of metagenomes [1][2].
+
+[1] Besemer, J. and M. Borodovsky (1999).
+"Heuristic approach to deriving models for gene finding."
+Nucleic Acids Research 27(19): 3911-3920.
+
+[2] Zhu W., Lomsadze A. and Borodovsky M. (2010).
+"ab initio Gene Identification in Metagenomic Sequences."
+Nucleic Acids Research, 2010, Vol.38, No.12, e132, doi: 10.1093/nar/gkq275
+
+This package includes the following file:
+
+  gmhmmp -  GeneMark.hmm prokaryotic
+  MetaGeneMark_v1.mod - parameter file for metagenome gene prediction
+  README.MetaGeneMark
+
+========================================================
+
+prokaryotic GeneMark.hmm version 3.26
+
+Usage:
+        gmhmmp [options] [sequence file]
+
+                [sequence file] - file with sequence/s in FASTA format
+
+Required options:
+        -m      [model file] file with gene finding parameters
+                               metagenome style model file is allowed
+
+Optional parameters:
+
+*** Output options
+
+        -o      [output file] output file name
+                default = [sequence file].lst
+        -f      output format: [L] for LST, [G] for GFF
+                default = L
+        -a      output protein sequences of predicted genes
+        -d      output nucleotide sequences of predicted genes
+        -A      [protein output file]   output protein sequences of predicted genes into this file
+        -D      [nucleotide ouput file] output nucleotide sequences of predicted genes into this file
+        -k      output RBS score and spacer
+        -K      [file] output all RBS scores and location to file
+        -b      output one best prediction per sequence
+
+*** Prediction options
+
+        -r      Use RBS for gene start prediction
+        -s      [d|r|.] Strand to predict genes on
+                default = '.' predict genes on both strands
+        -p      [1|0] Gene overlap are allowed [1] or prohibited [0]
+                default = 1
+                [0] is used for gene finding in intron-less eukaryotic genomes
+        -e      [filename] use this file with external infromation to profile predictions
+        -c      parse parameters from FASTA defline
+        -g      [number] translate to proteins using this genetic code
+
+*** Developer options
+
+        -M      [model file] file with gene finding parameters for metagenomes
+        -R      [model file] file with parameters of RBS sub model
+        -L      [log file] output information into loginfo file
+        -i      [number] Probability of initiation and termination in non-coding state
+                default = 0.5
+        -n      Turn OFF prediction of the incomplete genes at sequence gaps
+                (gap : string of unknown letters 'N' longer then 20 nt)
+        -E      [value] evidence score for coding regions
+        -v      verbose
+        -V      debug mode
+
+========================================================
+
+Example 1:
+	gmhmmp -m MetaGeneMark_v1.mod test_seq.fasta 
+
+	Predictions will be in file "sequence.mfa.lst" in default GeneMark.hmm format.
+
+Example 2:
+	gmhmmp -a -d -f G -m MetaGeneMark_v1.mod test_seq.fasta  -o test_seq.gff
+
+	Predictions will be in file "sequence.gff" in GFF format
+	with nucleotide and protein sequences for each predicted gene. 
+
+========================================================
+
+
+
