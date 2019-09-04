@@ -46,15 +46,15 @@ o puedo resolver lo que pretendo con:
     - Secuencias largas permiten la captura de regiones únicas flanqueando los *repeats*
 
 - Heterocigosidad
-  - Por definición un genoma es aploide
+  - Por definición un genoma es haploide
   - Los ensambladores colapsan los alelos, pero si la cepa presenta alta heterocigosidad puede tener alelos tan distintos que se ensamblan independientemente
   - Regiones heterócigas se duplican (en diploides) o multiplican (poliploides)
   - o ni se ensamblan!
   - Pop. grandes suelen ser mas heterocigas
 
 - Ploidía
-  - Favorecer secuenciar cepas aploides
-  - Tejidos diploides o poloploides piden mas secuenciación
+  - Favorecer secuenciar cepas haploides
+  - Tejidos diploides o poliploides piden mas secuenciación
   - Los ensambles suelen estar mas fragmentados
 - GC%
   - Illumina puede no secuenciar regiones de alto contenido de GC
