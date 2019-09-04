@@ -151,15 +151,97 @@ Protocolos complementarios:
 
 ## 4 requerimentos computacionales
 
+Tamaño y velocidad
+
+Los archivos intermedios son mucho mas grandes que los resultados
+
+Los procesos que no se pueden paralelizar son mas costosos de ram
+
 ![SRAfigure](table1.png)
 
 
 
+## 5 Ensamblar
+
+WF para ensamblar:
 
 
 
+![SRAfigure](figure1.png)
 
 
+
+yo le hice así:
+
+![SRAfigure](figure2.png)
+
+Antes de ensamblar se debe conocer la calidad y limpiar los datos crudos como vimos en la Unidad [3.1](Limpieza_y_calidad.md)
+
+¿Por que los datos de PacBio no se limpian igual que los de Illumina?
+
+![SRAfigure](figure3.jpg)
+
+
+
+#### Ensamble *de novo* vs mapeo a genoma de referencia
+
+*de novo*
+
+Usa solo la información proporcionada en los .fastq y los parámetros del ensamblador
+
+Los ensambladores de secuencias cortas usas como algoritmo los *de Brujin graphs* alimentado por k-meros. Funcionan mejor con profundidades de secuenciación de entre 60 y 80x. 
+
+![SRAfigure](figure4.png)
+
+
+
+Los resultados de un ensamble son dependientes del organismo y de los datos. Un algoritmo puede funcionar bien en un caso y mal en otro. 
+
+Los programas para ensamblar con long-read usan Overlap Layout Consensus
+
+
+
+Los programas que hacen ensambles híbridos inician con grafos de brujin y después usan las long reads
+
+#### Scaffolding
+
+Se refiere a usar los mismos datos o datos adicionales para unir los contigs generados en el ensamble.
+
+Contig vs scaffolds? -> Ns
+
+
+
+#### Calificando un ensamble
+
+Quast
+
+![SRAfigure](figure5.png)
+
+![SRAfigure](figure6.png)
+
+Ademas:
+
+FRCBam reporta mis-assembly
+
+Busco y SIGMA reportan completitud
+
+MaxBin y VizBin detecta contaminacion por DNA de otro organismo
+
+
+
+#### 6 Anotar transposones
+
+#### 7 Predecir modelos génicos
+
+#### 8 Anotar usando bases de datos de alta calidad
+
+#### 9 Poner los datos accesibles y en formatos estandard
+
+#### 10 poner tu codigo accesible
+
+#### 11 Re-analizar
+
+#### 
 
 
 
