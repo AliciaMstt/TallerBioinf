@@ -35,7 +35,7 @@ o puedo resolver lo que pretendo con:
 
 - Tamaño del genoma
   - Calcular el tamaño de la secuenciación (cobertura vs profundidad) (aceptable >60x)
-  - Usar citometría de flujo o en su defecto conocer los tamaños de los genomas de las especies mas cercanas (BD de C-Value de [hongos](http://www.zbi.ee/fungal-genomesize), [plantas](http://data.kew.org/cvalues) y [animales](http:// www.genomesize.com))
+  - Usar citometría de flujo o en su defecto conocer los tamaños de los genomas de las especies mas cercanas (BD de C-Value de [hongos](http://www.zbi.ee/fungal-genomesize), [plantas](http://data.kew.org/cvalues) y [animales](http://www.genomesize.com)
 
 - Repeats
 
