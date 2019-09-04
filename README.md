@@ -128,9 +128,9 @@ La calificación final del repositorio toma en cuenta:
 * M28 Agosto: Clase (exposición profes) de tópico Unidad 3 (Evaluación de Calidad)
 
 * L2 Septiembre: Presentación/retroalimentación de problemas de estudiantes
-* M4 Septiembre: Clase (exposición profes) de tópico Unidad 3 (Asembleo de genomas de novo)
+* M4 Septiembre: Clase (exposición profes) de tópico Unidad 3 (Ensamblado de genomas de novo)
 * L9 Septiembre: Presentación/retroalimentación de problemas de estudiantes
-* M11 Septiembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
+* M11 Septiembre: Clase (exposición profes) de tópico Unidad 3 (Anotación de genomas)
 * M18 Septiembre: Presentación/retroalimentación de problemas de estudiantes
 * L23 Septiembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
 * M25 Septiembre: Presentación/retroalimentación de problemas de estudiantes
