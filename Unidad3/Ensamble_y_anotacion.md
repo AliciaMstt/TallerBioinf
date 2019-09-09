@@ -27,7 +27,7 @@ o puedo resolver lo que pretendo con:
 - Para la extracción de DNA, seleccione una cepa que sea un buen representante de la especie y que pueda proporcionar suficiente DNA
 - Extraer más DNA del que crees que necesitas y guardar el tejido para repetir extracciones
 - Considerar la secuenciación de RNA para reforzar los ensambles genómicos. Idealmente de la misma cepa
-- Comparar tecnologías de secuenciación ([Illumina](https://www.illumina.com](https://www.illumina.com/), [IonTorrent](https://www.thermofisher.com/mx/es/home/brands/ion-torrent.html), [PacBio]([https://www.pacb.com](https://www.pacb.com/), [NanoPore](https://nanoporetech.com/applications/dna-nanopore-sequencing), reviews: [1](https://www.sciencedirect.com/science/article/pii/S0888754315300410), [2](https://www.nature.com/articles/nature24286),) y anticipar los programas y recursos computacionales necesarios
+- Comparar tecnologías de secuenciación ([Illumina](https://www.illumina.com/), [IonTorrent](https://www.thermofisher.com/mx/es/home/brands/ion-torrent.html), [PacBio](https://www.pacb.com/), [NanoPore](https://nanoporetech.com/applications/dna-nanopore-sequencing), reviews: [1](https://www.sciencedirect.com/science/article/pii/S0888754315300410), [2](https://www.nature.com/articles/nature24286),) y anticipar los programas y recursos computacionales necesarios
 
 
 
