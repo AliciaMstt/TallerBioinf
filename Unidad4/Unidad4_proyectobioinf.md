@@ -100,3 +100,19 @@ Además, para las próximas clases deberás hacer y exponer el **Planteamiento y
 
 Utilizaremos el sistema de issues y comentarios de Github para hacer comentarios y sugerencias al código de los demás. Esto ocurrirá durante las sesiones de discusión, pero también durante tiempo fuera de clase. También es posible hacer cambios más complejos mediante pull requests.
 
+Dudas que hemos resuelto:
+
+Loops:
+* [How to loop with two variables -bash (Melania)](https://github.com/Melcatus/genomic_cotton/issues/4)
+* [Loop to aling pair-end reads  -bash (Fernanda)](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/2)
+* [Calculating the Q30 using a loop -bash (Rodolfo)](https://github.com/necrosnake91/Lung_cancer_transcriptome/issues/7)
+* [Loop for mutation analyses -R (Héctor)](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/9)
+
+Parsear archivos output
+* [Extract table of ipyrad stats file -bash o R (Christian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/17)
+
+Gráficas:
+
+* [Code color in volcano plots - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/8)
+
+
