@@ -272,17 +272,26 @@ Contig vs scaffolds? -> Ns
 
    #### Velvet
 
-   Se ejecuta en 2 pasos velveth y velvetg
+Se ejecuta en 2 pasos velveth (hace los k-meros) y velvetg (hace los grafos)
 
-   ```
-   #mkdir Velvet; cd Velvet
-   ```
+Primero creas un directorio para los resultados
+    
+    ```
+    mkdir ~/TallerBioinf/Unidad3/H.hv6_toy/assem/Velvet
+    cd ~/TallerBioinf/Unidad3/H.hv6_toy/bin
+    ```
+    
+Velveth
 
-   ```
-   velveth Velh_Hhv6_raw71 31 -fastq -shortPaired ../data/Hhv6.R1.fastq .../data/Hhv6.R2.fastq
-   
-   velvetg Velh_Hhv6_raw71/
-   ```
+    ```
+    velveth ../assem/Velvet/Hhv6_31 31 -fastq -shortPaired ../data/Hhv6.R1.fastq ../data/Hhv6.R2.fastq
+    ```
+    
+Velvetg
+    ```
+    velvetg ../assem/Velvet/Hhv6_31/
+    
+
 
    
 
