@@ -1,3 +1,5 @@
+
+
 # 3.2 Ensamble y anotación genómica
 
 ## Introducción
@@ -271,69 +273,77 @@ Contig vs scaffolds? -> Ns
    ```
 
    #### Velvet
-
-Se ejecuta en 2 pasos velveth (hace los k-meros) y velvetg (hace los grafos)
-
-Primero creas un directorio para los resultados
-    
-    ```
-    mkdir ~/TallerBioinf/Unidad3/H.hv6_toy/assem/Velvet
-    cd ~/TallerBioinf/Unidad3/H.hv6_toy/bin
-    ```
-    
-Velveth
-
-    ```
-    velveth ../assem/Velvet/Hhv6_31 31 -fastq -shortPaired ../data/Hhv6.R1.fastq ../data/Hhv6.R2.fastq
-    ```
-    
-Velvetg
-    ```
-    velvetg ../assem/Velvet/Hhv6_31/
-    
-
-
    
-
-3. Evaluar el ensamble
-
-   ```
-   cd ~/TallerBioinf/Unidad3/H.hv6_toy
+   Se ejecuta en 2 pasos velveth (hace los k-meros) y velvetg (hace los grafos).
    
-   quast.py -t 30 assem/Velvet/Hhv6_31/contigs.fa
+   Primero creas un directorio para los resultados.
+   
    ```
-   Revizar las salidas (.txt y .html)
-   Tal vez necesitemos scp los .html del servidor a nuestra unidad local
-
-   ¿scp?
+   mkdir ~/TallerBioinf/Unidad3/H.hv6_toy/assem/Velvet
+   cd ~/TallerBioinf/Unidad3/H.hv6_toy/bin
+   ```
+   
+    Velveth
+   
+   ```
+   velveth ../assem/Velvet/Hhv6_31 31 -fastq -shortPaired ../data/Hhv6.R1.fastq ../data/Hhv6.R2.fastq
+   ```
+   
+   Velvetg
+   
+   ```
+   velvetg ../assem/Velvet/Hhv6_31/
+   ```
+   
+   
 
 #### Calificando un ensamble
 
-Características generales de un ensamble genómico
+1.- <u>Características generales de un ensamble genómico</u>
 
-[Quast](http://quast.sourceforge.net/quast) [Paper](http://doi.org/10.1093/bioinformatics/btt086)
+Podemos generar un resumen mediante la herramienta [Quast](http://quast.sourceforge.net/quast) [(cita)](http://doi.org/10.1093/bioinformatics/btt086).
 
 ¿Qué son los valores N50 y L50?
+
 ¿Cuales contigs se usan?, ¿Cuales se descartan? y ¿Por qué?
 
+```
+cd ~/TallerBioinf/Unidad3/H.hv6_toy
+
+quast.py -t 30 assem/Velvet/Hhv6_31/contigs.fa
+```
+
+Revizar las salidas (.txt y .html).
+Tal vez necesitemos scp los .html del servidor a nuestra unidad local.
+
+¿scp?
 
 ![SRAfigure](figure5.png)
 
 ![SRAfigure](figure6.png)
 
-Completitud
+2.-<u>Completitud</u>
 
-FRCBam reporta mis-assembly
+[FRCBam](https://github.com/vezzi/FRC_align) reporta mis-assembly.
 
-[Busco](https://busco.ezlab.org/), [gVolante](https://gvolante.riken.jp) y [FGMP](https://github.com/stajichlab/FGMP) reportan completitud
+[Busco](https://busco.ezlab.org/), [gVolante](https://gvolante.riken.jp) y [FGMP](https://github.com/stajichlab/FGMP) reportan completitud.
 
-Pureza
-Usamos herramientas de la microbiómica o metagenómica para hacer el bining y la asignación taxonómica
 
-[MaxBin](https://downloads.jbei.org/data/microbial_communities/MaxBin/MaxBin.html) y [VizBin](http://claczny.github.io/VizBin/) detecta contaminacion por DNA de otro organismo
+
+3.-<u>Pureza</u>
+Usamos herramientas de la microbiómica o metagenómica para hacer el bining y/o la asignación taxonómica. Con lo que se detecta contaminación por DNA de otro organismo.
+
+[MaxBin](https://downloads.jbei.org/data/microbial_communities/MaxBin/MaxBin.html) 
+
+Usa una base de datos de genes *housekeeping* propios de organismos comunes para ciertos tipos de muestra.
 
 ![SRAfigure](figure7.png)
-[Endogonaceae genomics](Chang_et_al-2019-New_Phytologist)
+
+[VizBin](http://claczny.github.io/VizBin/)
+
+Usa características propias de las secuencias (contigs o reads) de DNA para agruparlas en una gráfica de 2 dimensiones.
+
+Ejemplo: [Endogonaceae genomics](Chang_et_al-2019-New_Phytologist)
 
 
 
@@ -355,4 +365,4 @@ Usamos herramientas de la microbiómica o metagenómica para hacer el bining y l
 
 Findable, Accessible, Interoperable, and Reusable (FAIR)
 
-([Dominguez Del Angel et al. 2018](https://f1000researchdata.s3.amazonaws.com/manuscripts/14771/99439b36-6d2f-44ae-a2f6-bbb0917e5073_13598_-_victoria_del_angel.pdf?doi=10.12688/f1000research.13598.1&numberOfBrowsableCollections=17&numberOfBrowsableInstitutionalCollections=4&numberOfBrowsableGateways=22))
+([Dominguez Del Angel et al. 2018](2018  Dominguez Del Angel et al. 10 steps in genomics.pdf))
