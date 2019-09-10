@@ -289,28 +289,42 @@ Contig vs scaffolds? -> Ns
 3. Evaluar el ensamble
 
    ```
-   ./quast-4.6.3/quast -t 30 ../assem/clean/contigs.fa ../assem/raw/contigs.fa
+   cd ~/TallerBioinf/Unidad3/H.hv6_toy
+   
+   quast.py -t 30 assem/Velvet/Hhv6_31/contigs.fa
    ```
-
+   Revizar las salidas (.txt y .html)
    Tal vez necesitemos scp los .html del servidor a nuestra unidad local
 
    ¿scp?
 
 #### Calificando un ensamble
 
-[Quast]() [Paper](http://doi.org/10.1093/bioinformatics/btt086)
+Características generales de un ensamble genómico
+
+[Quast](http://quast.sourceforge.net/quast) [Paper](http://doi.org/10.1093/bioinformatics/btt086)
+
+¿Qué son los valores N50 y L50?
+¿Cuales contigs se usan?, ¿Cuales se descartan? y ¿Por qué?
+
 
 ![SRAfigure](figure5.png)
 
 ![SRAfigure](figure6.png)
 
-Ademas:
+Completitud
 
 FRCBam reporta mis-assembly
 
-Busco y SIGMA reportan completitud
+[Busco](https://busco.ezlab.org/), [gVolante](https://gvolante.riken.jp) y [FGMP](https://github.com/stajichlab/FGMP) reportan completitud
 
-MaxBin y VizBin detecta contaminacion por DNA de otro organismo
+Pureza
+Usamos herramientas de la microbiómica o metagenómica para hacer el bining y la asignación taxonómica
+
+[MaxBin](https://downloads.jbei.org/data/microbial_communities/MaxBin/MaxBin.html) y [VizBin](http://claczny.github.io/VizBin/) detecta contaminacion por DNA de otro organismo
+
+![SRAfigure](figure7.png)
+[Endogonaceae genomics](Chang_et_al-2019-New_Phytologist)
 
 
 
