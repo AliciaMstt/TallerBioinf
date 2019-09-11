@@ -262,6 +262,7 @@ Podemos generar un resumen mediante la herramienta [Quast](http://quast.sourcefo
 ¿Qué son los valores N50 y L50?
 
 ¿Cuales contigs se usan?, ¿Cuales se descartan? y ¿Por qué?
+
 pueden crear algunos ensambles rápidos con el script bin/runVelvet.sh
 
 ```
