@@ -432,7 +432,7 @@ Finalmente el autor concluye que un proyecto genómico debe ser **FAIR**
 
 Findable, Accessible, Interoperable, and Reusable (FAIR)
 
-([Dominguez Del Angel et al. 2018](2018  Dominguez Del Angel et al. 10 steps in genomics.pdf))
+([Dominguez Del Angel et al. 2018](2018 _Dominguezel al.10steps))
 
 **DATOS**
 
