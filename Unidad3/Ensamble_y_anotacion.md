@@ -236,7 +236,7 @@ Contig vs scaffolds? -> Ns
    
    ```
    cd ~/TallerBioinf/Unidad3/H.hv6_toy/bin
-mkdir -p ../assem/Velvet
+   mkdir -p ../assem/Velvet
    ```
    
     Velveth
@@ -245,7 +245,7 @@ mkdir -p ../assem/Velvet
 velveth ../assem/Velvet/Hhv6_31 31 -fastq -shortPaired ../data/Hhv6.R1.fastq ../data/Hhv6.R2.fastq
 ```
 
-​		Velvetg
+Velvetg
 
 ```
 velvetg ../assem/Velvet/Hhv6_31/
