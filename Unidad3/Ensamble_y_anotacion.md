@@ -226,76 +226,32 @@ Contig vs scaffolds? -> Ns
 
 2. Ensamblar el genoma
 
-   Usaremos uno o varios  ensamblador con los mismos parámetros (-k) pero con los 2 grupos de datos (raw y clean)
-
-   
-
-   ### SPADES
-
-   ```
-   mkdir ../assem/raw
-   spades.py -1 ../data/Hhv6.R1.fastq -2 Hhv6.R2.fastq --careful -k 31,41,51,61,71,81,91 -t 4 -o raw
-   ```
-
-   ```
-   mkdir ../assem/clean
-   spades.py -1 ../data/Hhv6.R1.fastq -2 Hhv6.R2.fastq --careful -k 31,41,51,61,71,81,91 -t 4 -o clean
-   ```
-
-   ### IDBA_UD
-
-   http://i.cs.hku.hk/~alse/hkubrg/projects/idba_ud/
-
-   Peng, Y., et al. (2010) IDBA- A Practical Iterative de Bruijn Graph De Novo Assembler. RECOMB. Lisbon.
-
-   ```
-   #mkdir ..../IDBA_UD
-   ```
-
-   le daré el tercer juego de datos para el --read_level_2
-
-   primero se integran las lecturas pareadas en un solo archivo:
-
-   ```
-   interleave-reads.py ../data/Hhv6.R1.fastq ../data/Hhv6.R1.fastq -o Hhv6_InterRaw.fastq
-   ```
-
-   se eliminan las calidades
-
-   ```
-   fastq_to_fasta -n -v -i Hhv6_InterRaw.fastq -o Hhv6_InterRaw.fasta
-   ```
-
-   se ensambla
-
-   ```
-   idba_ud -r Hhv6_InterRaw.fasta --mink 31 --maxk 91 --step 10 --pre_correction -o idba_31-91_s10 --num_threads 4
-   ```
+   Usaremos uno o varios  tamaños de k-mero y  los 2 grupos de datos (raw y clean).
 
    #### Velvet
-   
+
    Se ejecuta en 2 pasos velveth (hace los k-meros) y velvetg (hace los grafos).
-   
+
    Primero creas un directorio para los resultados.
    
    ```
-   mkdir ~/TallerBioinf/Unidad3/H.hv6_toy/assem/Velvet
    cd ~/TallerBioinf/Unidad3/H.hv6_toy/bin
+mkdir -p ../assem/Velvet
    ```
    
     Velveth
    
-   ```
-   velveth ../assem/Velvet/Hhv6_31 31 -fastq -shortPaired ../data/Hhv6.R1.fastq ../data/Hhv6.R2.fastq
-   ```
-   
-   Velvetg
-   
-   ```
-   velvetg ../assem/Velvet/Hhv6_31/
-   ```
-   
-   
+```
+velveth ../assem/Velvet/Hhv6_31 31 -fastq -shortPaired ../data/Hhv6.R1.fastq ../data/Hhv6.R2.fastq
+```
+
+​		Velvetg
+
+```
+velvetg ../assem/Velvet/Hhv6_31/
+```
+
+
 
 #### Calificando un ensamble
 
@@ -322,7 +278,7 @@ Tal vez necesitemos scp los .html del servidor a nuestra unidad local.
 
 ![SRAfigure](figure6.png)
 
-2.-<u>Completitud</u>
+2.- <u>Completitud</u>
 
 [FRCBam](https://github.com/vezzi/FRC_align) reporta mis-assembly.
 
@@ -330,7 +286,7 @@ Tal vez necesitemos scp los .html del servidor a nuestra unidad local.
 
 
 
-3.-<u>Pureza</u>
+3.- <u>Pureza</u>
 Usamos herramientas de la microbiómica o metagenómica para hacer el bining y/o la asignación taxonómica. Con lo que se detecta contaminación por DNA de otro organismo.
 
 [MaxBin](https://downloads.jbei.org/data/microbial_communities/MaxBin/MaxBin.html) 
@@ -349,20 +305,146 @@ Ejemplo: [Endogonaceae genomics](Chang_et_al-2019-New_Phytologist)
 
 #### 6 Anotar transposones
 
-#### 7 Predecir modelos génicos
+Existen 2 tipos de elementos repetidos:
 
-#### 8 Anotar usando bases de datos de alta calidad
+- De baja complejidad son microsatelites
+- De alta complejidad son transposones
+
+Los transposones son clave en todos los genómas eucarióticos y pueden representar hasta el 90% del genoma en algunos taxa.
+
+Su número se puede correlacionar con el tamaño genómico y su organización.
+
+Se usa:
+
+[RepeatMasker](http://www.repeatmasker.org/)
+
+Que detecta regiones repetidas con BLASTall y las puede resumir o cuantificar.
+
+[REPET package](https://urgi.versailles.inra.fr/Tools/REPET) 
+
+Que usa BLASTall vs it self, y blast vs DB de TEs.
+
+
+
+## Anotación
+
+Anotar un genoma es agregar información biológica comprensible a su secuencia de DNA.
+
+Principalmente enfocada en detectar y asignar funciones a las potenciales regiones codificantes.
+
+Aunque también, cuando es necesario se puede usar:
+
+[tRNAscan-se](http://lowelab.ucsc.edu/tRNAscan-SE/) para transferentes
+
+[INFERNAL](http://eddylab.org/infernal/) para todos los ncRNA
+
+ ![SRAfigure](figure8.png)
+
+#### 7 Predicción de modelos génicos
+
+También llamada anotación estructural, es la detección de sitios de inicio de la replicación en marco de lectura con codones de paro.
+
+Predicción <u>intrínseca</u> vs <u>extrínseca</u>.
+
+![SRAfigure](figure9.png)
+
+Usamos [AUGUSTUS](http://bioinf.uni-greifswald.de/augustus/) para predecir de manera intrínseca.
+
+#### 8 Asignación funcional
+
+Comparación de los genes predichos vs DB de alta calidad
+
+![SRAfigure](figure10.png)
+
+#### Ejercicio:
+
+Predecir y asignar los genes y funciones del genoma que ensamblamos. 
+
+#### Predicción
+
+Usamos [Augustus](http://bioinf.uni-greifswald.de/augustus/) para <u>predecir</u> de manera intrínseca.
+
+Usa 2 pasos:
+
+Uno de entrenamiento (con cDNA de la misma sp. o cercana) y uno de predicción.
+
+```
+export PATH=$PATH:~/augustus/bin:~/augustus/scripts
+
+export AUGUSTUS_CONFIG_PATH=/usr/local/bin/augustus
+```
+
+```
+augustus --species=saccharomyces_cerevisiae_S288C ../data/S.cerevisiae.fna
+```
+
+También está [Augustus on line](http://bioinf.uni-greifswald.de/webaugustus/index.gsp)
+
+
+
+#### Asignación funcional
+
+Usaremos [InterProScan](https://www.ebi.ac.uk/interpro/beta/) para la <u>AF</u>.
+
+Es un programa para la predicción funcional de secuencias de AA que se asocia a muchas DB especializadas.
+
+[UniProt](https://www.uniprot.org/)
+
+[Gene Ontology](http://geneontology.org/docs/go-annotations/)
+
+[CAZy](http://www.cazy.org/)
+
+[KEGG](https://www.genome.jp/kegg/)
+
+```
+mkdir -p /TallerBioinf/Unidad3/H.hv6_toy/annot/interproscan
+```
+
+```
+interproscan -i ../annot/Hhv6_aug.aa -o Hhv6 -iprlookup -goterms -f tsv
+```
+
+Revisar las [salidas](https://github.com/ebi-pf-team/interproscan/wiki/InterProScan5OutputFormats) de interpro ([ejemplo en html](https://www.ebi.ac.uk/interpro/sequencesearch/iprscan5-S20190911-185515-0091-39181847-p1m))
+
+
+
+Análisis de metabolismos
+
+[Gosth KOALA](https://www.kegg.jp/ghostkoala/)
+
+BLAST KOALA
+
+Permite obtener términos [KO](https://www.kegg.jp/kegg/ko.html) y mapear online sobre la enciclopedia KEGG.
+
+[Liga](https://www.kegg.jp/kegg-bin/blastkoala_result?id=76d500542eeae4cccb16fe031a61ac5feb485803&passwd=VyhJNv&type=ghostkoala) al análisis del proteoma de una levadura que hice para la clase.
+
+
+
+
 
 #### 9 Poner los datos accesibles y en formatos estandard
 
-#### 10 poner tu codigo accesible
+#### 10 Poner tu código accesible
+
+Revisar [Unidad 1](Unidad1)
+
+Finalmente el autor concluye que un proyecto genómico debe ser **FAIR**
+
+Findable, Accessible, Interoperable, and Reusable (FAIR)
+
+([Dominguez Del Angel et al. 2018](2018  Dominguez Del Angel et al. 10 steps in genomics.pdf))
+
+**DATOS**
+
+**Findable**: Usar identificadores únicos y persistentes a nivel mundial para los datos y metadatos. Hacer posible rastrear análisis anteriores y relacionarlos con la anotación actual. La anotación en desuso debe seguir siendo rastreable. 
+**Accesible**: Registro adecuado de datos y metadatos en un repositorio público o autosuficiente adecuado. Todos los datos deben ser indexados y buscables y accesibles mediante un identificador utilizando protocolos estandarizados. El código se eberá depositar en ELIXIR, GitHub o Docker.
+**Interoperable**: Los datos y metadatos deben depositarse utilizando el o los formatos más utilizados. El código y los programas deben especificar sus versiones y las versiones delas bases de datos. Deben poder usarse modularmente e interactuar con otros programas.
+**Reusable**: Los datos estén suficientemente bien caracterizados para ser reutilizados de manera efectiva en futuros análisis o para ser desafiados por nuevos métodos de evaluación. Las licencias deben ser lo menos restrictivas posible. El código debe ser abierto, estar encapsulado en repositorios o contenedores y estar documentado.
+
+
 
 #### 11 Re-analizar
 
 #### 
 
 
-
-Findable, Accessible, Interoperable, and Reusable (FAIR)
-
-([Dominguez Del Angel et al. 2018](2018  Dominguez Del Angel et al. 10 steps in genomics.pdf))
