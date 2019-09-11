@@ -371,8 +371,6 @@ Usa 2 pasos:
 Uno de entrenamiento (con cDNA de la misma sp. o cercana) y uno de predicción.
 
 ```
-export PATH=$PATH:~/augustus/bin:~/augustus/scripts
-
 export AUGUSTUS_CONFIG_PATH=/usr/local/bin/augustus
 ```
 
