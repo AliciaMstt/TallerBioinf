@@ -262,11 +262,12 @@ Podemos generar un resumen mediante la herramienta [Quast](http://quast.sourcefo
 ¿Qué son los valores N50 y L50?
 
 ¿Cuales contigs se usan?, ¿Cuales se descartan? y ¿Por qué?
+pueden crear algunos ensambles rápidos con el script bin/runVelvet.sh
 
 ```
-cd ~/TallerBioinf/Unidad3/H.hv6_toy
+cd ~/TallerBioinf/Unidad3/H.hv6_toy/bin
 
-quast.py -t 30 assem/Velvet/Hhv6_31/contigs.fa
+quast.py -o ../assem/quast_res ../assem/Velvet/Hhv6_11/contigs.fa ../assem/Velvet/Hhv6_21/contigs.fa ../assem/Velvet/Hhv6_31/contigs.fa
 ```
 
 Revizar las salidas (.txt y .html).
