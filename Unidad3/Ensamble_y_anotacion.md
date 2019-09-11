@@ -437,8 +437,11 @@ Findable, Accessible, Interoperable, and Reusable (FAIR)
 **DATOS**
 
 **Findable**: Usar identificadores únicos y persistentes a nivel mundial para los datos y metadatos. Hacer posible rastrear análisis anteriores y relacionarlos con la anotación actual. La anotación en desuso debe seguir siendo rastreable. 
+
 **Accesible**: Registro adecuado de datos y metadatos en un repositorio público o autosuficiente adecuado. Todos los datos deben ser indexados y buscables y accesibles mediante un identificador utilizando protocolos estandarizados. El código se eberá depositar en ELIXIR, GitHub o Docker.
+
 **Interoperable**: Los datos y metadatos deben depositarse utilizando el o los formatos más utilizados. El código y los programas deben especificar sus versiones y las versiones delas bases de datos. Deben poder usarse modularmente e interactuar con otros programas.
+
 **Reusable**: Los datos estén suficientemente bien caracterizados para ser reutilizados de manera efectiva en futuros análisis o para ser desafiados por nuevos métodos de evaluación. Las licencias deben ser lo menos restrictivas posible. El código debe ser abierto, estar encapsulado en repositorios o contenedores y estar documentado.
 
 
