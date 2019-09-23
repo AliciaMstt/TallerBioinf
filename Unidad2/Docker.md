@@ -207,7 +207,7 @@ $ docker stop a5864268eadd
 Si quieres que tu contenedor corra en el background desde un principio, puedes utilizar el flab `-d`.
 
 ```
-$ docker run -dit ubuntu bash
+$ docker run -dit ubuntu:14.04 bash
 e236ce647ea0c6513531f44f9880bc3b4c0005f2442dd16ca10125bd305ec31b
 $ docker ps
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                NAMES
