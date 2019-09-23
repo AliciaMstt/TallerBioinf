@@ -135,6 +135,7 @@ La calificación final del repositorio toma en cuenta:
 * L23 Septiembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
 * M25 Septiembre: Presentación/retroalimentación de problemas de estudiantes
 
+* L30 Septiembre: Presentación/retroalimentación de problemas de estudiantes
 * M2 Octubre (no se olvida): Presentación/retroalimentación de problemas de estudiantes
 * L7 Octubre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
 * M9 Octubre: Presentación/retroalimentación de problemas de estudiantes
