@@ -109,6 +109,7 @@ Loops:
 * [Loop for mutation analyses -R (Héctor)](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/9)
 * [Loop in R to rename output tables (Tonio)](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/4)
 * [Loop to change file names based on a list -bash (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/2)
+* [Table with tips of each node in a phylogenetic tree -R (Cristian](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/22)
 
 BCFtools:
 * [Convert vcf to fasta) Duhyadi](https://github.com/Duhyadi/Deleterious-alleles-in-landraces-of-maize/issues/1)
