@@ -190,7 +190,7 @@ for s in D1 D2 D3 I1 I2 I3  ;
 	cat $s\_salmon_quantification/quant.sf | cut -f 5 | grep -v N >> $s.tmp.txt ; 
 done
 
-paste ids.tmp.1 D1.tmp.txt D2.tmp.txt D3.tmp.txt I1.tmp.txt I2.tmp.txt I3.tmp.txt > salmon.matrix.txt	
+paste ids.tmp.1.txt D1.tmp.txt D2.tmp.txt D3.tmp.txt I1.tmp.txt I2.tmp.txt I3.tmp.txt > salmon.matrix.txt	
  
 ```
 
