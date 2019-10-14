@@ -54,7 +54,7 @@ Para poder cuantificarlas podemos hacer un pequeño script con cada una de las m
 touch script_quant_salmon.sh 
 echo '#!/bin/bash' > script_quant_salmon.sh 
 for s in D1 D2 D3 I1 I2 I3 ; 
-	do echo salmon quant -i transcriptome_salmon_index -l A -1 $s\_1_qual_paired_2.fastq.gz -2 $s\_2_qual_paired_2.fastq.gz -p 12 --validateMappings -o $s\_salmon_quantification ; 
+	do echo salmon quant -i transcriptome_salmon_index -l A -1 sub_$s\_1_qual_paired_2.fastq.gz -2 sub_$s\_2_qual_paired_2.fastq.gz -p 12 --validateMappings -o $s\_salmon_quantification ; 
 	done >> script_quant_salmon.sh
 
 sh script_quant_salmon.sh
