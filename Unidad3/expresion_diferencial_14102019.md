@@ -1,4 +1,5 @@
 ** Análisis de expresión diferencial**
+[Datos en Drive](https://drive.google.com/drive/folders/1YxRmVkPqvzz-9DIUWv9WjPPDbXMXgwps)
 
 Los datos provenientes se pueden obtener tras tener un armado y hacer una estimación de las veces que los transcritos se observaron en cada una de las muestras. Para esto se pueden utilizar dos métodos de estimación: 1) dependientes de alineamiento (RSEM, eXpress) y 2) independientes de alineamiento (kallisto, Salmon). 
 
