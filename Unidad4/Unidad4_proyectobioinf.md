@@ -124,3 +124,6 @@ Gráficas:
 Bajar datos:
 * [Download fastq files (sequencing reads) with SRA toolkit fastq-dump but I want to know if the process concluded correctly](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/5) (Toño)
 
+Anotación
+* [What database use to cotton genome annotation?](https://github.com/Melcatus/genomic_cotton/issues/9)(Melania)
+
