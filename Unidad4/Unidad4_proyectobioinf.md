@@ -122,3 +122,6 @@ Gráficas:
 
 
 * Veronica
+
+Descarga de Archivos:
+[I want to download fastq files (sequencing reads) with SRA toolkit fastq-dump but I want to know if the process concluded correctly.](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/5)
