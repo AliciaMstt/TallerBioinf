@@ -114,14 +114,12 @@ Loops:
 BCFtools:
 * [Convert vcf to fasta) Duhyadi](https://github.com/Duhyadi/Deleterious-alleles-in-landraces-of-maize/issues/1)
 
-Parsear archivos output:
+Parsear o sacar info de archivos output:
 * [Extract table of ipyrad stats file -bash o R (Christian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/17)
 
 Gráficas:
 * [Code color in volcano plots - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/8)
-
-
 * Veronica
 
 Descarga de Archivos:
-[I want to download fastq files (sequencing reads) with SRA toolkit fastq-dump but I want to know if the process concluded correctly.](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/5)
+[Download fastq files (sequencing reads) with SRA toolkit fastq-dump but I want to know if the process concluded correctly (Toño)](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/5)
