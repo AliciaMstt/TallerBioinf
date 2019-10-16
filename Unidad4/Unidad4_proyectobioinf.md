@@ -121,6 +121,5 @@ Gráficas:
 * [Code color in volcano plots - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/8)
 * Veronica
 
-Bajar datos:
-* [Download fastq files (sequencing reads) with SRA toolkit fastq-dump but I want to know if the process concluded correctly](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/5) (Toño)
-
+Descarga de Archivos:
+[Download fastq files (sequencing reads) with SRA toolkit fastq-dump but I want to know if the process concluded correctly (Toño)](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/5)
