@@ -11,7 +11,7 @@ Taller práctico de bioinformática Posgrado en Ciencias Biológicas UNAM
 
 [M. en C. Rodolfo Ángeles Argáiz](https://scholar.google.com/citations?user=A2ZpeC8AAAAJ&hl=es&oi=ao)
 
-Lunes y miércoles 3-6 pm. Instituto de Biología y CONABIO (salas por definir según el día).
+Lunes y miércoles 3-6 pm. CONABIO (sala por definir según el día).
 
 ## Objetivos
 
