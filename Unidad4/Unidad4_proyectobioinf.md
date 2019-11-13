@@ -131,3 +131,6 @@ Descarga de Archivos:
 Anotación
 * [What database use to cotton genome annotation?](https://github.com/Melcatus/genomic_cotton/issues/9)(Melania)
 
+Apilar archivos:
+* [Problems with the stacking of several files](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
+
