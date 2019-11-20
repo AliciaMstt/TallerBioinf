@@ -110,6 +110,7 @@ Loops:
 * [Loop in R to rename output tables (Tonio)](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/4)
 * [Loop to change file names based on a list -bash (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/2)
 * [Concatenating fastq files -bash (Rodolfo)](https://github.com/necrosnake91/Lung_cancer_transcriptome/issues/9)
+* [Loop to quantify differential expression (Vero)](https://github.com/VeroIarrachtai/Abies_religiosa_vs_ozone/issues/15)
 
 BCFtools:
 * [Convert vcf to fasta) Duhyadi](https://github.com/Duhyadi/Deleterious-alleles-in-landraces-of-maize/issues/1)
@@ -117,10 +118,12 @@ BCFtools:
 Parsear archivos output:
 * [Extract table of ipyrad stats file -bash o R (Christian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/17)
 * [Choose by gene labels](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/5) 
+* [Parsear: generate data frame from an html file (Vero)](https://github.com/VeroIarrachtai/Abies_religiosa_vs_ozone/issues/13)
 
 Gráficas:
 * [Code color in volcano plots - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/8)
 * [Plot cophylogeny (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/5)
+* [Add Greek letters in plots (Vero)](https://github.com/VeroIarrachtai/Abies_religiosa_vs_ozone/issues/14)
 
 Phylogenies:
 * [Table with tips of each node in a phylogenetic tree -R (Cristian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/22)
