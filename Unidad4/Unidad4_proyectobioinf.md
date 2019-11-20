@@ -120,6 +120,7 @@ Parsear archivos output:
 
 Gráficas:
 * [Code color in volcano plots - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/8)
+* [Using different scales in barplot simultaneously - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/10)
 * [Plot cophylogeny (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/5)
 
 Phylogenies:
@@ -131,3 +132,8 @@ Descarga de Archivos:
 Anotación
 * [What database use to cotton genome annotation?](https://github.com/Melcatus/genomic_cotton/issues/9)(Melania)
 
+Enrichment Analysis
+* [Modify stadistic parameters to implement GSEA Analysis on DESEq results (Laura)](https://github.com/LauraMCE/lncRNA_BC/issues/15)
+
+Markdown
+* [Troubles with sublisting in Markdown (Laura)](https://github.com/LauraMCE/lncRNA_BC/issues/9)
