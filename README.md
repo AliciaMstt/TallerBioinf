@@ -9,9 +9,9 @@ Taller práctico de bioinformática Posgrado en Ciencias Biológicas UNAM
 
 [Dra. Camille Truong](https://camilletruong.wixsite.com/home#!)
 
-[M. en C. Rodolfo Ángeles Argáiz](https://scholar.google.com/citations?user=A2ZpeC8AAAAJ&hl=es&oi=ao)
+Bíol. Marisol Navarro
 
-Lunes y miércoles 3-6 pm. CONABIO (sala por definir según el día).
+Martes y jueves de **8 a 11 am**. En línea.
 
 ## Objetivos
 
@@ -118,37 +118,5 @@ La calificación final del repositorio toma en cuenta:
 
 ## Calendario
 
-* L5 Agosto: Bienvenida y Unidad 1 (1.1-1.4)
-* M7 Agosto: Unidad 1 continaucion (1.5, 1.6: git y github)
-* L12 Agosto: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (basics)
-* M14 Agosto: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (loops)
-* L19 Agosto: 1/2 Unidad 2.4 (trucos en terminal y editores de texto), Clase 4.1. Planteamiento de un proyectos bioinformáticos y 4.2. Github para manejar proyectos bioinformáticos
-* M21 Agosto: Unidad 4.? Funciones de R / Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github
-* L26 Agosto: Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github
-* M28 Agosto: Clase (exposición profes) de tópico Unidad 3 (Evaluación de Calidad)
 
-* L2 Septiembre: Presentación/retroalimentación de problemas de estudiantes
-* M4 Septiembre: Clase (exposición profes) de tópico Unidad 3 (Ensamblado de genomas de novo)
-* L9 Septiembre: Presentación/retroalimentación de problemas de estudiantes
-* M11 Septiembre: Clase (exposición profes) de tópico Unidad 3 (Anotación de genomas)
-* M18 Septiembre: Presentación/retroalimentación de problemas de estudiantes
-* L23 Septiembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
-* M25 Septiembre: Presentación/retroalimentación de problemas de estudiantes
-
-* L30 Septiembre: Presentación/retroalimentación de problemas de estudiantes
-* M2 Octubre (no se olvida): Presentación/retroalimentación de problemas de estudiantes
-* L7 Octubre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
-* M9 Octubre: Presentación/retroalimentación de problemas de estudiantes
-* L14 Octubre: Seminario (estudiantes) de tópico metodológico.
-* M16 Octubre: Presentación/retroalimentación de problemas de estudiantes
-* L21 Octubre: Seminario (estudiantes) de tópico metodológico.
-* M23 Octubre: Presentación/retroalimentación de problemas de estudiantes
-* L28 Octubre: Seminario (estudiantes) de tópico metodológico.
-* M30 Octubre: Presentación/retroalimentación de problemas de estudiantes | Primera entrega de Repositorio 
-
-* L4 Noviembre: Seminario (estudiantes) de tópico metodológico.
-* M6 Noviembre: Presentación/retroalimentación de problemas de estudiantes
-* L11  Noviembre: Presentación/retroalimentación de problemas de estudiantes
-* M13  Noviembre: Presentación/retroalimentación de problemas de estudiantes
-* M20 Noviembre: Presentación/retroalimentación de problemas de estudiantes | Entrega final de Repositorio
 
