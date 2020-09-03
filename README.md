@@ -118,5 +118,35 @@ La calificación final del repositorio toma en cuenta:
 
 ## Calendario
 
-
-
+* M22 Septiembre: Bienvenida y Unidad 1 (1.1-1.4)
+* J24 Septiembre: Unidad 1 continación (1.5, 1.6: git y github)
+* M29 Septiembre: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (basics)
+* J01 Octubre: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (loops)
+* M06 Octubre: Unidad 2 (trucos en terminal y editores de texto), Unidad 4.1. Planteamiento de un proyecto bioinformático
+* J08 Octubre: Unidad 4 continuación (Github para manejar proyectos bioinformáticos)
+* M13 Octubre: 1/2 clase Unidad 2 (Funciones de R), 1/2 clase Presentación y retroalimentación de sus reposotorios y proyectos bioinformáticos en Github
+ 
+* J15 Octubre: Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github
+* M20 Octubre: Clase (exposición profes) de tópico Unidad 3 (Evaluación de Calidad)
+* J22 Octubre: Presentación/retroalimentación de problemas de estudiantes
+* M27 Octubre: Clase (exposición profes) de tópico Unidad 3 (Ensamblado de genomas de novo)
+* J29 Octubre: Presentación/retroalimentación de problemas de estudiantes
+* M03 Noviembre: Clase (exposición profes) de tópico Unidad 3 (Anotación de genomas)
+* J05 Noviembre: Presentación/retroalimentación de problemas de estudiantes
+* M10 Noviembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
+* J12 Noviembre: Presentación/retroalimentación de problemas de estudiantes
+* M17 Noviembre: Presentación/retroalimentación de problemas de estudiantes
+* J19 Noviembre: Presentación/retroalimentación de problemas de estudiantes
+* M24 Noviembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
+* J26 Noviembre: Presentación/retroalimentación de problemas de estudiantes
+* M01 Diciembre: Seminario (estudiantes) de tópico metodológico.
+* J03 Diciembre: Presentación/retroalimentación de problemas de estudiantes
+* M08 Diciembre: Seminario (estudiantes) de tópico metodológico.
+* J10 Diciembre: Presentación/retroalimentación de problemas de estudiantes
+* M05 Enero: Seminario (estudiantes) de tópico metodológico | Primera entrega de Repositorio
+* J07 Enero: Presentación/retroalimentación de problemas de estudiantes 
+* M12 Enero: Seminario (estudiantes) de tópico metodológico.
+* J14  Enero: Presentación/retroalimentación de problemas de estudiantes
+* M19  Enero: Presentación/retroalimentación de problemas de estudiantes
+* M21 Enero: Presentación/retroalimentación de problemas de estudiantes
+* M26 - J28 Enero: Preguntas y resolución de problemas | Entrega final de Repositorio
