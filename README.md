@@ -44,16 +44,22 @@ Por favor nota que este **no** es un curso introductorio a la bioinformática, p
 
 1.6.	Introducción a Github 
 
+1.7. Introducción a repli.it
+
 #### Unidad 2 Mejores prácticas al escribir y documentar scripts (horas: teóricas 2, prácticas 1)
-2.1. Working directory y rutas relativas
+2.1. Principios de diseño de software (SOLID, DRY, KISS, POLA, YAGNI, POLP)
 
-2.2. Uso de variables 
+2.2. Principios de Agile Project management
 
-2.3. Cuando sí, cuando no y cómo usar for loops
+2.3. Working directory y rutas relativas
 
-2.4. Trucos en la terminal y el editor de texto
+2.4. Uso de variables 
 
-2.5. Recomendaciones misceláneas 
+2.5. Cuando sí, cuando no y cómo usar for loops
+
+2.6. Trucos en la terminal y el editor de texto
+
+2.7. Recomendaciones misceláneas 
 
 #### Unidad 3 Discusión de métodos bioinformáticos aplicados a distintos tipos de datos (horas: teóricas 8, prácticas 8)
 3.1. Evaluación de la calidad, limpieza de datos y demultiplexeo
@@ -119,13 +125,12 @@ La calificación final del repositorio toma en cuenta:
 ## Calendario
 
 * M22 Septiembre: Bienvenida y Unidad 1 (1.1-1.4)
-* J24 Septiembre: Unidad 1 continación (1.5, 1.6: git y github)
+* J24 Septiembre: Unidad 1 continuación (1.5, 1.6: git y github)
 * M29 Septiembre: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (basics)
 * J01 Octubre: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (loops)
 * M06 Octubre: Unidad 2 (trucos en terminal y editores de texto), Unidad 4.1. Planteamiento de un proyecto bioinformático
 * J08 Octubre: Unidad 4 continuación (Github para manejar proyectos bioinformáticos)
 * M13 Octubre: 1/2 clase Unidad 2 (Funciones de R), 1/2 clase Presentación y retroalimentación de sus reposotorios y proyectos bioinformáticos en Github
- 
 * J15 Octubre: Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github
 * M20 Octubre: Clase (exposición profes) de tópico Unidad 3 (Evaluación de Calidad)
 * J22 Octubre: Presentación/retroalimentación de problemas de estudiantes
