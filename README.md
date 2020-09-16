@@ -42,40 +42,36 @@ Por favor nota que este **no** es un curso introductorio a la bioinformática, p
 
 1.6.	Introducción a Github 
 
-1.7. Introducción a repli.it
+1.7.  Introducción a repli.it
 
 #### Unidad 2 Mejores prácticas al escribir y documentar scripts (horas: teóricas 2, prácticas 1)
 2.1. Principios de diseño de software (SOLID, DRY, KISS, POLA, YAGNI, POLP)
 
-2.2. Principios de Agile Project management
+2.2. Working directory y rutas relativas
 
-2.3. Working directory y rutas relativas
+2.3. Uso de variables 
 
-2.4. Uso de variables 
+2.4. Cuando sí, cuando no y cómo usar for loops
 
-2.5. Cuando sí, cuando no y cómo usar for loops
+2.5. Trucos en la terminal y el editor de texto
 
-2.6. Trucos en la terminal y el editor de texto
-
-2.7. Recomendaciones misceláneas 
+2.6. Funciones en R
 
 #### Unidad 3 Discusión de métodos bioinformáticos aplicados a distintos tipos de datos (horas: teóricas 8, prácticas 8)
-3.1. Evaluación de la calidad, limpieza de datos y demultiplexeo
 
-3.2. Secuenciación reducida de genomas (eg. RAD, GBS)
+3.1. Docker 
 
-3.3. Genomas completos
-
-3.4. Metabarcoding
-
-3.5. Transcriptomas
+3.2. Seminarios temááticos que se decidierán con base en los proyectos de lxs estudiantes.
 
 #### Unidad 4 Revisión colaborativa de código bioinformático (horas: teóricas 2, prácticas 40)
-4.1. Planteamiento de un proyectos bioinformáticos
 
-4.2. Github para manejar proyectos bioinformáticos
+4.1. Principios de Agile Project management
 
-4.3. Revisión colaborativa de análisis bioinformáticos de los proyectos de los y las estudiantes
+4.2. Planteamiento de un proyectos bioinformáticos
+
+4.3. Github para manejar proyectos bioinformáticos
+
+4.4. Revisión colaborativa de análisis bioinformáticos de los proyectos de los y las estudiantes
 
 
 ## Dinámica de clase y evaluación
@@ -118,37 +114,35 @@ La calificación final del repositorio toma en cuenta:
 * 15% Avances, organización y respuesta a comentarios en el proyecto de Github **en inglés**
 
 
-
-
 ## Calendario
 
 * M22 Septiembre: Bienvenida y Unidad 1 (1.1-1.4)
 * J24 Septiembre: Unidad 1 continuación (1.5, 1.6: git y github)
-* M29 Septiembre: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (basics)
-* J01 Octubre: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (loops)
-* M06 Octubre: Unidad 2 (trucos en terminal y editores de texto), Unidad 4.1. Planteamiento de un proyecto bioinformático
-* J08 Octubre: Unidad 4 continuación (Github para manejar proyectos bioinformáticos)
-* M13 Octubre: 1/2 clase Unidad 2 (Funciones de R), 1/2 clase Presentación y retroalimentación de sus reposotorios y proyectos bioinformáticos en Github
-* J15 Octubre: Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github
-* M20 Octubre: Clase (exposición profes) de tópico Unidad 3 (Evaluación de Calidad)
-* J22 Octubre: Presentación/retroalimentación de problemas de estudiantes
-* M27 Octubre: Clase (exposición profes) de tópico Unidad 3 (Ensamblado de genomas de novo)
-* J29 Octubre: Presentación/retroalimentación de problemas de estudiantes
-* M03 Noviembre: Clase (exposición profes) de tópico Unidad 3 (Anotación de genomas)
-* J05 Noviembre: Presentación/retroalimentación de problemas de estudiantes
-* M10 Noviembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
-* J12 Noviembre: Presentación/retroalimentación de problemas de estudiantes
+* M29 Septiembre: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 1.7 (repl.it)
+* J01 Octubre: 1/2 clase presentación lighting talk proyectos, 1/2 clase Unidad 2 (2.1-2.2)
+* M06 Octubre: Unidad 2.3-2.5 (variables, loops y otros trucos en terminal)
+* J08 Octubre: Unidad 4.1-4.3
+* M13 Octubre: Unidad 2.6 (Funciones de R), 
+* J15 Octubre: Presentación y retroalimentación de sus reposotorios y proyectos bioinformáticos en Github y pruebas de repli.it con sus propios repos (4 estudiantes)
+* M20 Octubre: Presentación y retroalimentación de sus Reposotorios y Proyectos Bioinformáticos en Github (8 estudiantes)
+* J22 Octubre: Clase (exposición profes) de tópico Unidad 3 (Docker)
+* M27 Octubre: Presentación/retroalimentación de problemas de estudiantes
+* J29 Octubre: Seminario (estudiantes) de tópico metodológico.
+* M03 Noviembre: Presentación/retroalimentación de problemas de estudiantes
+* J05 Noviembre: Seminario (estudiantes) de tópico metodológico.
+* M10 Noviembre: Presentación/retroalimentación de problemas de estudiantes
+* J12 Noviembre: Seminario (estudiantes) de tópico metodológico.
 * M17 Noviembre: Presentación/retroalimentación de problemas de estudiantes
-* J19 Noviembre: Presentación/retroalimentación de problemas de estudiantes
-* M24 Noviembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
-* J26 Noviembre: Presentación/retroalimentación de problemas de estudiantes
-* M01 Diciembre: Seminario (estudiantes) de tópico metodológico.
-* J03 Diciembre: Presentación/retroalimentación de problemas de estudiantes
-* M08 Diciembre: Seminario (estudiantes) de tópico metodológico.
-* J10 Diciembre: Presentación/retroalimentación de problemas de estudiantes
-* M05 Enero: Seminario (estudiantes) de tópico metodológico | Primera entrega de Repositorio
+* J19 Noviembre: Clase (exposición profes) de tópico Unidad 3 (Anotación de genomas)
+* M24 Noviembre: Presentación/retroalimentación de problemas de estudiantes
+* J26 Noviembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
+* M01 Diciembre: Presentación/retroalimentación de problemas de estudiantes
+* J03 Diciembre: Clase (exposición profes) de tópico Unidad 3 (por elegir)
+* M08 Diciembre: Presentación/retroalimentación de problemas de estudiantes
+* J10 Diciembre: Recapitulacion issues resueltos y pendientes de todo el grupo.
+* M05 Enero: Presentación y **primera entrega de Repositorios** (12 estudiantes)
 * J07 Enero: Presentación/retroalimentación de problemas de estudiantes 
-* M12 Enero: Seminario (estudiantes) de tópico metodológico.
+* M12 Enero: Presentación/retroalimentación de problemas de estudiantes 
 * J14  Enero: Presentación/retroalimentación de problemas de estudiantes
 * M19  Enero: Presentación/retroalimentación de problemas de estudiantes
 * M21 Enero: Presentación/retroalimentación de problemas de estudiantes
