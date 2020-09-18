@@ -42,7 +42,7 @@ Por favor nota que este **no** es un curso introductorio a la bioinformática, p
 
 1.6.	Introducción a Github
 
-1.7.    Introducción a repli.it
+1.7.  Introducción a repl.it
 
 #### Unidad 2 Mejores prácticas al escribir y documentar scripts (horas: teóricas 2, prácticas 1)
 2.1. Principios de diseño de software (SOLID, DRY, KISS, POLA, YAGNI, POLP)
@@ -101,7 +101,7 @@ return
 
 * 10% **Seminario de tópico metodológico.** Preparación, exposición y discusión de tópicos metodológicos. La exposición del seminario debe ser en inglés.
 
-* 20% **Evaluación final del repositorio** Dos fechas de revisión: 30 de octubre (se hacen comentarios) y 20 de noviembre (entrega final con comentarios resueltos).
+* 20% **Evaluación final del repositorio** Dos fechas de revisión: 05 enero (se hacen comentarios) y 28 de enero (entrega final con comentarios resueltos).
 
 La calificación final del repositorio toma en cuenta:
 
@@ -147,4 +147,4 @@ Martes 12 | Enero | Presentación/retroalimentación de problemas de estudiantes
 Jueves 14 | Enero | Presentación/retroalimentación de problemas de estudiantes
 Martes 19 | Enero | Presentación/retroalimentación de problemas de estudiantes
 Martes 21 | Enero | Presentación/retroalimentación de problemas de estudiantes
-Martes 26 - Jueves 28 | Enero | Preguntas y resolución de problemas | **Entrega final de Repositorio**
+Martes 26 - Jueves 28 | Enero | Preguntas y resolución de problemas y **Entrega final de Repositorio** | 
