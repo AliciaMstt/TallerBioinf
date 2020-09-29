@@ -795,7 +795,7 @@ Cuando estés listx para que los cambios que hicieron colaborativamente se **sin
 
 Esto enviará los cambios hechos en tu repl al repo de GitHub, de forma similar a cuando hacemos cambios en nuestra versión local de un script en nuestra computadora y lo enviamos a github con `git commit` y `git push`. Observaciones importantes:
 
-a) Aunque cualquier persona a la que le diste el link puede editar el repl, **sólo tu puedes hacer el commit y push a GitHub** (o a quien le des permisos de colaborador en tu repo de GitHub).
+a) **Cualquier persona a la que le diste el link con el botón Share puede editar el repl**. Por lo tanto durante la clase, es buena idea **crear una rama y trabajar en ella** para poder revisar los cambios con tiempo después y decidir si hacer el merge.
 
 b) Si haces cambios a tu repo de GitHub desde otro lugar diferente a repl (GitHub, tu compu local, el cluster, etc) deberás **sincronizar tu repl con GitHub dando click en el botón `Pull`**:
 
