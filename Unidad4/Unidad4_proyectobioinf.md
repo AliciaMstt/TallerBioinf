@@ -131,10 +131,14 @@ Descarga de Archivos:
 Anotación
 * [What database use to cotton genome annotation?](https://github.com/Melcatus/genomic_cotton/issues/9)(Melania)
 
+
 Sotware en general:
-*[I need helping to install some dependencies in perl to run vcf2maf.pl](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/10)
+* [I need helping to install some dependencies in perl to run vcf2maf.pl](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/10)
+* [Problems with the stacking of several files](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
+
 
 Differential Expression Analysis 
 * [Define contrasts for DE](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/6) 
+
 
 
