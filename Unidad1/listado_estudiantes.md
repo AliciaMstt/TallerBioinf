@@ -4,11 +4,11 @@ Profesorxs:
 
 Alicia Mastretta - AliciaMstt
 Camille Truong – camillethuyentruong
-Rodolfo Ángles - Rodolfo47
+Sol Navarro - solouli
 
 
 
-Estudiantes:
+Estudiantes 2019:
 1. Rafael Cristian Cervantes Salcedo - cristoichkov - [https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm)
 2. Héctor Martínez Gregorio - github: Martinez-Gregorio-Hector - [https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES)
 3. Rodolfo Luis Chávez Domínguez - necrosnake91 [https://github.com/necrosnake91/Lung_cancer_transcriptome.git](https://github.com/necrosnake91/Lung_cancer_transcriptome.git)

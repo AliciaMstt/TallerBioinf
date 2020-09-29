@@ -110,6 +110,7 @@ Loops:
 * [Loop in R to rename output tables (Tonio)](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/4)
 * [Loop to change file names based on a list -bash (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/2)
 * [Concatenating fastq files -bash (Rodolfo)](https://github.com/necrosnake91/Lung_cancer_transcriptome/issues/9)
+* [Stacking of several files -bash (Héctor)](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
 
 BCFtools:
 * [Convert vcf to fasta) Duhyadi](https://github.com/Duhyadi/Deleterious-alleles-in-landraces-of-maize/issues/1)
@@ -137,3 +138,11 @@ Enrichment Analysis
 
 Markdown
 * [Troubles with sublisting in Markdown (Laura)](https://github.com/LauraMCE/lncRNA_BC/issues/9)
+
+Sotware en general:
+* [I need helping to install some dependencies in perl to run vcf2maf.pl](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/10)
+* [Problems with the stacking of several files](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
+
+
+Differential Expression Analysis 
+* [Define contrasts for DE](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/6) 
