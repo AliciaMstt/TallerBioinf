@@ -131,3 +131,6 @@ Descarga de Archivos:
 Anotación
 * [What database use to cotton genome annotation?](https://github.com/Melcatus/genomic_cotton/issues/9)(Melania)
 
+Differential Expression Analysis 
+* [Define contrasts for DE](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/6) 
+
