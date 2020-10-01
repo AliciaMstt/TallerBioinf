@@ -124,8 +124,8 @@ Jueves 01 | Octubre | 1/2 clase presentación lighting talk proyectos, 1/2 clase
 Martes 06 | Octubre | Unidad 2.3-2.5 (variables, loops y otros trucos en terminal)
 Jueves 08 | Octubre | Unidad 4.1-4.3
 Martes 13 | Octubre | Unidad 2.6 (Funciones de R)
-Jueves 15 | Octubre | Presentación y retroalimentación de sus Repositorios y Proyectos Bioinformáticos en Github y pruebas de repli.it con sus propios repositorios (4 estudiantes)
-Martes 20 | Octubre | Presentación y retroalimentación de sus Repositorios y Proyectos Bioinformáticos en Github (8 estudiantes)
+Jueves 15 | Octubre | Presentación y retroalimentación de sus Repositorios y Proyectos Bioinformáticos en Github y pruebas de repli.it con sus propios repositorios (6 estudiantes)
+Martes 20 | Octubre | Presentación y retroalimentación de sus Repositorios y Proyectos Bioinformáticos en Github y pruebas de repli.it con sus propios repositorios (6 estudiantes)
 Jueves 22 | Octubre | Clase (exposición profes) de tópico Unidad 3 (Docker)
 Martes 27 | Octubre | Presentación/retroalimentación de problemas de estudiantes
 Jueves 29 | Octubre | Seminario (estudiantes) de tópico metodológico.
