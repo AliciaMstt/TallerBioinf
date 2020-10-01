@@ -1,6 +1,34 @@
 # Unidad 2: Mejores prácticas al escribir y documentar scripts
 
-## 2.1. Working directory y rutas relativas
+## 2.1. Principios de diseño de software 
+
+### DRY
+Dont Repeat Yourself. Las violaciones de DRY se conocen como WET: "write every time", "waste everyones time", "we enjoy typing". 
+[Referencia](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+
+### KISS
+Keep It Simple Stupid. 
+[Referencia](https://en.wikipedia.org/wiki/KISS_principle)
+
+### YAGNI
+You Aren't Gonna Need It. 
+[Referencia](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
+
+### POLA
+Principle of Least Astonishment. 
+[Referencia](https://en.wikipedia.org/wiki/Principle_of_least_astonishment)
+
+### POLP
+Principle of Least Privilege. 
+[Referencia](https://digitalguardian.com/blog/what-principle-least-privilege-polp-best-practice-information-security-and-compliance)
+
+### SOLID
+Single responsibility, Open-closed, Liskov substitution, Interface segregation and Dependency inversion. 
+[Referencia](https://team-coder.com/solid-principles/).
+
+A lo largo del taller, especialmente durante la retroalimentación de sus scripts, buscaremos ejemplos de cada uno de estos principios y los pondremos en esta parte del repositorio.
+
+## 2.2. Working directory y rutas relativas
 
 El workingdirectory de un script siempre es el directorio donde está guardado dicho script. Entonces, es importante que si tu script va a manejar directorios (`cd` a algún lugar) lo planees con **rutas relativas** empezando en el directorio donde guardarás el script.
 
@@ -101,7 +129,7 @@ fi
 
 
 
-## 2.2. Uso de variables
+## 2.3. Uso de variables
 
 ### Definir variables
 
@@ -207,7 +235,7 @@ grep -h CV outs_path/${taxa}/log*.out >  outs_path/${taxa}/Kerror_${taxa}.txt
 
 
 
-## 2.3. For loops
+## 2.4. For loops
 
 Los *for loops* permiten **repetir** una serie de comandos con diferentes *variables de una lista*.
 
@@ -337,7 +365,7 @@ $ for i in $(cat muestras.txt); do echo Hacer algo con la muestra $i; done
 ```
 
 
-## 2.4. Trucos en la terminal y el editor de texto
+## 2.5. Trucos en la terminal y el editor de texto
 
 #### `cat`
 
@@ -411,7 +439,7 @@ $sed 's/unix/linux/g' geekfile.txt > moregeekfile.txt
 `awk` es un lenguaje diseñado para la extracción de datos. A menudo se usa con `sed` para realizar tareas útiles y prácticas de manipulación de texto. Al igual que `sed`, `awk` lee una línea a la vez, realiza alguna acción dependiendo de la condición que le dé y genera el resultado. Entre otros, uno de los usos más populares de `awk` es para [seleccionar columnas de un archivo de texto](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/)
 
 
-## 2.5. Recomendaciones misceláneas
+## 2.6. Recomendaciones misceláneas
 
 `~` es una especie de ruta corta a la ruta absoluta de tu directorio home. No importa dónde estés `cd ~` te llevará a home.
 
@@ -459,7 +487,7 @@ Algunas de estas recomendaciones las tomé de [aquí](https://www.codingdojo.com
 
 
 
-## 2.6. Unos jueguitos
+### Unos jueguitos
 
 Dejando a un lado el `code`, no es mala idea ejercitar también la lógica de la programación.
 
@@ -470,7 +498,7 @@ Ejercicio:
 En clase, completemos los primeros 8 niveles del MAZE. O si pueden los 10, si no luego.
 
 
-## 2.7. Funciones en R
+## 2.8. Funciones en R
 
 Una función es un conjunto de instrucciones organizadas para complir con una tarea específica. En R una función es un **objeto** compuesto por las siguientes partes:
 
