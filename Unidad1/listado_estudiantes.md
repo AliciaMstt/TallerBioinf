@@ -23,3 +23,15 @@ Estudiantes 2019:
 
 
 Estudiantes 2020:
+1.
+2.
+3.
+4. 
+5. 
+6.
+7.
+8. Nelly Jazmín Pacheco Cruz - NellyJazminPC - [*Qmacdougallii*_genomics_and_environment](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment)
+9.
+10.
+11.
+12.
