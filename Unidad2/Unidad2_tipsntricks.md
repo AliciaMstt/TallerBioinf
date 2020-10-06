@@ -452,7 +452,7 @@ Algunas de estas recomendaciones las tomé de [aquí](https://www.codingdojo.com
 
 
 
-### 2.7 Unos jueguitos
+### Unos jueguitos
 
 Dejando a un lado el `code`, no es mala idea ejercitar también la lógica de la programación.
 
@@ -463,7 +463,7 @@ Ejercicio:
 En clase, completemos los primeros 8 niveles del MAZE. O si pueden los 10, si no luego.
 
 
-## 2.8. Funciones en R
+## 2.7 Funciones en R
 
 Una función es un conjunto de instrucciones organizadas para complir con una tarea específica. En R una función es un **objeto** compuesto por las siguientes partes:
 
