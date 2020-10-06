@@ -49,12 +49,6 @@ Alicias-MacBook-Pro:Prac_Uni1 ticatla$
 
 Ejemplo de ruta relativa:
 
-```
-Alicias-MacBook-Pro:Desktop ticatla$ cd Taller/Unidad1/
-```
-
-En la organización de tu proyecto tendrás los scripts guardados en un directorio determinado, y los datos en otro. Entonces para leer/escribir datos se recomienda utilizar `../` en combinación con una ruta relativa. Ejemplo:
-
 Imaginemos que tienes un proyecto estructurado en 2 directorios así:
 
 ```
@@ -68,18 +62,18 @@ Entonces un script de R guardado en el directorio scripts podría leer el archiv
 read.csv(file="../data/misdatos.csv")
 ```
 
-Asumiendo que `scripts` sea el WD del script.
+Asumiendo que `scripts` sea el working directory del script.
 
 
 Esto importa porque **utilizar  rutas relativas permite que los scripts puedan correr en cualquier equipo sin necesidad de hacer cambios**
 
 
 
-### Alternativa: ejecutar un script desde cualquier workingdirectory usando el PATH
+### Alternativa (por ejemplo para la instalación de programas y dependencias): ejecutar un script desde cualquier workingdirectory usando el PATH
 
 El PATH es una lista de directorios donde la computadora busca para encontrar el script solicitado. Es una **variable global** que contiene una cadena de diferentes rutas separadas por ':'
 
-Cuando escribes el nombre de un script sin utilizar una ruta absoluta o relativa, la computadora usa esa variable para buscarlo, comenzando con el primer directorio de la lista. Eso significa que los directorios que aparecen primero en el PATH tienen prioridad sobre los que aparecen más adelante.
+Cuando escribes el nombre de un script sin utilizar una ruta absoluta o relativa, la computadora usa esa variable para buscar el scripts en los directorios indicados, comenzando con el primer directorio de la lista. Eso significa que los directorios que aparecen primero en el PATH tienen prioridad sobre los que aparecen más adelante.
 
 ```
 $echo $PATH # ver cual es el PATH de tu computadora (o sesión)
@@ -87,40 +81,26 @@ $echo $PATH # ver cual es el PATH de tu computadora (o sesión)
 
 ### ¿Como cambiar el PATH de manera permanente?
 
-Dando que PATH es una variable, si has hecho modificaciones usando el terminal, no se van a guardar cuando abres una nueva sesión/ventana en el Terminal. Modificaciones al PATH de manera permanente se hacen por el medio de dos ejecutivos que se pueden modificar usando:
+Tenes dos opciones:
+
+1. Poner el script en un directorio que ya existe por default en la variable PATH, por ejemplo
 
 ```
-$open -a TextWrangler .bash_profile  ### login shells
-$open -a TextWrangler .bashrc  ### non-login shells
+sudo mv hello /usr/local/bin
 ```
 
-Si esos archivos no existen en la configuración de su maquina, se pueden crear usando:
+2. Añadir el directorio donde está el script la variable PATH
 
 ```
-$ cd ~/   ## to go to your home folder
-$ touch .bash_profile   ## to create your new file
-$ $open -a TextWrangler .bash_profile   ## edit .bash_profile (or with your favorite editor)
-$ . .bash_profile   ## to reload .bash_profile and update any functions you have added. Notice the space between the two dots!
+export PATH=$PATH:/home/camille/bin
 ```
 
-### ¿Cual es la diferencia entre un login y un non-login shell?
-
-Cuando inicias una sesión (nombre de usuario y contraseña), ya sea en la computadora o de forma remota a través de 'ssh', .bash_profile se ejecuta para configurar su shell. Pero, si ya has iniciado una sesión en la computadora y abres una nueva ventana de terminal, entonces .bashrc se ejecuta.
-
-Digamos que si quieres imprimir información de diagnóstico sobre tu máquina cada vez que inicias una sesión (uso de memoria, usuarios actuales, etc), vas a colocar esto en tu .bash_profile. Si lo colocas en tu .bashrc, lo verás cada vez que abras una nueva ventana del terminal.
-
-Mac OS X es una excepción: La Terminal de Mac OS X ejecuta un login shell para cada nueva ventana de terminal, llamando a **.bash_profile** en lugar de .bashrc.
-
-### Recomendación
-
-La mayoría del tiempo, quieres que modificaciones al PATH se apliquen a ambos login y non-login shells, y no es deseable mantener dos archivos de configuración separados. Si es el caso (y solamente si esos dos archivos existen en su computadora), eso se puede solucionar llamando a .bashrc adentro del archivo .bash_profile, luego colocando **toda la configuración** del PATH en .bashrc
-
-Para hacer esto, agregue las siguientes líneas a .bash_profile:
+Dando que PATH es una variable, si haces modificaciones usando el terminal, no se van a guardar cuando abres una nueva sesión en el Terminal. Modificaciones al PATH de manera permanente se hacen por el medio de un archivo de configuración (texto plano) llamado .bash_profile
 
 ```
-si [-f ~ / .bashrc]; entonces
-   fuente ~ / .bashrc
-fi
+$ cd ~/   ## go to your home folder
+$ nano .bash_profile   ## edit .bash_profile (or with your favorite editor)
+$ source ~/.bash_profile   ## to reload .bash_profile and update any functions you have added. Notice the space between the two dots!
 ```
 
 ### Ejercicio
