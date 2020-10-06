@@ -28,3 +28,4 @@ Estudiantes 2019:
 Estudiantes 2020:
 
 Valeria Stephany Flores Almaraz - (https://github.com/valeriafloral/Abies_fungal_endophytes)
+Isaura Rosas Reinhold - IsauraRReinhold - [https://github.com/IsauraRReinhold/Disocactus_transcriptome](https://github.com/IsauraRReinhold/Disocactus_transcriptome)
