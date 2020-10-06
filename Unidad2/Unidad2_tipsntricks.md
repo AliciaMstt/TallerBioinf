@@ -92,7 +92,7 @@ sudo mv hello /usr/local/bin
 2. Añadir el directorio donde está el script la variable PATH
 
 ```
-export PATH=$PATH:/home/camille/bin
+export PATH=$PATH:/home/Camille/bin
 ```
 
 Dando que PATH es una variable, si haces modificaciones usando el terminal, no se van a guardar cuando abres una nueva sesión en el Terminal. Modificaciones al PATH de manera permanente se hacen por el medio de un archivo de configuración (texto plano) llamado .bash_profile
@@ -284,14 +284,6 @@ done
 
 Lo cual hará 100 directorios (llamados directorio1, directorio2 y así) con un archivo de texto (llamados texto1, texto2,...) adentro. Si lo quieres repetir se usa el comando **-p** para sobre-escribir el contenido de cada directorio (a usar con cuidado!)
 
-```
-for i in {1..100}; do
-mkdir -p directorio$i;
-cd directorio$i;
-touch texto${i}.txt;
-cd ../;
-done
-```
 
 
 ### Crear arrays y utilizarlos como una lista en un loop
@@ -337,7 +329,7 @@ Un arreglo también puede ser el resultado de un comando, por ejemplo de `grep`,
 
 **Leyendo desde un archivo**
 
-Los arrays tienen sus problemas cuando son muy grandes y  es fácil cometer errores porque nunca "los vemos", por lo tanto mucha gente prefiere mejor leer los elemntos directo de un archivo. Ejemplo:
+Los arrays tienen sus problemas cuando son muy grandes y  es fácil cometer errores porque nunca "los vemos", por lo tanto mucha gente prefiere mejor leer los elementos directo de un archivo. Ejemplo:
 
 ```
 $ grep -oE "\w+_[0-9]*" nuevos_final.fam > muestras.txt
@@ -359,6 +351,7 @@ Ejemplo: usando `cat`, crea un archivo en tu repo de chocolate llamado 'felines.
 Ejemplo: Usa `grep` y "." para encontrar todas las palabras de 5 caracteres que empiezan con "c" y acaban con "h" - muy bueno para hacer cruzigramas!
 
 ```
+$cat /usr/share/dict/words
 $grep '\<c...h\>' /usr/share/dict/words
 ```
 
@@ -410,14 +403,6 @@ $sed 's/unix/linux/g' geekfile.txt > moregeekfile.txt
 [Mas ejemplos](https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/)
 
 
-#### `awk`
-
-`awk` es más que un comando, es un lenguaje de programación. Se puede escribir scripts `awk` para operaciones complejas o usar `awk` desde la línea de comandos. El nombre significa 'Aho, Weinberger y Kernighan', los autores del lenguaje.
-
-¿Qué es lo que hace awk?
-
-`awk` es un lenguaje diseñado para la extracción de datos. A menudo se usa con `sed` para realizar tareas útiles y prácticas de manipulación de texto. Al igual que `sed`, `awk` lee una línea a la vez, realiza alguna acción dependiendo de la condición que le dé y genera el resultado. Entre otros, uno de los usos más populares de `awk` es para [seleccionar columnas de un archivo de texto](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/)
-
 
 ## 2.6. Recomendaciones misceláneas
 
@@ -467,7 +452,7 @@ Algunas de estas recomendaciones las tomé de [aquí](https://www.codingdojo.com
 
 
 
-### Unos jueguitos
+### 2.7 Unos jueguitos
 
 Dejando a un lado el `code`, no es mala idea ejercitar también la lógica de la programación.
 
