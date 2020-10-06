@@ -757,6 +757,50 @@ Lo primero que hay que hacer es este tutorial: [Hello-world Github Guide](https:
 5. Lee la [documentación de `pull request` en Github](https://help.github.com/en/articles/about-pull-requests). Con base en esto, modifica el archivo `/Unidad1/listado_estudiantes.txt` del repositorio del curso para agregar tu nombre y nombre de usuario de github a la lista. Posteriormente has un `pull request` para que nosotros lo veamos y aceptemos en el repositorio.  
 
 
+## Introducción a repl.it
+
+[repl.it/](https://repl.it/) es una herramienta que nos permite editar archivos de texto de un repositorio de Github **de forma dinámica en tiempo real con varias personas editando al mismo tiempo**. Puedes imaginarlo como un documento en google drive donde puedes ver a tus colegas escribir al mismo tiempo que tú.
+
+(en esta parte de la clase en vivo les daré un link para que entremos a un repl de chocolate, no pongo el link pues es público y es mala idea compartirlo al internet mundial).
+
+Utilizaremos repl.it durante la solución de problemas bioinformáticos en equipo pues nos ayudará a hacer los cambios al código de nuestrxs colegas de forma más dinámica en la modalidad online.
 
 
+### Hacer y compartir un repositorio repl
 
+1. Entrar a repl.it y hacer log in con tu cuenta.
+
+2. Dar click en **New repl**, luego **Import from Github** y seleccionar de la lista de nuestros repositorios de GitHub el repo que queremos *replizar* (se vale inventar palabras en la vida, no se limiten).
+
+![](repl1.png)
+
+3. ¡Listo! ya tienes un repl.it asociado a tu reposotiro de github. Te va a preguntar en qué lenguaje está. Al menos que sea un reposotirio 100% escrito en R o python, te recomendamos que **dejes el default que es bash**
+
+4. Para compartir da click en **Share** y posteriormente agrega los nombres de usuarix de las personas con quien lo compartirás, o más fácil: copia y comparte el link que viene abajo. **OJO: con este link cualquier persona podrá entrar y hacer cambios en tu repl, así que comparterlo con prudencia**.
+
+![](repl2.png)
+
+5. ¡Colabora!
+
+
+### Sincronizar los cambios de un repl.it con tu repositorio de GitHub
+
+Cuando estés listx para que los cambios que hicieron colaborativamente se **sincronicen con tu repositorio de GitHub**: 
+
+1. Ve al ícono de versión de controles
+2. Escribe un mensaje para el commit
+3. Da click en el botón "Commit & push"
+
+![](repl3.png)
+
+Esto enviará los cambios hechos en tu repl al repo de GitHub, de forma similar a cuando hacemos cambios en nuestra versión local de un script en nuestra computadora y lo enviamos a github con `git commit` y `git push`. Observaciones importantes:
+
+a) **Cualquier persona a la que le diste el link con el botón Share puede editar el repl**. Por lo tanto durante la clase, es buena idea **crear una rama y trabajar en ella** para poder revisar los cambios con tiempo después y decidir si hacer el merge.
+
+b) Si haces cambios a tu repo de GitHub desde otro lugar diferente a repl (GitHub, tu compu local, el cluster, etc) deberás **sincronizar tu repl con GitHub dando click en el botón `Pull`**:
+
+![](repl4.png)
+
+Lo cual incorporará los cambios a tu repl:
+
+![](repl5.png)
