@@ -28,5 +28,5 @@ Estudiantes 2019:
 Estudiantes 2020:
 
 Valeria Stephany Flores Almaraz - (https://github.com/valeriafloral/Abies_fungal_endophytes)
-2. Verónica Lizbeth González Valdez - VeronicaGlez - (https://github.com/VeronicaGlez/Red_warbler)
-(https://github.com/VeronicaGlez/Red_warbler.git)
+
+2. Verónica Lizbeth González Valdez - VeronicaGlez - [https://github.com/VeronicaGlez/Red_warbler](https://github.com/VeronicaGlez/Red_warbler.git)
