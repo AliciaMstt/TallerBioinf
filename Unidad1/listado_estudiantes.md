@@ -22,9 +22,4 @@ Estudiantes 2019:
 
 
 
-
-
-
 Estudiantes 2020:
-
-Valeria Stephany Flores Almaraz - (https://github.com/valeriafloral/Abies_fungal_endophytes)
