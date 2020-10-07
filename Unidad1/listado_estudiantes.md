@@ -1,3 +1,4 @@
+
 Nombre - cuenta de github
 
 Profesorxs:
@@ -21,12 +22,14 @@ Estudiantes 2019:
 10. José Antonio Urbán Aragon - tono2204 [https://github.com/tono2204/Mezcal_Yeast_Populations](https://github.com/tono2204/Mezcal_Yeast_Populations)
 
 
-
-
-
-
 Estudiantes 2020:
 
-Valeria Stephany Flores Almaraz - (https://github.com/valeriafloral/Abies_fungal_endophytes)
 
-Brett Butler - redgcko7 [https://github.com/redgcko7/Coleonyx_elegans_popgen](https://github.com/redgcko7/Coleonyx_elegans_popgen)
+1. Abelardo Aguilar Cámara - abelardoacm - [https://github.com/abelardoacm/ssDNA_viral_pangenomics.git](https://github.com/abelardoacm/ssDNA_viral_pangenomics.git)
+2. Valeria Stephany Flores Almaraz - [https://github.com/valeriafloral/Abies_fungal_endophytes](https://github.com/valeriafloral/Abies_fungal_endophytes)
+3. Alexander Llanes Quvedo - AlexLlanesQuevedo - [https://github.com/AlexLlanesQuevedo](https://github.com/AlexLlanesQuevedo)
+4. Nelly Jazmín Pacheco Cruz - NellyJazminPC - [*Qmacdougallii*_genomics_and_environment](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment)
+5. Ana Isabel Bermudez Contreras - bc-anaisabel- [https://github.com/bc-anaisabel/amptk_pipeline](https://github.com/bc-anaisabel/amptk_pipeline)
+6. Brett Butler - redgcko7 [https://github.com/redgcko7/Coleonyx_elegans_popgen](https://github.com/redgcko7/Coleonyx_elegans_popgen)
+
+
