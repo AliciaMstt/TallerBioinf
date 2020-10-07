@@ -22,7 +22,9 @@ Estudiantes 2019:
 
 
 Estudiantes 2020:
+
 1. Abelardo Aguilar Cámara - abelardoacm - [https://github.com/abelardoacm/ssDNA_viral_pangenomics.git]
 2. Valeria Stephany Flores Almaraz - (https://github.com/valeriafloral/Abies_fungal_endophytes
 3. Alexander Llanes Quvedo - AlexLlanesQuevedo - https://github.com/AlexLlanesQuevedo
+4. Nelly Jazmín Pacheco Cruz - NellyJazminPC - [*Qmacdougallii*_genomics_and_environment](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment)
 
