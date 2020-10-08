@@ -65,11 +65,12 @@ Por favor nota que este **no** es un curso introductorio a la bioinformática, p
 
 #### Unidad 4 Revisión colaborativa de código bioinformático (horas: teóricas 2, prácticas 40)
 
-4.1. Principios de Agile Project management
 
-4.2. Planteamiento de un proyectos bioinformáticos
+4.1. Organización de proyectos bioinformáticos en un repositorio
 
-4.3. Github para manejar proyectos bioinformáticos
+4.2. Github para manejar proyectos bioinformáticos
+
+4.3. Principios de Agile Project Management
 
 4.4. Revisión colaborativa de análisis bioinformáticos de los proyectos de los y las estudiantes
 

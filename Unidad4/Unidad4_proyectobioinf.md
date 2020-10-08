@@ -1,12 +1,16 @@
 # Unidad 4: Organización de un proyecto bioinformático
 
+
+
+## Organización de proyectos bioinformáticos en un repositorio
+
 Recordemos lo ya mencionado en clases previas:
 
-Un proyecto bioinformático consiste en los datos crudos, datos procesados, scripts y documentación  necesarios para reproducir los análisis realizados. Es decir en todo lo que al final debes subir a un repositorio como [Dryad](https://www.datadryad.org/pages/organization) (aunque los datos pueden conectarse desde otros repos, como [SRA](https://www.ncbi.nlm.nih.gov/sra), claro). 
+Un repositorio bioinformático consiste en los datos crudos, datos procesados, scripts y documentación  necesarios para reproducir los análisis realizados. Es decir en todo lo que al final debes subir a un repositorio como [Dryad](https://www.datadryad.org/pages/organization) (aunque los datos pueden conectarse desde otros repos, como [SRA](https://www.ncbi.nlm.nih.gov/sra), claro). 
 
-### Organización de directorios 
+### Organización de directorios
 
-Un proyecto bioinformático debe tener su propio **directorio** (carpeta) y contener en subdirectorios todo lo necesario para realizarlo.
+Un repositorio bioinformático debe tener su propio **directorio** (carpeta) y contener en subdirectorios todo lo necesario para realizarlo.
 
 El directorio del proyecto debe dividirse a su vez, lo recomendable es que sea en **subdirectorios** parecidos a los siguientes:
 
@@ -56,7 +60,7 @@ Para ver un ejemplo de un repositorio organizado así, baja la sección **Data a
 
 ## Manejo de proyectos e issues en Github
 
-Como hemos visto GitHub te permite llevar un control de versiones, es decir, llevar un registro de los cambios que se realizan sobre un proyecto informático, particularmente sobre las modificaciones a los scripts.
+Como hemos visto GitHub te permite llevar un control de versiones, es decir, llevar un registro de los cambios que se realizan sobre un análisis informático, particularmente sobre las modificaciones a los scripts.
 
 Github además permite organizar proyectos con un sistema de asignación "tareas por hacer" que se pueden asignar a un usuario de forma colaborativa, o a una misma para mantener un proyecto propio sin perderse.
 
@@ -74,7 +78,7 @@ Las tareas ("cards") de un proyecto pueden quedarse como tareas simplemente, o v
 ![](github_issues.png)
   
 
-**Ejercicio** Agréga a Camille, Rodolfo y a mi al repositorio de tu proyecto.
+**Ejercicio** Agréga a Camille, Sol y a mi al repositorio de tu proyecto.
 
 
 
@@ -95,6 +99,110 @@ La calificación final del repositorio (20% calif del curso) toma en cuenta:
 * 15% Avances, organización y respuesta a comentarios en el proyecto de Github **en inglés**
 
 Además, para las próximas clases deberás hacer y exponer el **Planteamiento y exposición de tu proyecto como un Repositorio y un Proyecto de Github subdividido en tareas** Los tasks, documentación e issues deben ser en inglés. Puede aún estar incompleto en el entendido de que lo trabajarás durante el resto del curso, pero en tu exposición inicial ya debe estar el **esqueleto** de los directorios y un **borrador del README**.
+
+
+## Principios de Agile project Management
+
+Estas notas están basadas en su mayoría en el libro: *Agile Project Management for Dummies*, Mark C. Layton, 2017. Algunas partes del libro están [disponibles en línea](https://www.dummies.com/careers/project-management/agile-project-management-for-dummies-cheat-sheet/)
+
+
+Un proyecto es un pograma de trabajo planificado que requiere una cantidad definitiva de tiempo, esfuerzo y planeación para que se complete. Los projectos tienen objetivos y metas y normalmente deben completarse en un tiempo determinado basado en cierto presupuesto. Por eso sus proyectos de maestría y doctorado, son erm, proyectos.
+
+Los proyectos existen desde que la humanidad es humanidad. Incluyen por ejemplo la construcción de las pirámides de Teotihuacan. 
+
+Inspirados por los procesos de manufactura, los proyectos informáticos seguían una estrategia "paso-a-paso", también llamada "cascada", con los siguientes pasos:
+
+1. Requisitos
+2. Diseño
+3. Desarrollo
+4. Integración
+5. Pruebas
+6. Implementación
+
+Sin embargo, las estrategias cascaga **acumulan riesgo**, pues entre más se avanza, más difícil es dar marcha atrás para cambiar algo que hicimos al inicio. Para contrarestar esto, al inicio de los 2000s se desarrolló el "desarrollo agil de proyectos".
+
+El desarrollo agil de proyectos es un estilo de manejo de proyectos que se enfoca en producir resultados de forma temprana, mejorando los productos del proyecto de forma continua, flexible, con retroalimentación del equipo y con con los productos (eg código) ampliamente puesto a prueba.
+
+En el desarrollo agil de proyectos en vez de revisar los resultados durante la implementación (¡o sea al FINAL! por ejemplo cuando ya ponemos los resultados del análisis en la tesis), se trabaja en **iteraciones**. 
+
+Una **iteración** es un fragmento pequeño del proyecto en general. Una iteración sigue los mismos pasos de un proyecto cascada, pero en una acción que puede completarse en un par de semanas en vez de en un par de años. 
+
+Esto reduce considerablemente el riesgo, y permite ir avanzando en logros tangibles que nos mantienen motivadas.
+
+![](agile_vs_waterfall.jpg)
+
+
+### Manifesto y princpios del Desarrollo Agil de Proyectos
+
+
+El desarrollo agil de proyectos vio la luz a través del [Manifesto for Agile Software Development](https://agilemanifesto.org/):
+
+
+*Estamos descubriendo formas mejores de desarrollar
+software tanto por nuestra propia experiencia como
+ayudando a terceros. A través de este trabajo hemos
+aprendido a valorar:*
+
+*Individuos e interacciones sobre procesos y herramientas
+Software funcionando sobre documentación extensiva
+Colaboración con el cliente sobre negociación contractual
+Respuesta ante el cambio sobre seguir un plan*
+
+*Esto es, aunque valoramos los elementos de la derecha,
+valoramos más los de la izquierda.*
+
+y se subdivide en **12 principios**:
+
+1. Nuestra mayor prioridad es satisfacer al cliente
+mediante la entrega temprana y continua de software
+con valor.
+
+2. Aceptamos que los requisitos cambien, incluso en etapastardías del desarrollo. Los procesos Ágiles aprovechan el cambio para proporcionar ventaja competitiva al
+cliente.
+
+3. Entregamos software funcional frecuentemente, entre dos semanas y dos meses, con preferencia al periodo de
+tiempo más corto posible.
+
+4. Los responsables de negocio y los desarrolladores
+trabajamos juntos de forma cotidiana durante todo
+el proyecto.
+
+5. Los proyectos se desarrollan en torno a individuos
+motivados. Hay que darles el entorno y el apoyo que
+necesitan, y confiarles la ejecución del trabajo.
+
+6. El método más eficiente y efectivo de comunicar
+información al equipo de desarrollo y entre sus
+miembros es la conversación cara a cara.
+
+7. El software funcionando es la medida principal de
+progreso.
+
+8. Los procesos Ágiles promueven el desarrollo
+sostenible. Los promotores, desarrolladores y usuarios
+debemos ser capaces de mantener un ritmo constante
+de forma indefinida.
+
+9. La atención continua a la excelencia técnica y al
+buen diseño mejora la Agilidad.
+
+10. La simplicidad, o el arte de maximizar la cantidad de trabajo no realizado, es esencial.
+
+11. Las mejores arquitecturas, requisitos y diseños
+emergen de equipos auto-organizados.
+
+12. A intervalos regulares el equipo reflexiona sobre
+cómo ser más efectivo para a continuación ajustar y
+perfeccionar su comportamiento en consecuencia. 
+
+
+Para poner en práctica un proyecto siguiendo los principios de desarrollo ágil se debe seguir la siguiente ruta:
+
+![](agile-roadmap-value.jpg)
+
+**Reflexión:** El desarrollo agil de proyectos se pensó originalmente para desarrollo de software, pero puede aplicarse a muchas cosas. ¿Puedes imaginar cómo aplicarlo al desarrollo de un proyecto de investigación o en tu propia tesis? Brinda ejemplos.
+
+
 
 ## Retroalimentación al código de otros durante el curso
 
