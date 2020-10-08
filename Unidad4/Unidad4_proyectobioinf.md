@@ -77,10 +77,11 @@ Las tareas ("cards") de un proyecto pueden quedarse como tareas simplemente, o v
 
 ![](github_issues.png)
   
+#### ¿Cómo escribir un buen issue?
 
-**Ejercicio** Agréga a Camille, Sol y a mi al repositorio de tu proyecto.
+Sigue la guía: [How do I ask a good question? de Stackoverflow](https://stackoverflow.com/help/how-to-ask)  
 
-
+**Ejercicio:** Crea un proyecto dentro de tu repositorio de Github
 
 ## Repositorio y proyecto del curso en Github
 
@@ -99,6 +100,58 @@ La calificación final del repositorio (20% calif del curso) toma en cuenta:
 * 15% Avances, organización y respuesta a comentarios en el proyecto de Github **en inglés**
 
 Además, para las próximas clases deberás hacer y exponer el **Planteamiento y exposición de tu proyecto como un Repositorio y un Proyecto de Github subdividido en tareas** Los tasks, documentación e issues deben ser en inglés. Puede aún estar incompleto en el entendido de que lo trabajarás durante el resto del curso, pero en tu exposición inicial ya debe estar el **esqueleto** de los directorios y un **borrador del README**.
+
+## Retroalimentación al código de otros durante el curso
+
+Utilizaremos el sistema de issues y comentarios de Github para hacer comentarios y sugerencias al código de los demás. Esto ocurrirá durante las sesiones de discusión, pero también durante tiempo fuera de clase. También es posible hacer cambios más complejos mediante pull requests.
+
+Dudas que hemos resuelto:
+
+Loops:
+* [How to loop with two variables -bash (Melania)](https://github.com/Melcatus/genomic_cotton/issues/4)
+* [Loop to aling pair-end reads  -bash (Fernanda)](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/2)
+* [Calculating the Q30 using a loop -bash (Rodolfo)](https://github.com/necrosnake91/Lung_cancer_transcriptome/issues/7)
+* [Loop for mutation analyses -R (Héctor)](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/9)
+* [Loop in R to rename output tables (Tonio)](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/4)
+* [Loop to change file names based on a list -bash (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/2)
+* [Concatenating fastq files -bash (Rodolfo)](https://github.com/necrosnake91/Lung_cancer_transcriptome/issues/9)
+* [Stacking of several files -bash (Héctor)](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
+
+BCFtools:
+* [Convert vcf to fasta) Duhyadi](https://github.com/Duhyadi/Deleterious-alleles-in-landraces-of-maize/issues/1)
+
+Parsear archivos output:
+* [Extract table of ipyrad stats file -bash o R (Christian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/17)
+* [Choose by gene labels](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/5) 
+
+Gráficas:
+* [Code color in volcano plots - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/8)
+* [Using different scales in barplot simultaneously - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/10)
+* [Plot cophylogeny (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/5)
+
+Phylogenies:
+* [Table with tips of each node in a phylogenetic tree -R (Cristian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/22)
+
+Descarga de Archivos:
+* [Download fastq files (sequencing reads) with SRA toolkit fastq-dump but I want to know if the process concluded correctly (Toño)](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/5)
+
+Anotación
+* [What database use to cotton genome annotation?](https://github.com/Melcatus/genomic_cotton/issues/9)(Melania)
+
+Enrichment Analysis
+* [Modify stadistic parameters to implement GSEA Analysis on DESEq results (Laura)](https://github.com/LauraMCE/lncRNA_BC/issues/15)
+
+Markdown
+* [Troubles with sublisting in Markdown (Laura)](https://github.com/LauraMCE/lncRNA_BC/issues/9)
+
+Sotware en general:
+* [I need helping to install some dependencies in perl to run vcf2maf.pl](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/10)
+* [Problems with the stacking of several files](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
+
+
+Differential Expression Analysis 
+* [Define contrasts for DE](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/6) 
+
 
 
 ## Principios de Agile project Management
@@ -204,53 +257,3 @@ Para poner en práctica un proyecto siguiendo los principios de desarrollo ágil
 
 
 
-## Retroalimentación al código de otros durante el curso
-
-Utilizaremos el sistema de issues y comentarios de Github para hacer comentarios y sugerencias al código de los demás. Esto ocurrirá durante las sesiones de discusión, pero también durante tiempo fuera de clase. También es posible hacer cambios más complejos mediante pull requests.
-
-Dudas que hemos resuelto:
-
-Loops:
-* [How to loop with two variables -bash (Melania)](https://github.com/Melcatus/genomic_cotton/issues/4)
-* [Loop to aling pair-end reads  -bash (Fernanda)](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/2)
-* [Calculating the Q30 using a loop -bash (Rodolfo)](https://github.com/necrosnake91/Lung_cancer_transcriptome/issues/7)
-* [Loop for mutation analyses -R (Héctor)](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/9)
-* [Loop in R to rename output tables (Tonio)](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/4)
-* [Loop to change file names based on a list -bash (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/2)
-* [Concatenating fastq files -bash (Rodolfo)](https://github.com/necrosnake91/Lung_cancer_transcriptome/issues/9)
-* [Stacking of several files -bash (Héctor)](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
-
-BCFtools:
-* [Convert vcf to fasta) Duhyadi](https://github.com/Duhyadi/Deleterious-alleles-in-landraces-of-maize/issues/1)
-
-Parsear archivos output:
-* [Extract table of ipyrad stats file -bash o R (Christian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/17)
-* [Choose by gene labels](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/5) 
-
-Gráficas:
-* [Code color in volcano plots - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/8)
-* [Using different scales in barplot simultaneously - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/10)
-* [Plot cophylogeny (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/5)
-
-Phylogenies:
-* [Table with tips of each node in a phylogenetic tree -R (Cristian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/22)
-
-Descarga de Archivos:
-* [Download fastq files (sequencing reads) with SRA toolkit fastq-dump but I want to know if the process concluded correctly (Toño)](https://github.com/tono2204/Mezcal_Yeast_Populations/issues/5)
-
-Anotación
-* [What database use to cotton genome annotation?](https://github.com/Melcatus/genomic_cotton/issues/9)(Melania)
-
-Enrichment Analysis
-* [Modify stadistic parameters to implement GSEA Analysis on DESEq results (Laura)](https://github.com/LauraMCE/lncRNA_BC/issues/15)
-
-Markdown
-* [Troubles with sublisting in Markdown (Laura)](https://github.com/LauraMCE/lncRNA_BC/issues/9)
-
-Sotware en general:
-* [I need helping to install some dependencies in perl to run vcf2maf.pl](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/10)
-* [Problems with the stacking of several files](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
-
-
-Differential Expression Analysis 
-* [Define contrasts for DE](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/6) 
