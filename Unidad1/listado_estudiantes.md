@@ -23,3 +23,4 @@ Estudiantes 2019:
 
 
 Estudiantes 2020:
+9. Bertha Guadalupe Rueda Zarazúa - bgrueda - [https://github.com/bgrueda/WES_LUAD.git]
