@@ -35,5 +35,6 @@ Estudiantes 2020:
 8. Verónica Lizbeth González Valdez - VeronicaGlez - [https://github.com/VeronicaGlez/Red_warbler](https://github.com/VeronicaGlez/Red_warbler.git)
 9. Javier Urbán Olivares - JavierUrban - [https://github.com/JavierUrban/Genome-assembly-of-the-copepod-Leptodiaptomus.git](https://github.com/JavierUrban/Genome-assembly-of-the-copepod-Leptodiaptomus.git)
 10. Ariel Hernán Muñoz Sánchez - arihelrnan -  [https://github.com/arihelrnan/Endophyte_microbiome_Vanilla_planifolia.git](https://github.com/arihelrnan/Endophyte_microbiome_Vanilla_planifolia.git)
+11. Bertha Guadalupe Rueda Zarazúa - bgrueda - [https://github.com/bgrueda/WES_LUAD.git](https://github.com/bgrueda/WES_LUAD.git)
 
 
