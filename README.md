@@ -127,7 +127,7 @@ Jueves 08 | Octubre | Unidad 4.1-4.3
 Martes 13 | Octubre | Unidad 2.7 (Funciones de R)
 Jueves 15 | Octubre | Presentación y retroalimentación de sus Repositorios y Proyectos Bioinformáticos en Github y pruebas de repli.it con sus propios repositorios (6 estudiantes)
 Martes 20 | Octubre | Presentación y retroalimentación de sus Repositorios y Proyectos Bioinformáticos en Github y pruebas de repli.it con sus propios repositorios (6 estudiantes)
-Jueves 22 | Octubre | Clase (exposición profes) de tópico Unidad 3 (Docker)
+Jueves 22 | Octubre | Clase (exposición profes) de tópico Unidad 3 (Variantes esctructurales y genómica comparada)
 Martes 27 | Octubre | Presentación/retroalimentación de problemas de estudiantes
 Jueves 29 | Octubre | Seminario (estudiantes) de tópico metodológico.
 Martes 03 | Noviembre | Presentación/retroalimentación de problemas de estudiantes
@@ -135,7 +135,7 @@ Jueves 05 | Noviembre | Seminario (estudiantes) de tópico metodológico.
 Martes 10 | Noviembre | Presentación/retroalimentación de problemas de estudiantes
 Jueves 12 | Noviembre | Seminario (estudiantes) de tópico metodológico.
 Martes 17 | Noviembre | Presentación/retroalimentación de problemas de estudiantes
-Jueves 19 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (Anotación de genomas)
+Jueves 19 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (Outliers)
 Martes 24 | Noviembre | Presentación/retroalimentación de problemas de estudiantes
 Jueves 26 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (Expresión diferencial)
 Martes 01 | Diciembre | Presentación/retroalimentación de problemas de estudiantes
