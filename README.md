@@ -137,9 +137,9 @@ Jueves 12 | Noviembre | Seminario (estudiantes) de tópico metodológico.
 Martes 17 | Noviembre | Presentación/retroalimentación de problemas de estudiantes
 Jueves 19 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (Anotación de genomas)
 Martes 24 | Noviembre | Presentación/retroalimentación de problemas de estudiantes
-Jueves 26 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (por elegir)
+Jueves 26 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (Expresión diferencial)
 Martes 01 | Diciembre | Presentación/retroalimentación de problemas de estudiantes
-Jueves 03 | Diciembre | Clase (exposición profes) de tópico Unidad 3 (por elegir)
+Jueves 03 | Diciembre | Clase (exposición profes) de tópico Unidad 3 (Haplotypos en metabarcoding)
 Martes 08 | Diciembre | Presentación/retroalimentación de problemas de estudiantes
 Jueves 10 | Diciembre | Recapitulación issues resueltos y pendientes de todo el grupo.
 Martes 05 | Enero | Presentación y **primera entrega de Repositorios** (12 estudiantes)
