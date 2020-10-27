@@ -117,6 +117,9 @@ Loops:
 * [Concatenating fastq files -bash (Rodolfo)](https://github.com/necrosnake91/Lung_cancer_transcriptome/issues/9)
 * [Stacking of several files -bash (Héctor)](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
 
+Funciones:
+* [Create function to summarize mean and sd for all soil variables in R](https://github.com/bc-anaisabel/juniperus_paper/issues/12) Ana
+
 BCFtools:
 * [Convert vcf to fasta) Duhyadi](https://github.com/Duhyadi/Deleterious-alleles-in-landraces-of-maize/issues/1)
 
@@ -143,15 +146,19 @@ Enrichment Analysis
 
 Markdown
 * [Troubles with sublisting in Markdown (Laura)](https://github.com/LauraMCE/lncRNA_BC/issues/9)
+* [Show html of rmd in github](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/4) Nelly
+* [Delete second row view in gray (chr, int, dbl)](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/7) Nelly
+
 
 Sotware en general:
 * [I need helping to install some dependencies in perl to run vcf2maf.pl](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/10)
 * [Problems with the stacking of several files](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
+* [Climate data - install packages in R 4.0.2 ERROR](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/5) Nelly
 
 
 Differential Expression Analysis 
 * [Define contrasts for DE](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/6) 
-
+* [which trimm program I have to choose?](https://github.com/IsauraRReinhold/Disocactus_transcriptome/issues/6) Isaura
 
 
 ## Principios de Agile project Management
