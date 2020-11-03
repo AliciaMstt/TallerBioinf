@@ -146,3 +146,6 @@ Sotware en general:
 
 Differential Expression Analysis 
 * [Define contrasts for DE](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/6) 
+
+Genome assembly
+* [Difficulties to use databases running BLAST](https://github.com/JavierUrban/Genome-assembly-of-the-copepod-Leptodiaptomus/issues/3) Javier
