@@ -30,8 +30,11 @@ Estudiantes 2020:
 3. Alexander Llanes Quvedo - AlexLlanesQuevedo - [https://github.com/AlexLlanesQuevedo](https://github.com/AlexLlanesQuevedo)
 4. Nelly Jazmín Pacheco Cruz - NellyJazminPC - [*Qmacdougallii*_genomics_and_environment](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment)
 5. Ana Isabel Bermudez Contreras - bc-anaisabel- [https://github.com/bc-anaisabel/amptk_pipeline](https://github.com/bc-anaisabel/amptk_pipeline)
-6. Brett Butler - redgcko7 [https://github.com/redgcko7/Coleonyx_elegans_popgen](https://github.com/redgcko7/Coleonyx_elegans_popgen)
+6. Brett Butler - redgcko7 - [https://github.com/redgcko7/Coleonyx_elegans](https://github.com/redgcko7/Coleonyx_elegans)
 7. Isaura Rosas Reinhold - IsauraRReinhold - [https://github.com/IsauraRReinhold/Disocactus_transcriptome](https://github.com/IsauraRReinhold/Disocactus_transcriptome)
 8. Verónica Lizbeth González Valdez - VeronicaGlez - [https://github.com/VeronicaGlez/Red_warbler](https://github.com/VeronicaGlez/Red_warbler.git)
 9. Javier Urbán Olivares - JavierUrban - [https://github.com/JavierUrban/Genome-assembly-of-the-copepod-Leptodiaptomus.git](https://github.com/JavierUrban/Genome-assembly-of-the-copepod-Leptodiaptomus.git)
+10. Ariel Hernán Muñoz Sánchez - arihelrnan -  [https://github.com/arihelrnan/Endophyte_microbiome_Vanilla_planifolia.git](https://github.com/arihelrnan/Endophyte_microbiome_Vanilla_planifolia.git)
+11. Bertha Guadalupe Rueda Zarazúa - bgrueda - [https://github.com/bgrueda/WES_LUAD.git](https://github.com/bgrueda/WES_LUAD.git)
+
 
