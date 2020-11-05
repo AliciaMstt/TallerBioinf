@@ -155,6 +155,8 @@ Sotware en general:
 * [Problems with the stacking of several files](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
 * [Climate data - install packages in R 4.0.2 ERROR](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/5) Nelly
 
+Comparisons of microbiomes compositions
+* [Problems with colors in Heat_tree_matrix](https://github.com/arihelrnan/Endophyte_microbiome_Vanilla_planifolia/issues/4) Ariel
 
 Differential Expression Analysis 
 * [Define contrasts for DE](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/6) 
