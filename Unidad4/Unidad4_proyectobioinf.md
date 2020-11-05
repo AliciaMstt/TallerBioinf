@@ -163,6 +163,9 @@ Differential Expression Analysis
 * [Define contrasts for DE](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/6) 
 * [which trimm program I have to choose?](https://github.com/IsauraRReinhold/Disocactus_transcriptome/issues/6) Isaura
 
+Genome assembly
+* [Difficulties to use databases running BLAST](https://github.com/JavierUrban/Genome-assembly-of-the-copepod-Leptodiaptomus/issues/3) Javier
+
 
 ## Principios de Agile project Management
 
@@ -264,6 +267,4 @@ Para poner en práctica un proyecto siguiendo los principios de desarrollo ágil
 ![](agile-roadmap-value.jpg)
 
 **Reflexión:** El desarrollo agil de proyectos se pensó originalmente para desarrollo de software, pero puede aplicarse a muchas cosas. ¿Puedes imaginar cómo aplicarlo al desarrollo de un proyecto de investigación o en tu propia tesis? Brinda ejemplos.
-
-
 
