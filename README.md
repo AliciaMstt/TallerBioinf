@@ -136,7 +136,7 @@ Martes 10 | Noviembre | Presentación/retroalimentación de problemas de estudia
 Jueves 12 | Noviembre | Seminario (estudiantes) de tópico metodológico.
 Martes 17 | Noviembre | Presentación/retroalimentación de problemas de estudiantes
 Jueves 19 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (Outliers)
-Martes 24 | Noviembre | Presentación/retroalimentación de problemas de estudiantes
+Martes 24 | Noviembre | Seminario (estudiantes) de tópico metodológico, recap de issues (round 1) 
 Jueves 26 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (Expresión diferencial)
 Martes 01 | Diciembre | Presentación/retroalimentación de problemas de estudiantes
 Jueves 03 | Diciembre | Clase (exposición profes) de tópico Unidad 3 (Haplotypos en metabarcoding)
