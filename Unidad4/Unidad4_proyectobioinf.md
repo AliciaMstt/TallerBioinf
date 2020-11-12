@@ -166,6 +166,8 @@ Differential Expression Analysis
 Genome assembly
 * [Difficulties to use databases running BLAST](https://github.com/JavierUrban/Genome-assembly-of-the-copepod-Leptodiaptomus/issues/3) Javier
 
+Conditional and automated file management
+* [Label and concatenation of genbank file from taxonomy ID](https://github.com/abelardoacm/ssDNA_viral_pangenomics/issues/2) Abelardo
 
 ## Principios de Agile project Management
 
