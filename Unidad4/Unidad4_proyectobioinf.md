@@ -132,6 +132,8 @@ Gráficas:
 * [Using different scales in barplot simultaneously - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/10)
 * [Plot cophylogeny (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/5)
 * [BUSCO plot (Isaura)](https://github.com/IsauraRReinhold/Disocactus_transcriptome/issues/18)
+* [adjust x-axis on barplots (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/4)  
+
 Phylogenies:
 * [Table with tips of each node in a phylogenetic tree -R (Cristian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/22)
 
