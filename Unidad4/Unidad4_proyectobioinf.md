@@ -13,7 +13,7 @@ El directorio del proyecto debe dividirse a su vez, lo recomendable es que sea e
 * **data**, contiene los datos, también puede tener otros nombres como *genetic* para datos genéticos y *spatial* para datos espaciales. Los datos genéticos pueden dividierse a su vez en subdirectorios como *raw*, *filtered*, *genotypes*, *data_in*, *data_out* de modo que los datos crudos estén en un directorio y los modificados por análisis subsecuentes en otros directorios. El punto es tener uno o más directorios donde estén todos los datos.  
 
 * **meta**, **info** o **docs** donde puedes guardar todos los metadatos, como un archivo cvs detallando información de cada una de las muestras. Si lo prefieres este archivo puede ir dentro del directorio de datos sin necesidad de hacer la carpeta *meta*. También es posible guardar aquí cualquier otro documento necesario para procesar los datos.
-  		
+  
 * **bin** o **scripts**, donde guardas todos los scripts necesarios para correr el análisis de principio a fin. Este es un directorio obligatorio. Esta es la carpeta más difícil de documentar.
 
 * **figures**, opcionalmente, puedes poner aquí el código que se utilice sólo para hacer las figuras de una publicación dada. Es como un extracto de *bin* dedicado solo a esto.
@@ -46,6 +46,7 @@ Para ver un ejemplo de un repositorio organizado así, baja la sección **Data a
     * [Este](https://datadryad.org/resource/doi:10.5061/dryad.f7248) repositorio de datos está dividido en varias secciones. El README de última sección "Data and scripts for population genomics and SDM" se ve así: [README_ejemplo](README_ejemplo.md).
 
     
+
 **Ejercicio**: baja el archivo zip (los datos y scripts) asociados al README anterior y compáralo con el README. Responde:
 
 * ¿Puedes encontrar los datos que ocupa para correr cada script? 
@@ -72,7 +73,7 @@ Los proyectos solo los podemos ver si es nuestro repositorio o si estamos agrega
 Las tareas ("cards") de un proyecto pueden quedarse como tareas simplemente, o volverse un **issue**. Los issues permiten delimitar una tarea que debe atenderse (por ejemplo un bug, una modalidad nueva deseada, etc) pero cuya solución además requiere discusión. Cada issue tiene asociado entonces una conversación. Tanto los issues como sus conversaciones asociadas son públicos, pues permiten al público saber, por ejemplo, que el problema existe y en qué va su solución.
 
 ![](github_issues.png)
-  
+
 
 **Ejercicio** Agréga a Camille, Rodolfo y a mi al repositorio de tu proyecto.
 
@@ -143,6 +144,12 @@ Sotware en general:
 * [I need helping to install some dependencies in perl to run vcf2maf.pl](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/10)
 * [Problems with the stacking of several files](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
 
+Jupyter Notebook
+
+* [Exporting images from Jupyter notebook](https://github.com/AlexLlanesQuevedo/santacruzi_project/issues/5)
 
 Differential Expression Analysis 
+
 * [Define contrasts for DE](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/6) 
+
+  
