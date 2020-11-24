@@ -65,11 +65,12 @@ Por favor nota que este **no** es un curso introductorio a la bioinformática, p
 
 #### Unidad 4 Revisión colaborativa de código bioinformático (horas: teóricas 2, prácticas 40)
 
-4.1. Principios de Agile Project management
 
-4.2. Planteamiento de un proyectos bioinformáticos
+4.1. Organización de proyectos bioinformáticos en un repositorio
 
-4.3. Github para manejar proyectos bioinformáticos
+4.2. Github para manejar proyectos bioinformáticos
+
+4.3. Principios de Agile Project Management
 
 4.4. Revisión colaborativa de análisis bioinformáticos de los proyectos de los y las estudiantes
 
@@ -126,7 +127,7 @@ Jueves 08 | Octubre | Unidad 4.1-4.3
 Martes 13 | Octubre | Unidad 2.7 (Funciones de R)
 Jueves 15 | Octubre | Presentación y retroalimentación de sus Repositorios y Proyectos Bioinformáticos en Github y pruebas de repli.it con sus propios repositorios (6 estudiantes)
 Martes 20 | Octubre | Presentación y retroalimentación de sus Repositorios y Proyectos Bioinformáticos en Github y pruebas de repli.it con sus propios repositorios (6 estudiantes)
-Jueves 22 | Octubre | Clase (exposición profes) de tópico Unidad 3 (Docker)
+Jueves 22 | Octubre | Clase (exposición profes) de tópico Unidad 3 (Variantes esctructurales y genómica comparada)
 Martes 27 | Octubre | Presentación/retroalimentación de problemas de estudiantes
 Jueves 29 | Octubre | Seminario (estudiantes) de tópico metodológico.
 Martes 03 | Noviembre | Presentación/retroalimentación de problemas de estudiantes
@@ -134,13 +135,13 @@ Jueves 05 | Noviembre | Seminario (estudiantes) de tópico metodológico.
 Martes 10 | Noviembre | Presentación/retroalimentación de problemas de estudiantes
 Jueves 12 | Noviembre | Seminario (estudiantes) de tópico metodológico.
 Martes 17 | Noviembre | Presentación/retroalimentación de problemas de estudiantes
-Jueves 19 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (Anotación de genomas)
-Martes 24 | Noviembre | Presentación/retroalimentación de problemas de estudiantes
-Jueves 26 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (por elegir)
+Jueves 19 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (Outliers)
+Martes 24 | Noviembre | Seminario (estudiantes) de tópico metodológico, recap de issues (round 1) 
+Jueves 26 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (Expresión diferencial)
 Martes 01 | Diciembre | Presentación/retroalimentación de problemas de estudiantes
-Jueves 03 | Diciembre | Clase (exposición profes) de tópico Unidad 3 (por elegir)
+Jueves 03 | Diciembre | Clase (exposición profes) de tópico Unidad 3 (Haplotypos en metabarcoding)
 Martes 08 | Diciembre | Presentación/retroalimentación de problemas de estudiantes
-Jueves 10 | Diciembre | Recapitulación issues resueltos y pendientes de todo el grupo.
+Jueves 10 | Diciembre | Participación en el congreso [MexPopGen5](https://mexpopgen.wordpress.com/)
 Martes 05 | Enero | Presentación y **primera entrega de Repositorios** (12 estudiantes)
 Jueves 07 | Enero | Presentación/retroalimentación de problemas de estudiantes
 Martes 12 | Enero | Presentación/retroalimentación de problemas de estudiantes

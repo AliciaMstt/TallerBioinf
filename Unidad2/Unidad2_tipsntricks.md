@@ -463,7 +463,52 @@ Ejercicio:
 En clase, completemos los primeros 8 niveles del MAZE. O si pueden los 10, si no luego.
 
 
-## 2.7 Funciones en R
+## 2.7 Source y Funciones en R
+
+
+`source` es una función que sirve para correr un script de R **dentro de otro script de R**. Esto permite modularizar un análisis y luego correr una pipeline general, así como tener por separado **funciones propias** (que podemos llamar igual que llamamos las funciones de los paquetes) y que utilizamos mucho en diversos scripts.
+
+**Ejemplo de cómo utilizar `source`:**
+
+Correr el script 3.IBR_testing.r de [este repositorio](https://datadryad.org/resource/doi:10.5061/dryad.f7248) desde **otro** script de R:
+
+```{r}
+source("3.IBR_testing.r")
+```
+
+Nota que pare que esto funcione tu working directory debe ser el correcto para leer `3.IBR_testing.r` como si fuera un archivo (que lo es). Es decir tu WD debe ser la ruta donde está 3.IBR_testing.r.
+
+**Utilidad**
+
+`source` es muy util para *modularizar* nuestra pipeline en varias partes más pequeñas y sencillas de entender, mismas que después podemos correr desde un script "general" o "maestro" cuando ya todo esté funcionando. 
+
+Por ejemplo, Nancy hizo una serie de análisis en tres niveles herárquicos para 8 órdenes de artrópodos en scripts independientes, pero luego utilizó source para correrlos todos desde un script único, para poder hacer un análisis conjunto:
+
+```
+#'**Community diversity and composition at the haplotype, 3% and 5% Clustering levels for each of the eight taxonomic orders studied**'#
+
+#This script gets all scripts of diversity using 8 arthropods order at multi-hierarchical levels 
+#We used 8 groups: Arachnda, Coleoptera, Collembola, Diptera, Hemiptera, Hymenoptera, Lepidoptera, and Myriapoda. 
+
+# Get the diversity analysis at haplotypes, CL 3%, and CL 5% in Diptera
+# Source to scripts Diptera and data
+source("Diptera/Com_matrixes_data_exploration_Diptera_h_Site.R") 
+source("Diptera/Com_matrixes_data_exploration_Diptera_3P_Site.R") 
+source("Diptera/Com_matrixes_data_exploration_Diptera_5P_Site.R") 
+
+#'**We get the diversity analysis at haplotypes, CL 3%, and CL 5% in Collembola**'#
+# Source to scripts Collembola and data
+source("Collembola/Com_matrixes_data_exploration_Collembola_h_Site.R") 
+source("Collembola/Com_matrixes_data_exploration_Collembola_3P_Site.R") 
+source("Collembola/Com_matrixes_data_exploration_Collembola_5P_Site.R") 
+
+...
+```
+
+Pero además, `source()` es útil si queremos crear nuestras propias funciones.
+
+
+### Crear tus propias funciones y utilizarlas con source:
 
 Una función es un conjunto de instrucciones organizadas para complir con una tarea específica. En R una función es un **objeto** compuesto por las siguientes partes:
 
@@ -485,7 +530,6 @@ return(object)
 ```
 
 **Ojo**: el comando `return` es necesario al final de una función siempre que queramos que dicha función "devuelva" un objeto (por ejemplo una df que creemos como parte de la función). De no poner esta instrucción, la función correrá desde otro script, pero no veremos ningún resultado.
-
 
 R base tiene muchas funciones predefinidas, y cuando instalamos un paquete básicamente agregamos una serie de funciones que trabajan juntas. Pero una ventaja de R es que también podemos hacer nuestras propias funciones. Esto es útil para:
 
@@ -509,24 +553,9 @@ fahrenheit_to_kelvin <- function(temp_F) {
 
 **Ejercicio**: escribe una función para convertir temperatura en grados centígrados a Kelvin.
 
+¿Cuándo es útil construir funciones? Cuando te encuentres copiando y pegando código al que básicamente le cambias el objeto de inicio o un par de detalles.
 
-#### Guardar funciones en archivos fuera del script de análisis
-
-`source` es una función que sirve para correr un script de R **dentro de otro script de R**. Esto permite modularizar un análisis y luego correr una pipeline general, así como tener por separado **funciones propias** (que podemos llamar igual que llamamos las funciones de los paquetes) y que utilizamos mucho en diversos scripts.
-
-Ejemplos de cómo utilizar `source`: correr el script del ejercicio anterior desde otro script con la línea con base en el código de la sección PopGenomicsIBR.zip de [este repositorio](https://datadryad.org/resource/doi:10.5061/dryad.f7248))
-
-Desde R, con source podemos correr todo un script de R desde **otro** script de R:
-
-```{r}
-source("3.IBR_testing.r")
-```
-Nota que pare que esto funcione tu working directory debe ser el correcto para leer `3.IBR_testing.r` como si fuera un archivo (que lo es). Es decir tu WD debe ser la ruta donde está 1.IBR_testing.r.
-
-
-Ahora veamos esta función:
-
-Primero veamos esta función:
+Este es el ejemplo de una función para leer el output de Fst de Stacks y formatearlo para poderlo usar en una prueba de Mantel:
 
 ```
 read.fst_summary_fix <- function(file, popNames){
@@ -566,9 +595,94 @@ Nota que `source` NO corre la función en sí, sino que solo la carga al cerebro
 
 El nombre del archivo R no importa, pero es buena práctica ponerle el mismo que el nombre de la función.
 
+Otro ejemplo. El siguiente código filtra el control negativo de datos de metabarcoding. Este paso hay que hacerlo para cada batch de PCR dentro de cada set de datos. Si en un script yo estoy limpiando 5 sets de datos, cada uno con 2 PCR batchs ¿Cuántas veces debo copiar y pegar el código de abajo?
+
+```
+  # subset pcr batch
+  batch<- subset_samples(phyloseq_tables, pcr_batch == PCR_Batch1)
+
+  ## get otu matrix
+  batch_OTU<-as.matrix(otu_table(batch))
+  
+  ## get NC vector
+  NC<-as.vector(batch_OTU[, "NegativeControl_1"])
+  
+  ## Remove reads present in NC for each OTU
+  batch_clean<-batch_OTU-NC
+  
+  ## Repleace negative numbers with 0 since we can't have negative reads
+  batch_clean<-replace(batch_clean, batch_clean < 0, 0)
+
+```
+
+Alternativamente puedo traducir lo anterior a una función:
+
+
+```
+remove_NC<-function(phyloseq_tables, batch_id, NC_name){ 
+  ### This functions removes the reads from NC of all samples from a given PCR batch
+  # returning a matrix of the otu table w/o the nc 
+  
+  ### arguments:
+  ## phyloseq_tables: a phyloseq object result of importing a taxonomy.biom file
+  ## batch_id: character vector with the name of the batch ID. Asumes it exists in a variable
+  # "pcr_batch" within the phyloseq tables
+  ## NC_name: character vector with the name of the NC sample.
+  
+  ### Function:
+  # subset pcr batch
+  batch_id <<- batch_id # assing batch_id to the global env because otherwise subset_samples do not work within a function
+  batch<- subset_samples(phyloseq_tables, pcr_batch == batch_id)
+  print("input data looks like:")
+  print(batch)
+  
+  ## get otu matrix
+  batch_OTU<-as.matrix(otu_table(batch))
+  
+  ## get NC vector
+  NC<-as.vector(batch_OTU[,NC_name])
+  
+  ## Remove reads present in NC for each OTU
+  batch_clean<-batch_OTU-NC
+  
+  ## Repleace negative numbers with 0 since we can't have negative reads
+  batch_clean<-replace(batch_clean, batch_clean < 0, 0)
+  
+  ## tell the user what happened
+  print(paste("NC sample", NC_name, "was used to filter",  sum(NC), "reads in total"))
+  
+  ## return results
+  batch_clean
+  
+}
+```
+
+Y después utilizarla en cada uno de mis PCR batchs:
+
+
+```
+## Source custom function to remove the reads from NC of all samples from a given PCR batch
+# returning a matrix of the otu table w/o the nc 
+source("remove_NC.R")
+
+## Filter NC reads in each PCR batch
+
+# For PCR batch 1
+batch1_filtered<-remove_NC(phyloseq_tables=phyloseq_tables, batch_id = "batch_1", NC_name = "NC16sI")
+head(batch1_filtered, n=3)
+
+# For PCR batch 2
+batch2_filtered<-remove_NC(phyloseq_tables, batch_id = "batch_2", NC_name = "NC16sS")
+head(batch2_filtered, n=3)
+
+# For PCR batch 3
+batch3_filtered<-remove_NC(phyloseq_tables, batch_id = "batch_3", NC_name = "NC16s-N")
+head(batch3_filtered, n=3)
+```
 
 **Ejercicio** Guarda tu función para convertir temperatura de grados C a K en un archivo separado de tu script, luego llámala con `source()` y utilízala en tu script.
 
+**Ejercicio** Analiza tu código. ¿Hay un paso que utilices mucho y que puedas convertir en una función? Presenta un ejemplo para la clase.
 
 **Referencias útiles para funciones en R**
 
