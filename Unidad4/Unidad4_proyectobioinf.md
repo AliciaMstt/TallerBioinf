@@ -132,6 +132,7 @@ Gráficas:
 * [Using different scales in barplot simultaneously - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/10)
 * [Plot cophylogeny (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/5)
 * [BUSCO plot (Isaura)](https://github.com/IsauraRReinhold/Disocactus_transcriptome/issues/18)
+
 Phylogenies:
 * [Table with tips of each node in a phylogenetic tree -R (Cristian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/22)
 
@@ -168,6 +169,12 @@ Genome assembly
 
 Conditional and automated file management
 * [Label and concatenation of genbank file from taxonomy ID](https://github.com/abelardoacm/ssDNA_viral_pangenomics/issues/2) Abelardo
+
+Extract mapped and unmapped reads with samtools
+* [Count how many reads map to a reference](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/10) Valeria
+
+Duplicated reads after preprocessing
+* [Overrrepresented sequence that was not previously presented](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/9) Valeria
 
 ## Principios de Agile project Management
 
