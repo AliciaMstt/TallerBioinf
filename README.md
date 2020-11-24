@@ -141,7 +141,7 @@ Jueves 26 | Noviembre | Clase (exposición profes) de tópico Unidad 3 (Expresi�
 Martes 01 | Diciembre | Presentación/retroalimentación de problemas de estudiantes
 Jueves 03 | Diciembre | Clase (exposición profes) de tópico Unidad 3 (Haplotypos en metabarcoding)
 Martes 08 | Diciembre | Presentación/retroalimentación de problemas de estudiantes
-Jueves 10 | Diciembre | Recapitulación issues resueltos y pendientes de todo el grupo.
+Jueves 10 | Diciembre | Participación en el congreso [MexPopGen5](https://mexpopgen.wordpress.com/)
 Martes 05 | Enero | Presentación y **primera entrega de Repositorios** (12 estudiantes)
 Jueves 07 | Enero | Presentación/retroalimentación de problemas de estudiantes
 Martes 12 | Enero | Presentación/retroalimentación de problemas de estudiantes
