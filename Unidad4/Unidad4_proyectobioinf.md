@@ -187,6 +187,9 @@ Extract mapped and unmapped reads with samtools
 Duplicated reads after preprocessing
 * [Overrrepresented sequence that was not previously presented](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/9) Valeria
 
+Programming language translation ("close" to open code)
+* [Maltab script to Python](https://github.com/abelardoacm/ssDNA_viral_pangenomics/issues/3) Abelardo
+
 ## Principios de Agile project Management
 
 Estas notas están basadas en su mayoría en el libro: *Agile Project Management for Dummies*, Mark C. Layton, 2017. Algunas partes del libro están [disponibles en línea](https://www.dummies.com/careers/project-management/agile-project-management-for-dummies-cheat-sheet/)
