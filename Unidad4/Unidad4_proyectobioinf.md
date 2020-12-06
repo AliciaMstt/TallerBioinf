@@ -161,6 +161,7 @@ Sotware en general:
 * [Problems with the stacking of several files](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
 * [Climate data - install packages in R 4.0.2 ERROR](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/5) Nelly
 * [Error: "Caused by: java.lang.NumberFormatException: For input string: "2236602580""](https://github.com/bgrueda/WES_LUAD/issues/4) Bertha
+* [Error in rbind with the function gradientForest from the package GradientForest in R](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/8) Nelly
 
 Jupyter Notebooks:
 * [Exporting images from Jupyter notebook](https://github.com/AlexLlanesQuevedo/santacruzi_project/issues/5)
