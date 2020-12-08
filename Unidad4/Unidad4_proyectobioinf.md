@@ -142,6 +142,7 @@ Markdown
 Sotware en general:
 * [I need helping to install some dependencies in perl to run vcf2maf.pl](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/10)
 * [Problems with the stacking of several files](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
+* [How to cite using Manubot (for Dummies)?](https://github.com/bgrueda/WES_LUAD/issues/5#issue-758998708)
 
 
 Differential Expression Analysis 
