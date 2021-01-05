@@ -147,5 +147,5 @@ Jueves 07 | Enero | Presentación y **primera entrega de Repositorios** (12 estu
 Martes 12 | Enero | Presentación/retroalimentación de problemas de estudiantes
 Jueves 14 | Enero | Presentación/retroalimentación de problemas de estudiantes
 Martes 19 | Enero | Presentación/retroalimentación de problemas de estudiantes
-Martes 21 | Enero | Presentación/retroalimentación de problemas de estudiantes
+Jueves 21 | Enero | Presentación/retroalimentación de problemas de estudiantes
 Martes 26 - Jueves 28 | Enero | Preguntas y resolución de problemas y **Entrega final de Repositorio** | 
