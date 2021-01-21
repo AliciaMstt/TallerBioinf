@@ -148,5 +148,5 @@ Martes 12 | Enero | Presentación/retroalimentación de problemas de estudiantes
 Jueves 14 | Enero | Presentación/retroalimentación de problemas de estudiantes
 Martes 19 | Enero | Presentación/retroalimentación de problemas de estudiantes
 Jueves 21 | Enero | Presentación/retroalimentación de problemas de estudiantes
-Jueves 26 | Enero | Presentación/retroalimentación de problemas de estudiantes, preguntas y resolución de problemas
+Martes 26 | Enero | Presentación/retroalimentación de problemas de estudiantes, preguntas y resolución de problemas
 Jueves 28 | Enero | Clase (exposición profes) de tópico Unidad 3 (Docker), **Entrega final de Repositorio** | 
