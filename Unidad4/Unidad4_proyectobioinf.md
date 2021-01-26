@@ -137,7 +137,7 @@ Gráficas:
 * [BUSCO plot (Isaura)](https://github.com/IsauraRReinhold/Disocactus_transcriptome/issues/18)
 * [adjust x-axis on barplots (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/4)  
 * [How can I add color bar to heatmap?](https://github.com/arihelrnan/Endophyte_microbiome_Vanilla_planifolia/issues/7)  
-* [SNA Plot: Associate color to its corresponding family (Ana)] (https://github.com/bc-anaisabel/juniperus_paper/issues/6)
+* [SNA Plot: Associate color to its corresponding family (Ana)](https://github.com/bc-anaisabel/juniperus_paper/issues/6)
 
 
 Phylogenies:
@@ -164,6 +164,7 @@ Sotware en general:
 * [Climate data - install packages in R 4.0.2 ERROR](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/5) Nelly
 * [Error: "Caused by: java.lang.NumberFormatException: For input string: "2236602580""](https://github.com/bgrueda/WES_LUAD/issues/4) Bertha
 * [Error in rbind with the function gradientForest from the package GradientForest in R](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/8) Nelly
+* [Installation of SpiecEasi package in R studio](https://github.com/bc-anaisabel/juniperus_paper/issues/19) Ana  
 
 Jupyter Notebooks:
 * [Exporting images from Jupyter notebook](https://github.com/AlexLlanesQuevedo/santacruzi_project/issues/5)
