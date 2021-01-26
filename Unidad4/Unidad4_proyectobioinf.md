@@ -138,7 +138,7 @@ Gráficas:
 * [adjust x-axis on barplots (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/4)  
 * [How can I add color bar to heatmap?](https://github.com/arihelrnan/Endophyte_microbiome_Vanilla_planifolia/issues/7)  
 * [SNA Plot: Associate color to its corresponding family (Ana)] (https://github.com/bc-anaisabel/juniperus_paper/issues/6)
-
+* [Failed to assign color on PCA plot in R](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/12) Nelly
 
 Phylogenies:
 * [Table with tips of each node in a phylogenetic tree -R (Cristian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/22)
