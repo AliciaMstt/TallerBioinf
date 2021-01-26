@@ -137,6 +137,8 @@ Gráficas:
 * [BUSCO plot (Isaura)](https://github.com/IsauraRReinhold/Disocactus_transcriptome/issues/18)
 * [adjust x-axis on barplots (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/4)  
 * [How can I add color bar to heatmap?](https://github.com/arihelrnan/Endophyte_microbiome_Vanilla_planifolia/issues/7)  
+* [SNA Plot: Associate color to its corresponding family (Ana)] (https://github.com/bc-anaisabel/juniperus_paper/issues/6)
+
 
 Phylogenies:
 * [Table with tips of each node in a phylogenetic tree -R (Cristian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/22)
@@ -161,6 +163,7 @@ Sotware en general:
 * [Problems with the stacking of several files](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
 * [Climate data - install packages in R 4.0.2 ERROR](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/5) Nelly
 * [Error: "Caused by: java.lang.NumberFormatException: For input string: "2236602580""](https://github.com/bgrueda/WES_LUAD/issues/4) Bertha
+* [Error in rbind with the function gradientForest from the package GradientForest in R](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/8) Nelly
 
 Jupyter Notebooks:
 * [Exporting images from Jupyter notebook](https://github.com/AlexLlanesQuevedo/santacruzi_project/issues/5)
@@ -186,6 +189,9 @@ Extract mapped and unmapped reads with samtools
 
 Duplicated reads after preprocessing
 * [Overrrepresented sequence that was not previously presented](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/9) Valeria
+
+Programming language translation ("close" to open code)
+* [Maltab script to Python](https://github.com/abelardoacm/ssDNA_viral_pangenomics/issues/3) Abelardo
 
 ## Principios de Agile project Management
 
