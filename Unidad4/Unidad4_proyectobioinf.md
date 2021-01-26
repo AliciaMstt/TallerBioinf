@@ -17,7 +17,7 @@ El directorio del proyecto debe dividirse a su vez, lo recomendable es que sea e
 * **data**, contiene los datos, también puede tener otros nombres como *genetic* para datos genéticos y *spatial* para datos espaciales. Los datos genéticos pueden dividierse a su vez en subdirectorios como *raw*, *filtered*, *genotypes*, *data_in*, *data_out* de modo que los datos crudos estén en un directorio y los modificados por análisis subsecuentes en otros directorios. El punto es tener uno o más directorios donde estén todos los datos.  
 
 * **meta**, **info** o **docs** donde puedes guardar todos los metadatos, como un archivo cvs detallando información de cada una de las muestras. Si lo prefieres este archivo puede ir dentro del directorio de datos sin necesidad de hacer la carpeta *meta*. También es posible guardar aquí cualquier otro documento necesario para procesar los datos.
-  		
+  
 * **bin** o **scripts**, donde guardas todos los scripts necesarios para correr el análisis de principio a fin. Este es un directorio obligatorio. Esta es la carpeta más difícil de documentar.
 
 * **figures**, opcionalmente, puedes poner aquí el código que se utilice sólo para hacer las figuras de una publicación dada. Es como un extracto de *bin* dedicado solo a esto.
@@ -50,6 +50,7 @@ Para ver un ejemplo de un repositorio organizado así, baja la sección **Data a
     * [Este](https://datadryad.org/resource/doi:10.5061/dryad.f7248) repositorio de datos está dividido en varias secciones. El README de última sección "Data and scripts for population genomics and SDM" se ve así: [README_ejemplo](README_ejemplo.md).
 
     
+
 **Ejercicio**: baja el archivo zip (los datos y scripts) asociados al README anterior y compáralo con el README. Responde:
 
 * ¿Puedes encontrar los datos que ocupa para correr cada script? 
@@ -76,8 +77,10 @@ Los proyectos solo los podemos ver si es nuestro repositorio o si estamos agrega
 Las tareas ("cards") de un proyecto pueden quedarse como tareas simplemente, o volverse un **issue**. Los issues permiten delimitar una tarea que debe atenderse (por ejemplo un bug, una modalidad nueva deseada, etc) pero cuya solución además requiere discusión. Cada issue tiene asociado entonces una conversación. Tanto los issues como sus conversaciones asociadas son públicos, pues permiten al público saber, por ejemplo, que el problema existe y en qué va su solución.
 
 ![](github_issues.png)
+
   
 #### ¿Cómo escribir un buen issue?
+
 
 Sigue la guía: [How do I ask a good question? de Stackoverflow](https://stackoverflow.com/help/how-to-ask)  
 
@@ -126,6 +129,11 @@ BCFtools:
 Parsear archivos output:
 * [Extract table of ipyrad stats file -bash o R (Christian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/17)
 * [Choose by gene labels](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/5) 
+* [Extract information from Trimmomatic stoutput and make a table](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/16)(Valeria)
+
+Simplificación de scripts:
+* [ReEx in name files](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/11)(Valeria)
+
 
 Gráficas:
 * [Code color in volcano plots - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/8)
@@ -134,6 +142,9 @@ Gráficas:
 * [BUSCO plot (Isaura)](https://github.com/IsauraRReinhold/Disocactus_transcriptome/issues/18)
 * [adjust x-axis on barplots (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/4)  
 * [Adding sample ID's to admixture plot in R package 'pophelper' (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/9)
+* [How can I add color bar to heatmap?](https://github.com/arihelrnan/Endophyte_microbiome_Vanilla_planifolia/issues/7)  
+* [SNA Plot: Associate color to its corresponding family (Ana)](https://github.com/bc-anaisabel/juniperus_paper/issues/6)
+
 
 
 Phylogenies:
@@ -159,11 +170,19 @@ Sotware en general:
 * [Problems with the stacking of several files](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/issues/11)
 * [Climate data - install packages in R 4.0.2 ERROR](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/5) Nelly
 * [Error: "Caused by: java.lang.NumberFormatException: For input string: "2236602580""](https://github.com/bgrueda/WES_LUAD/issues/4) Bertha
+* [Error in rbind with the function gradientForest from the package GradientForest in R](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/8) Nelly
+* [Installation of SpiecEasi package in R studio](https://github.com/bc-anaisabel/juniperus_paper/issues/19) Ana  
 
-Comparisons of microbiomes compositions
+Jupyter Notebooks:
+* [Exporting images from Jupyter notebook](https://github.com/AlexLlanesQuevedo/santacruzi_project/issues/5)
+
+
+Comparisons of microbiomes compositions:
 * [Problems with colors in Heat_tree_matrix](https://github.com/arihelrnan/Endophyte_microbiome_Vanilla_planifolia/issues/4) Ariel
 
+
 Differential Expression Analysis 
+
 * [Define contrasts for DE](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/6) 
 * [which trimm program I have to choose?](https://github.com/IsauraRReinhold/Disocactus_transcriptome/issues/6) Isaura
 
@@ -179,9 +198,13 @@ Extract mapped and unmapped reads with samtools
 Duplicated reads after preprocessing
 * [Overrrepresented sequence that was not previously presented](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/9) Valeria
 
+
 Population genetics:
 * [Generating a pairwise genetic distance matrix for individuals using RADseq data (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/5)
 
+
+Programming language translation ("close" to open code)
+* [Maltab script to Python](https://github.com/abelardoacm/ssDNA_viral_pangenomics/issues/3) Abelardo
 
 
 ## Principios de Agile project Management
