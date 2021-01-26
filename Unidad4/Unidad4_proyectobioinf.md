@@ -141,8 +141,10 @@ Gráficas:
 * [Plot cophylogeny (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/5)
 * [BUSCO plot (Isaura)](https://github.com/IsauraRReinhold/Disocactus_transcriptome/issues/18)
 * [adjust x-axis on barplots (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/4)  
+* [Adding sample ID's to admixture plot in R package 'pophelper' (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/9)
 * [How can I add color bar to heatmap?](https://github.com/arihelrnan/Endophyte_microbiome_Vanilla_planifolia/issues/7)  
 * [SNA Plot: Associate color to its corresponding family (Ana)](https://github.com/bc-anaisabel/juniperus_paper/issues/6)
+
 
 
 Phylogenies:
@@ -196,8 +198,14 @@ Extract mapped and unmapped reads with samtools
 Duplicated reads after preprocessing
 * [Overrrepresented sequence that was not previously presented](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/9) Valeria
 
+
+Population genetics:
+* [Generating a pairwise genetic distance matrix for individuals using RADseq data (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/5)
+
+
 Programming language translation ("close" to open code)
 * [Maltab script to Python](https://github.com/abelardoacm/ssDNA_viral_pangenomics/issues/3) Abelardo
+
 
 ## Principios de Agile project Management
 
