@@ -133,6 +133,7 @@ Gráficas:
 * [Plot cophylogeny (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/5)
 * [BUSCO plot (Isaura)](https://github.com/IsauraRReinhold/Disocactus_transcriptome/issues/18)
 * [adjust x-axis on barplots (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/4)  
+* [Adding sample ID's to admixture plot in R package 'pophelper' (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/9)
 
 
 Phylogenies:
@@ -177,6 +178,11 @@ Extract mapped and unmapped reads with samtools
 
 Duplicated reads after preprocessing
 * [Overrrepresented sequence that was not previously presented](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/9) Valeria
+
+Population genetics:
+* [Generating a pairwise genetic distance matrix for individuals using RADseq data (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/5)
+
+
 
 ## Principios de Agile project Management
 
