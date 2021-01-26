@@ -129,6 +129,11 @@ BCFtools:
 Parsear archivos output:
 * [Extract table of ipyrad stats file -bash o R (Christian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/17)
 * [Choose by gene labels](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/5) 
+* [Extract information from Trimmomatic stoutput and make a table](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/16)(Valeria)
+
+Simplificación de scripts:
+* [ReEx in name files](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/11)(Valeria)
+
 
 Gráficas:
 * [Code color in volcano plots - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/8)
