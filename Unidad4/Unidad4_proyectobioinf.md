@@ -129,6 +129,11 @@ BCFtools:
 Parsear archivos output:
 * [Extract table of ipyrad stats file -bash o R (Christian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/17)
 * [Choose by gene labels](https://github.com/FernandaDiaz12/pediatric_astrocytoma/issues/5) 
+* [Extract information from Trimmomatic stoutput and make a table](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/16)(Valeria)
+
+Simplificación de scripts:
+* [ReEx in name files](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/11)(Valeria)
+
 
 Gráficas:
 * [Code color in volcano plots - R (Laura) ](https://github.com/LauraMCE/lncRNA_BC/issues/8)
@@ -136,9 +141,12 @@ Gráficas:
 * [Plot cophylogeny (Melisa)](https://github.com/almamelisa/Euphoniinae-Subfamily/issues/5)
 * [BUSCO plot (Isaura)](https://github.com/IsauraRReinhold/Disocactus_transcriptome/issues/18)
 * [adjust x-axis on barplots (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/4)  
+* [Adding sample ID's to admixture plot in R package 'pophelper' (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/9)
 * [How can I add color bar to heatmap?](https://github.com/arihelrnan/Endophyte_microbiome_Vanilla_planifolia/issues/7)  
 * [SNA Plot: Associate color to its corresponding family (Ana)] (https://github.com/bc-anaisabel/juniperus_paper/issues/6)
 * [Failed to assign color on PCA plot in R](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/12) Nelly
+
+
 
 Phylogenies:
 * [Table with tips of each node in a phylogenetic tree -R (Cristian)](https://github.com/cristoichkov/GBS_Bioinf_Process_Mamm/issues/22)
@@ -164,6 +172,7 @@ Sotware en general:
 * [Climate data - install packages in R 4.0.2 ERROR](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/5) Nelly
 * [Error: "Caused by: java.lang.NumberFormatException: For input string: "2236602580""](https://github.com/bgrueda/WES_LUAD/issues/4) Bertha
 * [Error in rbind with the function gradientForest from the package GradientForest in R](https://github.com/NellyJazminPC/Qmacdougallii_genomics_and_environment/issues/8) Nelly
+* [Installation of SpiecEasi package in R studio](https://github.com/bc-anaisabel/juniperus_paper/issues/19) Ana  
 
 Jupyter Notebooks:
 * [Exporting images from Jupyter notebook](https://github.com/AlexLlanesQuevedo/santacruzi_project/issues/5)
@@ -190,8 +199,14 @@ Extract mapped and unmapped reads with samtools
 Duplicated reads after preprocessing
 * [Overrrepresented sequence that was not previously presented](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/9) Valeria
 
+
+Population genetics:
+* [Generating a pairwise genetic distance matrix for individuals using RADseq data (Brett)](https://github.com/redgcko7/Coleonyx_elegans/issues/5)
+
+
 Programming language translation ("close" to open code)
 * [Maltab script to Python](https://github.com/abelardoacm/ssDNA_viral_pangenomics/issues/3) Abelardo
+
 
 ## Principios de Agile project Management
 
