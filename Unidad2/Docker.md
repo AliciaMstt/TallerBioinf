@@ -116,15 +116,13 @@ Veámoslo con un ejemplo:
 
 ```
 $ docker pull ubuntu:14.04 #Baja la versión 14.04 de ubuntu 
-Using default tag: latest
-latest: Pulling from library/ubuntu
-
-5a132a7e7af1: Pull complete 
-fd2731e4c50c: Pull complete 
-28a2f68d1120: Pull complete 
-a3ed95caeb02: Pull complete 
-Digest: sha256:4e85ebe01d056b43955250bbac22bdb8734271122e3c78d21e55ee235fc6802d
-Status: Downloaded newer image for ubuntu:latest
+14.04: Pulling from library/ubuntu
+2e6e20c8e2e6: Pull complete 
+95201152d9ff: Pull complete 
+5f63a3b65493: Pull complete 
+Digest: sha256:63fce984528cec8714c365919882f8fb64c8a3edf23fdfa0b218a2756125456f
+Status: Downloaded newer image for ubuntu:14.04
+docker.io/library/ubuntu:14.04
 ```
 
  
@@ -232,6 +230,16 @@ Esto ocupa espacio en disco y nos llena de contenedores a los que no volveremos 
 
 Esto se hace con el flag `--rm` a `docker run`.
 
+```
+$ docker run -it --rm ubuntu:14.04 bash
+root@e9728140d6b0:/# ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@e9728140d6b0:/# exit
+$ docker ps -a
+CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS                     PORTS     NAMES
+
+```
+
 #### "Conectar" un contenedor con un directorio dentro del OS nativo, aka "montar un volumen":
 
 (Para poder hacer esta parte primero: `git clone https://github.com/AliciaMstt/TallerBioinf.git`)
@@ -256,8 +264,7 @@ Asumiendo que estás en `Unidad2/Docker/Prac_docker`.
 ```
 $ pwd
 /root/TallerBioinf/Unidad2/Docker/Prac_docker
-$ midirectorio=$(pwd)
-$ docker run --rm  -v $midirectorio:/nombredirContenedor -it ubuntu:14.04 bash
+$ docker run --rm  -v $(pwd):/nombredirContenedor -it ubuntu:14.04 bash
 
 ```
 
@@ -362,6 +369,38 @@ Part of FASTX Toolkit 0.0.14 by A. Gordon (assafgordon@gmail.com)
 
 ```
 
+#### Problema de permisos de usuario frecuente al usuar biocontainers
+
+Los contenedores de biocontainers crean un usuario llamado `biodocker`. Si lo corres localmente normalmente no habrá ningun problema, pero si lo estás corriendo en un cluster donde la administración de usuarios sea más cuidadosa, es probable que que puedas `docker run` sin problema, pero que si montas un volumen (`-v`) no puedas escribir en el directorio que montaste. Esto se debe a que sólo determinados usuarios tienen permiso de escritura en el directorio que existe fuera de docker, y que el usuario `biodocker` no es uno de ellos. El error se ve así:
+
+
+```
+$ docker run --rm -v $(pwd):/data biocontainers/biocontainers bash -c "echo Hola > mi_archivo.txt"
+bash: mi_archivo.txt: Permission denied
+```
+
+
+
+La solución es: 
+
+1) Averiguar el usder id del usuario con el que estás trabajando en el cluster:
+
+
+```
+$ id arachnida
+uid=1001(arachnida) gid=1001(arachnida) groups=1001(arachnida),998(docker)
+```
+
+2) Utilizar el `uid` dentro de tu comando de `docker run` con el flag `-u`:
+
+```
+$ docker run -u 1001 --rm -v $(pwd):/data biocontainers/biocontainers bash -c "echo Hola > mi_archivo.txt"
+
+$ ls
+mi_archivo.txt
+```
+
+
 ### Repaso y conceptos clave
 
 * Utilidad de docker: 
@@ -383,7 +422,7 @@ Part of FASTX Toolkit 0.0.14 by A. Gordon (assafgordon@gmail.com)
 
 `docker pull [IMAGEN]` para bajar la imagen base donde trabajaras
 
- `docker run -v [-v [RutaABSOLUTAaldirectorioDeseado:/nombrevolumen]] -it [IMAGEN] bash` para crear y correr el contenedor con la imagen de forma interactiva ("entrando") y con un volumen montado a un directorio de nuestra compu donde queramos escribir/leer datos. Ejemplo: ``
+ `docker run -v [-v [RutaABSOLUTAaldirectorioDeseado:/nombrevolumen]] -it [IMAGEN] bash` para crear y correr el contenedor con la imagen de forma interactiva ("entrando") y con un volumen montado a un directorio de nuestra compu donde queramos escribir/leer datos. 
  
   OJO: cada vez que haces `docker run` se **crea** un contenedor **distinto** a partir de la misma imagen. Para **no llenarte de contenedores** utiliza `docker run --rm`.
  
@@ -395,7 +434,7 @@ Part of FASTX Toolkit 0.0.14 by A. Gordon (assafgordon@gmail.com)
  `docker rm` para borrar un contenedor que ya no quieras. Debes `docker stop` si está corriendo.
  
  
- 
+
  
  2) **Utilizando un contenedor por proceso (Recomendado)** suponiendo que el sofware que utilizas ya vive en una imagen, por ejemplo de Biocontainers. Los comandos base que utilizarías para esto serían:
  
@@ -403,14 +442,14 @@ Part of FASTX Toolkit 0.0.14 by A. Gordon (assafgordon@gmail.com)
  
  `docker run --rm -v [RutaABSOLUTAaldirectorioDeseado:/data]  [biocontainers/IMAGEN] [COMANDOS del sofware en cuestión]` para correr el contenedor de una imagen de biocontainers con los comandos específicos de un software dado, con volumen montado a un directorio de nuestra compu donde queramos escribir/leer datos y de tal forma que el contenedor se borre automáticamente al terminar el proceso. Puedes hacer una línea por comando o agregar `-c exit` y juntar varios comandos en un pipe.
  
-Ejemplo (asumiendo el wd es donde estan los datos):
+Ejemplo (asumiendo el wd es donde estan los datos y que estás en un cluster con usuario 1001, si no quita el flag `-u`):
  
-`docker run --rm -v $(pwd):/data biocontainers/fastxtools:0.0.14 bash -c "fastx_trimmer -f 1 -l 70 -i human_Illumina_dataset.fastq -v | fastq_quality_filter -q 20 -p 90 -o clean_human_data.fastq -v ; exit"`
+`docker run -u 1001 --rm -v $(pwd):/data biocontainers/fastxtools:0.0.14 bash -c "fastx_trimmer -f 1 -l 70 -i human_Illumina_dataset.fastq -v | fastq_quality_filter -q 20 -p 90 -o clean_human_data.fastq -v ; exit"`
 
 El flag `-c`  en realidad sirve para pedirle que corra más de un comando dentro del mismo contenedor (unidos por ejemplo con `|`, `;`, etc) Si corres el contenedor con `bash` y los comandos deseados entre "" automáticamente se saldrá (sin tenerle que decir `exit`) al terminar de correr todos los comandos. Ejemplo:
 
 ```
-$ docker run --rm biocontainers/fastxtools:0.0.14 bash -c "fastq_to_fasta -h ; echo hola mundo"
+$ docker run -u 1001 --rm biocontainers/fastxtools:0.0.14 bash -c "fastq_to_fasta -h ; echo hola mundo"
 ```
 
 (Los datos del ejemplo vienen de [Galaxy Data Libraries](https://usegalaxy.org/library/list#folders/F5bee13e9f312df25/datasets/99fa250d93e003f7) y son de libre uso)
@@ -442,7 +481,7 @@ Donde en el caso del PlayGround la ruta absoluta es: `/root/TallerBioinf/Unidad2
 Por facilidad, puedes poner la parte que repitiremos cada vez que queramos correr vcftools (lo anterior hasta "vcftools") en una variable.
 
 ```
-vcftools="docker run --rm -v /root/TallerBioinf/Unidad2/Prac_docker:/data biocontainers/vcftools:0.1.15 vcftools"
+vcftools="docker run -u 1001 --rm -v /root/TallerBioinf/Unidad2/Prac_docker:/data biocontainers/vcftools:0.1.15 vcftools"
 ```
 
 y luego correrlo con $vcftools más el comando que quieras.
