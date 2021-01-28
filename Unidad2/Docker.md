@@ -521,7 +521,7 @@ Escribe un script que resuelva el ejercicio anterior, desde bajar el archivo has
 
 ### Otros ejercicios y notas
 
-**Ejercicio**: ve a la página [https://biocontainers-edu.biocontainers.pro/en/latest/running_example.html](https://biocontainers-edu.biocontainers.pro/en/latest/running_example.html) y lee el ejemplo de cómo usar `blast`. 
+**Ejercicio**: ve a la página [https://biocontainers-edu.readthedocs.io/en/latest/running_example.html](https://biocontainers-edu.readthedocs.io/en/latest/running_example.html) y lee el ejemplo de cómo usar `blast`. 
 
 
 
