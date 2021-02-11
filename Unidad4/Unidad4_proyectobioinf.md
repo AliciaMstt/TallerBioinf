@@ -192,6 +192,7 @@ Genome assembly
 
 Conditional and automated file management
 * [Label and concatenation of genbank file from taxonomy ID](https://github.com/abelardoacm/ssDNA_viral_pangenomics/issues/2) Abelardo
+* [Mash dist output transformation](https://github.com/abelardoacm/ssDNA_viral_pangenomics/issues/7) Abelardo
 
 Extract mapped and unmapped reads with samtools
 * [Count how many reads map to a reference](https://github.com/valeriafloral/Abies_fungal_endophytes/issues/10) Valeria
